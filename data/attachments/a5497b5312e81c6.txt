@@ -1,0 +1,2 @@
+Status: 201
+Response: {'success': True, 'message': 'Click muvaffaqiyatli yaratildi', 'click_id': 169}
