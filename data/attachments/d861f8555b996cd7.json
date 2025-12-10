@@ -1,0 +1,58 @@
+{
+  "core_car": {
+    "services": [],
+    "modification": 17580,
+    "drive_unit": 1,
+    "media_tools": [],
+    "optics": [],
+    "external_body_kit": [],
+    "salon": [
+      5,
+      4,
+      2
+    ],
+    "used_car": true,
+    "description": "1232323232323232333232ddssd",
+    "brand": 82,
+    "car_model": 828,
+    "generation": 1651,
+    "configuration": 2391,
+    "body_type": 1,
+    "fuel_type": 7,
+    "transmission": 1,
+    "color": 3,
+    "year": 2019,
+    "mileage": 23568.0
+  },
+  "region": 7,
+  "currency": "usd",
+  "photos": [
+    {
+      "url": "https://files-api.itpoint.uz/orient-motors/images/original/24d10620-62fd-4fc4-bf4e-4b32f19733f9.jpg",
+      "thumbnail": "https://files-api.itpoint.uz/orient-motors/images/thumbnail/24d10620-62fd-4fc4-bf4e-4b32f19733f9.jpg",
+      "type": "general"
+    },
+    {
+      "url": "https://files-api.itpoint.uz/orient-motors/images/original/4b5c2b8c-38c1-4f3c-940e-6fc6d4adb49b.jpg",
+      "thumbnail": "https://files-api.itpoint.uz/orient-motors/images/thumbnail/4b5c2b8c-38c1-4f3c-940e-6fc6d4adb49b.jpg",
+      "type": "general"
+    },
+    {
+      "url": "https://files-api.itpoint.uz/orient-motors/images/original/171a2479-d94b-464b-a746-33d1c791778e.jpg",
+      "thumbnail": "https://files-api.itpoint.uz/orient-motors/images/thumbnail/171a2479-d94b-464b-a746-33d1c791778e.jpg",
+      "type": "general"
+    },
+    {
+      "url": "https://files-api.itpoint.uz/orient-motors/images/original/6260d771-cf6f-4ddf-a5c2-435dffbd3ab1.jpg",
+      "thumbnail": "https://files-api.itpoint.uz/orient-motors/images/thumbnail/6260d771-cf6f-4ddf-a5c2-435dffbd3ab1.jpg",
+      "type": "general"
+    }
+  ],
+  "changed_part": [],
+  "condition": "excellent",
+  "barter": false,
+  "is_cheaper": false,
+  "passed_customs_clearance": false,
+  "buy_it_now_price": 10000.0,
+  "buy_it_now_currency": "usd"
+}
