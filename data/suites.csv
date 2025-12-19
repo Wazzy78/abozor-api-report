@@ -1,340 +1,307 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"
-Negative test:
-Send request to invalid URL and expect 404 error
-","24","test_get_body_type_list_negative_invalid_url","tests.api.specifaction","Wed Dec 10 09:56:38 GMT+05:00 2025","passed","Wed Dec 10 09:56:38 GMT+05:00 2025","","test_body_type","",""
-"","19","test_get_auction_detail_negative[abc]","tests.api.auctionn","Wed Dec 10 09:55:44 GMT+05:00 2025","passed","Wed Dec 10 09:55:44 GMT+05:00 2025","","test_auction_detail","",""
-"","57","test_get_faq_list","tests.api.chat","Wed Dec 10 09:56:21 GMT+05:00 2025","passed","Wed Dec 10 09:56:21 GMT+05:00 2025","","test_faq","",""
-"
-Positive test:
-Verify that diagnostics price details are returned correctly
-","38","test_get_diagnostics_price_positive","tests.api.main","Wed Dec 10 09:56:24 GMT+05:00 2025","passed","Wed Dec 10 09:56:24 GMT+05:00 2025","","test_diagnostics_price","",""
-"","33","test_transmission_id_negative","tests.api.specifaction","Wed Dec 10 09:56:40 GMT+05:00 2025","passed","Wed Dec 10 09:56:40 GMT+05:00 2025","","test_transmisson_id","",""
-"
-Test Case: Verify that API returns generation configuration details for a valid ID
-","44","test_get_generation_configurations_v2_by_id_positive[2483]","tests.api.car","Wed Dec 10 09:56:08 GMT+05:00 2025","passed","Wed Dec 10 09:56:08 GMT+05:00 2025","","test_generations","",""
-"","31","test_get_auction_deal_negative[?is_sold=maybe&mark=82&model=828&generation=1651&page=1&page_size=20]","tests.api.auctionn","Wed Dec 10 09:55:48 GMT+05:00 2025","passed","Wed Dec 10 09:55:48 GMT+05:00 2025","","test_deal_auction","",""
-"
-Negative test:
-Verify that endpoint returns 401 if no authorization headers are provided
-","27","test_remove_all_user_likes_unauthorized","tests.api.users","Wed Dec 10 09:56:43 GMT+05:00 2025","passed","Wed Dec 10 09:56:43 GMT+05:00 2025","","test_remove_like","",""
-"","62","test_get_diagnostic_center_functional[24]","tests.api.business","Wed Dec 10 09:55:52 GMT+05:00 2025","passed","Wed Dec 10 09:55:53 GMT+05:00 2025","","test_centers_read","",""
-"","53","test_get_fuel_type_by_id","tests.api.specifaction","Wed Dec 10 09:56:39 GMT+05:00 2025","passed","Wed Dec 10 09:56:39 GMT+05:00 2025","","test_fuel_type_id","",""
-"Test GET /moderation API endpoint","45","test_get_moderation","tests.api.moderation","Wed Dec 10 09:56:36 GMT+05:00 2025","passed","Wed Dec 10 09:56:36 GMT+05:00 2025","","test_moderation_list","",""
-"
-Positive test:
-Verify that tariffs are returned for a given carwash_id and the structure is valid
-","45","test_get_car_wash_tariffs_by_id","tests.api.carwash","Wed Dec 10 09:56:18 GMT+05:00 2025","passed","Wed Dec 10 09:56:18 GMT+05:00 2025","","test_get_tarrif","",""
-"Check that request without token returns 401 or 403","96","Negative: Get Atmos holds without token","tests.api.moderation","Wed Dec 10 09:56:34 GMT+05:00 2025","passed","Wed Dec 10 09:56:34 GMT+05:00 2025","TestModerationAtmosHolds","test_atmos_holds","",""
-"","26","test_get_my_lost_offers_negative[?page=&size=20&type=lost]","tests.api.auctionn","Wed Dec 10 09:55:49 GMT+05:00 2025","passed","Wed Dec 10 09:55:49 GMT+05:00 2025","","test_offer_lost","",""
-"
-Negative test:
-Verify that API returns 404 or 400 for invalid endpoint
-","49","test_get_regions_list_negative_invalid_url[/main/regions/invalid]","tests.api.main","Wed Dec 10 09:56:24 GMT+05:00 2025","passed","Wed Dec 10 09:56:24 GMT+05:00 2025","","test_region","",""
-"","31","test_get_my_lost_offers_negative[?page=1&size=20&type=invalid]","tests.api.auctionn","Wed Dec 10 09:55:49 GMT+05:00 2025","passed","Wed Dec 10 09:55:49 GMT+05:00 2025","","test_offer_lost","",""
-"","531","test_get_additional_deal_data_negative[?is_sold=true&mark=abc&model=828&year=2020]","tests.api.auctionn","Wed Dec 10 09:55:41 GMT+05:00 2025","passed","Wed Dec 10 09:55:42 GMT+05:00 2025","","test_additional_data","",""
-"","22","test_get_my_offers_invalid_query_params[?page=&size=20]","tests.api.auctionn","Wed Dec 10 09:55:48 GMT+05:00 2025","passed","Wed Dec 10 09:55:48 GMT+05:00 2025","","test_my_offer","",""
-"","619","test_create_car","tests.api.business","Wed Dec 10 09:55:52 GMT+05:00 2025","passed","Wed Dec 10 09:55:52 GMT+05:00 2025","","test_car_upload","",""
-"
-Positive test:
-Verify that checking a valid phone number returns type and detail
-","94","test_check_user_success","tests.api.users","Wed Dec 10 09:56:42 GMT+05:00 2025","passed","Wed Dec 10 09:56:42 GMT+05:00 2025","","test_check_user","",""
-"","153","test_post_trade_in_app","tests.api.business","Wed Dec 10 09:56:03 GMT+05:00 2025","passed","Wed Dec 10 09:56:03 GMT+05:00 2025","","test_trade_in_create","",""
-"Check bad request with invalid payload returns 400","41","Negative: Send request with invalid payload","tests.api.moderation","Wed Dec 10 09:56:36 GMT+05:00 2025","passed","Wed Dec 10 09:56:36 GMT+05:00 2025","TestModerationAction","test_moderation_action","",""
-"","538","test_get_daily_view_stats_negative_cases[?auction_id=0&days=30]","tests.api.auctionn","Wed Dec 10 09:55:44 GMT+05:00 2025","passed","Wed Dec 10 09:55:45 GMT+05:00 2025","","test_daily_view","",""
-"","528","test_get_additional_deal_data_negative[?is_sold=maybe&mark=82&model=828&year=2020]","tests.api.auctionn","Wed Dec 10 09:55:41 GMT+05:00 2025","passed","Wed Dec 10 09:55:41 GMT+05:00 2025","","test_additional_data","",""
-"
-Negative test:
-Verify that invalid parameters return an error message or empty promo
-","71","test_check_promo_invalid_params[params2]","tests.api.carwash","Wed Dec 10 09:56:20 GMT+05:00 2025","failed","Wed Dec 10 09:56:20 GMT+05:00 2025","","test_promo_check","",""
-"","294","test_create_car_post_v2_negative_missing_required[region]","tests.api.car","Wed Dec 10 09:56:15 GMT+05:00 2025","passed","Wed Dec 10 09:56:15 GMT+05:00 2025","TestCreateCarPostV2","test_v2_create","",""
-"
-Negative test:
-Verify that API returns 404 or appropriate error for invalid URL
-","24","test_get_about_us_blog_list_negative_invalid_url[/main/about-us/blog/lists]","tests.api.main","Wed Dec 10 09:56:22 GMT+05:00 2025","passed","Wed Dec 10 09:56:22 GMT+05:00 2025","","test_about_us","",""
-"
-Negative test:
-Verify that request without auth headers returns 401 Unauthorized
-","39","test_get_my_promos_unauthorized","tests.api.carwash","Wed Dec 10 09:56:18 GMT+05:00 2025","passed","Wed Dec 10 09:56:18 GMT+05:00 2025","","test_get_promo","",""
-"","61","test_get_business_user_by_id","tests.api.business","Wed Dec 10 09:56:03 GMT+05:00 2025","passed","Wed Dec 10 09:56:03 GMT+05:00 2025","","test_user_read","",""
-"
-Negative test:
-Verify that creating a car wash order with invalid data returns an error
-","49","test_create_car_wash_order_invalid_data[payload2]","tests.api.carwash","Wed Dec 10 09:56:17 GMT+05:00 2025","passed","Wed Dec 10 09:56:17 GMT+05:00 2025","","test_create_order","",""
-"","22","test_get_auction_view_count_negative[params2]","tests.api.auctionn","Wed Dec 10 09:55:44 GMT+05:00 2025","passed","Wed Dec 10 09:55:44 GMT+05:00 2025","","test_auction_view","",""
-"","201","test_similar_cars_positive","tests.api.car","Wed Dec 10 09:56:13 GMT+05:00 2025","passed","Wed Dec 10 09:56:14 GMT+05:00 2025","TestSimilarCars","test_similar","",""
-"","299","test_cip_upload","tests.api.business","Wed Dec 10 09:55:53 GMT+05:00 2025","passed","Wed Dec 10 09:55:53 GMT+05:00 2025","","test_cip_upload","",""
-"
-Positive test:
-Verify that a specific body type can be retrieved by its ID
-","51","test_get_body_type_by_id_positive[1]","tests.api.specifaction","Wed Dec 10 09:56:38 GMT+05:00 2025","passed","Wed Dec 10 09:56:38 GMT+05:00 2025","","test_body_type_id","",""
-"Check that request with invalid token returns 401","57","Negative: Get Atmos holds with invalid token","tests.api.moderation","Wed Dec 10 09:56:34 GMT+05:00 2025","passed","Wed Dec 10 09:56:34 GMT+05:00 2025","TestModerationAtmosHolds","test_atmos_holds","",""
-"","45","test_get_offer_status_success","tests.api.auctionn","Wed Dec 10 09:55:44 GMT+05:00 2025","passed","Wed Dec 10 09:55:44 GMT+05:00 2025","","test_bids_price","",""
-"","54","test_get_trade_in_app_active","tests.api.business","Wed Dec 10 09:56:02 GMT+05:00 2025","passed","Wed Dec 10 09:56:02 GMT+05:00 2025","","test_status_read","",""
-"","65","test_my_diagnostics","tests.api.business","Wed Dec 10 09:56:01 GMT+05:00 2025","passed","Wed Dec 10 09:56:01 GMT+05:00 2025","","test_my_diagnostics","",""
-"
-Positive test:
-Verify that API returns 200 and valid JSON response for a valid car model ID with auction and avtosalon filters.
-","47","test_get_car_model_list2_auction_avtosalon_positive[22228]","tests.api.car","Wed Dec 10 09:56:10 GMT+05:00 2025","passed","Wed Dec 10 09:56:10 GMT+05:00 2025","","test_model_list2","",""
-"
-Test Case: Verify that API returns brand details for a valid brand name (BYD)
-","55","test_get_car_brand_by_name_positive","tests.api.car","Wed Dec 10 09:56:08 GMT+05:00 2025","passed","Wed Dec 10 09:56:08 GMT+05:00 2025","","test_brands_read","",""
-"
-Negative test:
-Attempt to retrieve a body type with an invalid ID
-","27","test_get_body_type_by_id_negative_invalid_id[-1]","tests.api.specifaction","Wed Dec 10 09:56:38 GMT+05:00 2025","broken","Wed Dec 10 09:56:38 GMT+05:00 2025","","test_body_type_id","",""
-"","27","test_admin_access_token_negative[-]","tests.api.token","Wed Dec 10 09:56:42 GMT+05:00 2025","passed","Wed Dec 10 09:56:42 GMT+05:00 2025","","test_token_acces_admin","",""
+"","59","test_get_drive_unit_by_id_success","tests.api.specifaction","Fri Dec 19 13:00:17 GMT+05:00 2025","passed","Fri Dec 19 13:00:17 GMT+05:00 2025","","test_drive_unit_id","",""
+"","89","test_patch_ad","tests.api.abozor_ads","Fri Dec 19 12:59:17 GMT+05:00 2025","passed","Fri Dec 19 12:59:17 GMT+05:00 2025","","test_ads_patch","",""
+"","60","test_similar_cars_negative[invalid_body0]","tests.api.car","Fri Dec 19 12:59:52 GMT+05:00 2025","passed","Fri Dec 19 12:59:53 GMT+05:00 2025","TestSimilarCars","test_similar","",""
 "
 Test Case: Verify that API returns correct car details for a valid car ID
-","251","test_get_car_details_positive[22066]","tests.api.car","Wed Dec 10 09:56:08 GMT+05:00 2025","passed","Wed Dec 10 09:56:09 GMT+05:00 2025","","test_get_id","",""
-"","55","test_business_login_negative[+998990600862-wrongpassword]","tests.api.business","Wed Dec 10 09:56:01 GMT+05:00 2025","passed","Wed Dec 10 09:56:01 GMT+05:00 2025","","test_login","",""
+","245","test_get_car_details_positive[22066]","tests.api.car","Fri Dec 19 12:59:46 GMT+05:00 2025","passed","Fri Dec 19 12:59:46 GMT+05:00 2025","","test_get_id","",""
+"❌ Negative case: invalid car ID should return 404","61","test_get_specific_car_detail_invalid_id","tests.api.specific_cars","Fri Dec 19 13:00:20 GMT+05:00 2025","passed","Fri Dec 19 13:00:20 GMT+05:00 2025","","test_detail_id","",""
+"","90","test_optics","tests.api.specifaction","Fri Dec 19 13:00:17 GMT+05:00 2025","passed","Fri Dec 19 13:00:17 GMT+05:00 2025","","test_optics","",""
 "
 Positive test:
-Verify that API returns price_from and price_to for valid car data
-","71","test_price_prediction_success","tests.api.auctionn","Wed Dec 10 09:55:49 GMT+05:00 2025","failed","Wed Dec 10 09:55:49 GMT+05:00 2025","","test_price_predict","",""
-"
-Positive test:
-Verify that the list of tariffs is returned and has valid data structure
-","52","test_get_car_wash_tariffs","tests.api.carwash","Wed Dec 10 09:56:18 GMT+05:00 2025","passed","Wed Dec 10 09:56:18 GMT+05:00 2025","","test_get_tarrifs","",""
-"
-Negative test:
-Verify that invalid code or phone returns 400 or 401
-","27","test_verify_code_invalid[payload3]","tests.api.users","Wed Dec 10 09:56:43 GMT+05:00 2025","passed","Wed Dec 10 09:56:43 GMT+05:00 2025","","test_verify_code","",""
-"","589","test_get_additional_deal_data_success","tests.api.auctionn","Wed Dec 10 09:55:40 GMT+05:00 2025","passed","Wed Dec 10 09:55:41 GMT+05:00 2025","","test_additional_data","",""
-"","28","test_login_negative_cases[+998888672000-123456]","tests.api.token","Wed Dec 10 09:56:40 GMT+05:00 2025","passed","Wed Dec 10 09:56:40 GMT+05:00 2025","","test_loginapi","",""
-"","0","test_add_car_and_create_carwash_order","tests.api.carwash","Wed Dec 10 09:56:17 GMT+05:00 2025","broken","Wed Dec 10 09:56:17 GMT+05:00 2025","","test_cashback_order","",""
-"
-Test case to verify that the GET request for changed parts quality list
-returns status code 200 and valid response structure.
-","55","test_get_changed_parts_quality_list_success","tests.api.specifaction","Wed Dec 10 09:56:38 GMT+05:00 2025","passed","Wed Dec 10 09:56:38 GMT+05:00 2025","","test_changed_part","",""
-"
-Test Case: Verify that API returns a list of car brands with correct fields
-","72","test_get_car_brand_list_db_post_positive","tests.api.car","Wed Dec 10 09:56:09 GMT+05:00 2025","passed","Wed Dec 10 09:56:09 GMT+05:00 2025","","test_list_post","",""
-"
-Test Case: Verify that API returns like count inside a list for a valid car ID
-","50","test_get_car_like_count_positive","tests.api.car","Wed Dec 10 09:56:09 GMT+05:00 2025","passed","Wed Dec 10 09:56:09 GMT+05:00 2025","","test_like_count","",""
-"","52","test_change_user_status_negative","tests.api.chat","Wed Dec 10 09:56:20 GMT+05:00 2025","failed","Wed Dec 10 09:56:20 GMT+05:00 2025","","test_change_status_user","",""
-"","25","test_get_auction_deal_negative[?is_sold=true&mark=-1&model=828&generation=1651&page=1&page_size=20]","tests.api.auctionn","Wed Dec 10 09:55:48 GMT+05:00 2025","passed","Wed Dec 10 09:55:48 GMT+05:00 2025","","test_deal_auction","",""
-"
-Negative test:
-Verify that creating a car wash order with invalid data returns an error
-","47","test_create_car_wash_order_invalid_data[payload1]","tests.api.carwash","Wed Dec 10 09:56:17 GMT+05:00 2025","passed","Wed Dec 10 09:56:17 GMT+05:00 2025","","test_create_order","",""
-"","78","test_get_diagnostics_by_id[3727]","tests.api.business","Wed Dec 10 09:55:53 GMT+05:00 2025","passed","Wed Dec 10 09:55:54 GMT+05:00 2025","","test_diagnostic_read","",""
-"
-Test Case: Verify that API returns a list of top car brands with correct fields
-","150","test_get_top_car_brands_positive","tests.api.car","Wed Dec 10 09:56:07 GMT+05:00 2025","passed","Wed Dec 10 09:56:07 GMT+05:00 2025","","test_brand_top","",""
-"","70","test_create_car_post_v2_negative_missing_required[currency]","tests.api.car","Wed Dec 10 09:56:15 GMT+05:00 2025","passed","Wed Dec 10 09:56:15 GMT+05:00 2025","TestCreateCarPostV2","test_v2_create","",""
-"","37","test_get_car_promotions_negative_invalid_page[0]","tests.api.car","Wed Dec 10 09:56:12 GMT+05:00 2025","passed","Wed Dec 10 09:56:12 GMT+05:00 2025","","test_promo_list","",""
-"
-Test case: Create a car object without uploading any photos
-Expected: Car should be created successfully, then activated by moderator
-","722","test_car_without_photo","tests.api.mainfunctions","Wed Dec 10 09:56:27 GMT+05:00 2025","passed","Wed Dec 10 09:56:28 GMT+05:00 2025","","test_car_without_photo","",""
-"
-Positive test:
-Verify that the API returns the list of blogs under About Us section
-","71","test_get_about_us_blog_list_positive","tests.api.main","Wed Dec 10 09:56:22 GMT+05:00 2025","passed","Wed Dec 10 09:56:22 GMT+05:00 2025","","test_about_us","",""
-"","58","test_get_insurance_list","tests.api.business","Wed Dec 10 09:56:01 GMT+05:00 2025","passed","Wed Dec 10 09:56:01 GMT+05:00 2025","","test_mib_data","",""
-"
-Test case: Evaluate trade-in car price prediction
-Expected: Server returns a valid price prediction response
-","104","test_tradein_baholash","tests.api.mainfunctions","Wed Dec 10 09:56:30 GMT+05:00 2025","passed","Wed Dec 10 09:56:30 GMT+05:00 2025","","test_tradein_baholash","",""
-"","45","test_get_offline_deals_negative[?page=-1&size=20&type=active]","tests.api.auctionn","Wed Dec 10 09:55:49 GMT+05:00 2025","failed","Wed Dec 10 09:55:49 GMT+05:00 2025","","test_offline_deals","",""
-"
-Negative test:
-Verify that API returns 404 or 400 for invalid showroom application ID
-","48","test_get_showroom_application_by_id_negative[abc]","tests.api.main","Wed Dec 10 09:56:24 GMT+05:00 2025","passed","Wed Dec 10 09:56:24 GMT+05:00 2025","","test_showroom","",""
-"✅ Positive case: should return 200 and valid list of additional cars","49","test_get_additional_special_cars_list_positive","tests.api.specific_cars","Wed Dec 10 09:56:40 GMT+05:00 2025","passed","Wed Dec 10 09:56:40 GMT+05:00 2025","","test_additional_list","",""
-"","30","test_get_notification_list","tests.api.chat","Wed Dec 10 09:56:21 GMT+05:00 2025","failed","Wed Dec 10 09:56:21 GMT+05:00 2025","","test_notif_list","",""
-"","54","test_get_diagnostic_center_list","tests.api.business","Wed Dec 10 09:55:53 GMT+05:00 2025","passed","Wed Dec 10 09:55:53 GMT+05:00 2025","","test_diagnostic_center_list","",""
-"","46","test_get_auction_detail_negative[-1]","tests.api.auctionn","Wed Dec 10 09:55:43 GMT+05:00 2025","failed","Wed Dec 10 09:55:43 GMT+05:00 2025","","test_auction_detail","",""
-"","0","test_create_self_auction_missing_required_field","tests.api.auctionn","Wed Dec 10 09:55:50 GMT+05:00 2025","broken","Wed Dec 10 09:55:50 GMT+05:00 2025","","test_self_auction","",""
-"
-Negative test:
-Verify that invalid parameters return an error message or empty promo
-","82","test_check_promo_invalid_params[params1]","tests.api.carwash","Wed Dec 10 09:56:20 GMT+05:00 2025","passed","Wed Dec 10 09:56:20 GMT+05:00 2025","","test_promo_check","",""
-"","246","Positive: Get trade-in app details by valid ID","tests.api.mainfunctions","Wed Dec 10 09:56:32 GMT+05:00 2025","passed","Wed Dec 10 09:56:33 GMT+05:00 2025","","test_tradein_get_id","",""
+Verify that checking promo returns a valid JSON structure
+","66","test_check_promo_success","tests.api.carwash","Fri Dec 19 12:59:56 GMT+05:00 2025","passed","Fri Dec 19 12:59:56 GMT+05:00 2025","","test_promo_check","",""
+"","75","test_get_korib_berish_list","tests.api.business","Fri Dec 19 12:59:33 GMT+05:00 2025","passed","Fri Dec 19 12:59:33 GMT+05:00 2025","","test_korib_berish_list","",""
 "
 Negative test:
 Verify that requesting a car wash center with ID=0 returns an error (400 or 404)
-","45","test_get_car_wash_center_id_zero","tests.api.carwash","Wed Dec 10 09:56:15 GMT+05:00 2025","passed","Wed Dec 10 09:56:15 GMT+05:00 2025","","test_car_wash_centers","",""
-"","544","test_login_negative_cases[+998888672005-000000]","tests.api.mainfunctions","Wed Dec 10 09:56:29 GMT+05:00 2025","passed","Wed Dec 10 09:56:30 GMT+05:00 2025","","test_login_prod","",""
+","47","test_get_car_wash_center_id_zero","tests.api.carwash","Fri Dec 19 12:59:54 GMT+05:00 2025","passed","Fri Dec 19 12:59:54 GMT+05:00 2025","","test_car_wash_centers","",""
+"
+Negative test:
+Attempt to update profile with invalid region value
+","52","test_patch_user_profile_negative_invalid_region","tests.api.users","Fri Dec 19 13:00:23 GMT+05:00 2025","passed","Fri Dec 19 13:00:23 GMT+05:00 2025","","test_patch_profile","",""
+"
+Positive test:
+Verify that the liked cars list is returned with the correct structure
+","106","test_get_liked_cars_list","tests.api.users","Fri Dec 19 13:00:22 GMT+05:00 2025","passed","Fri Dec 19 13:00:23 GMT+05:00 2025","","test_liked_cars","",""
 "
 Test deleting a non-existing search filter should return 404 or 400
-","47","test_delete_search_filter_negative[0]","tests.api.filter","Wed Dec 10 09:56:21 GMT+05:00 2025","passed","Wed Dec 10 09:56:21 GMT+05:00 2025","","test_delete_search","",""
+","63","test_delete_search_filter_negative[999999]","tests.api.filter","Fri Dec 19 12:59:58 GMT+05:00 2025","passed","Fri Dec 19 12:59:58 GMT+05:00 2025","","test_delete_search","",""
+"
+Test Case: Verify that API returns 400 or 404 for invalid car IDs
+","24","test_get_car_details_negative[invalid]","tests.api.car","Fri Dec 19 12:59:46 GMT+05:00 2025","passed","Fri Dec 19 12:59:46 GMT+05:00 2025","","test_get_id","",""
+"","61","test_get_drive_unit_list_success","tests.api.specifaction","Fri Dec 19 13:00:17 GMT+05:00 2025","passed","Fri Dec 19 13:00:17 GMT+05:00 2025","","test_drive_unit","",""
+"","66","Negative: Try to get trade-in app with invalid ID","tests.api.mainfunctions","Fri Dec 19 13:00:11 GMT+05:00 2025","passed","Fri Dec 19 13:00:11 GMT+05:00 2025","","test_tradein_get_id","",""
+"
+Test deleting a non-existing search filter should return 404 or 400
+","42","test_delete_search_filter_negative[-1]","tests.api.filter","Fri Dec 19 12:59:58 GMT+05:00 2025","passed","Fri Dec 19 12:59:58 GMT+05:00 2025","","test_delete_search","",""
 "
 Negative test:
-Verify that calling a user without auth returns 401 Unauthorized
-","23","test_user_call_unauthorized","tests.api.users","Wed Dec 10 09:56:42 GMT+05:00 2025","passed","Wed Dec 10 09:56:42 GMT+05:00 2025","","test_call","",""
-"","40","test_get_search_list_success","tests.api.filter","Wed Dec 10 09:56:22 GMT+05:00 2025","failed","Wed Dec 10 09:56:22 GMT+05:00 2025","","test_search_list","",""
-"Check if valid moderation action returns 200/201","162","Positive: Send valid moderation action","tests.api.moderation","Wed Dec 10 09:56:36 GMT+05:00 2025","passed","Wed Dec 10 09:56:36 GMT+05:00 2025","TestModerationAction","test_moderation_action","",""
-"","19","test_get_leads_stats_positive","tests.api.car","Wed Dec 10 09:56:09 GMT+05:00 2025","failed","Wed Dec 10 09:56:09 GMT+05:00 2025","","test_leads_stats","",""
+Verify that endpoint returns 401 or 403 if request is sent without authorization
+","48","test_get_my_carwash_orders_unauthorized","tests.api.carwash","Fri Dec 19 12:59:55 GMT+05:00 2025","passed","Fri Dec 19 12:59:55 GMT+05:00 2025","","test_get_order","",""
+"","90","test_get_diagnostics_functional[3727]","tests.api.business","Fri Dec 19 12:59:31 GMT+05:00 2025","passed","Fri Dec 19 12:59:31 GMT+05:00 2025","","test_diagnostic_history","",""
 "
-Full happy-path flow based strictly on user's provided endpoints & payloads:
-  1) User1 creates auction                POST  /auction/self-auction
-  2) Admin activates auction              PATCH /moderation/auction-edit/{auction_id}   (status=offer_sending)
-  3) User2 creates offer                  POST  /business/offer/create/for/user
-  4) User1 marks auction as sold          POST  /auction/auction/sold
-  5) Admin confirms offer                 PATCH /moderation/offer-update/{offer_id}
-","840","test_c2b_auction_full_flow","tests.api.mainfunctions","Wed Dec 10 09:56:24 GMT+05:00 2025","passed","Wed Dec 10 09:56:25 GMT+05:00 2025","","test_auction_active","",""
-"","44","test_get_faq_list","tests.api.services","Wed Dec 10 09:56:37 GMT+05:00 2025","passed","Wed Dec 10 09:56:37 GMT+05:00 2025","","test_faq_list","",""
-"Check if authorized user gets 200 and valid JSON response","50","Positive: Get auction diagnostics with valid token","tests.api.moderation","Wed Dec 10 09:56:35 GMT+05:00 2025","passed","Wed Dec 10 09:56:35 GMT+05:00 2025","TestModerationAuctionDiagnostics","test_auction_diagnostics","",""
-"","532","test_get_daily_view_stats_negative_cases[?auction_id=5342&days=]","tests.api.auctionn","Wed Dec 10 09:55:46 GMT+05:00 2025","passed","Wed Dec 10 09:55:47 GMT+05:00 2025","","test_daily_view","",""
-"","58","test_avtosalon_data","tests.api.car","Wed Dec 10 09:56:07 GMT+05:00 2025","passed","Wed Dec 10 09:56:07 GMT+05:00 2025","","test_avtosalon_data","",""
-"Positive test: Verify dealer ranking position returns valid response","51","test_get_dealer_ranking_position_positive","tests.api.business","Wed Dec 10 09:55:53 GMT+05:00 2025","passed","Wed Dec 10 09:55:53 GMT+05:00 2025","","test_delaers_ranking_position","",""
-"Negative test for PATCH /moderation/auction-edit/{id} with invalid data","61","test_patch_auction_edit_negative","tests.api.moderation","Wed Dec 10 09:56:35 GMT+05:00 2025","broken","Wed Dec 10 09:56:36 GMT+05:00 2025","","test_auction_edit","",""
-"","43","test_get_diagnostic_info","tests.api.services","Wed Dec 10 09:56:37 GMT+05:00 2025","passed","Wed Dec 10 09:56:37 GMT+05:00 2025","","test_diagnostic_info","",""
-"","25","test_patch_car_status_negative[string-car-payload2-404]","tests.api.car","Wed Dec 10 09:56:14 GMT+05:00 2025","passed","Wed Dec 10 09:56:14 GMT+05:00 2025","","test_status_patch","",""
-"","87","test_get_korib_berish_list","tests.api.business","Wed Dec 10 09:55:55 GMT+05:00 2025","passed","Wed Dec 10 09:55:55 GMT+05:00 2025","","test_korib_berish_list","",""
-"","47","test_login_success","tests.api.token","Wed Dec 10 09:56:40 GMT+05:00 2025","passed","Wed Dec 10 09:56:40 GMT+05:00 2025","","test_loginapi","",""
-"","79","test_get_total_cars_success","tests.api.filter","Wed Dec 10 09:56:22 GMT+05:00 2025","passed","Wed Dec 10 09:56:22 GMT+05:00 2025","","test_total_cars","",""
+Test Case: Verify that API returns either top_10_cars list or car_id/like_count list
+","57","test_get_car_like_count_or_top_10","tests.api.car","Fri Dec 19 12:59:53 GMT+05:00 2025","passed","Fri Dec 19 12:59:53 GMT+05:00 2025","","test_top_model","",""
 "
-Negative test:
-Verify that request with invalid token returns 401
-","36","test_get_garage_cars_invalid_token[Bearer 12345]","tests.api.carwash","Wed Dec 10 09:56:17 GMT+05:00 2025","passed","Wed Dec 10 09:56:17 GMT+05:00 2025","TestGarageCars","test_garaj_car_id","",""
-"","53","test_get_body_type_list_positive","tests.api.specifaction","Wed Dec 10 09:56:39 GMT+05:00 2025","passed","Wed Dec 10 09:56:39 GMT+05:00 2025","","test_external_body","",""
-"","464","test_admin_access_token_negative[supermoderator-wrongpass]","tests.api.token","Wed Dec 10 09:56:41 GMT+05:00 2025","passed","Wed Dec 10 09:56:42 GMT+05:00 2025","","test_token_acces_admin","",""
+Test Case: Verify that API returns correct structure even when no results are found
+","57","test_get_business_cars_list_positive","tests.api.car","Fri Dec 19 12:59:45 GMT+05:00 2025","passed","Fri Dec 19 12:59:45 GMT+05:00 2025","","test_business_read","",""
+"","56","test_get_my_offers","tests.api.auctionn","Fri Dec 19 12:59:27 GMT+05:00 2025","passed","Fri Dec 19 12:59:27 GMT+05:00 2025","","test_get_auc_id","",""
+"","47","test_get_trade_in_centers","tests.api.business","Fri Dec 19 12:59:41 GMT+05:00 2025","passed","Fri Dec 19 12:59:41 GMT+05:00 2025","","test_trade_in_centers","",""
+"","52","test_get_trade_in_center","tests.api.business","Fri Dec 19 12:59:41 GMT+05:00 2025","passed","Fri Dec 19 12:59:41 GMT+05:00 2025","","test_trade_in_center_list","",""
+"","44","test_create_car_post_v2_negative_missing_required[core_car]","tests.api.car","Fri Dec 19 12:59:54 GMT+05:00 2025","passed","Fri Dec 19 12:59:54 GMT+05:00 2025","TestCreateCarPostV2","test_v2_create","",""
 "
-Negative test:
-Verify that API returns 404 or 400 for invalid showroom application ID
-","46","test_get_showroom_application_by_id_negative[99999]","tests.api.main","Wed Dec 10 09:56:24 GMT+05:00 2025","passed","Wed Dec 10 09:56:24 GMT+05:00 2025","","test_showroom","",""
-"","48","test_get_trade_in_centers_no_token","tests.api.auctionn","Wed Dec 10 09:55:50 GMT+05:00 2025","passed","Wed Dec 10 09:55:50 GMT+05:00 2025","","test_tradein_centers","",""
+Test deleting a non-existing search filter should return 404 or 400
+","53","test_delete_search_filter_negative[0]","tests.api.filter","Fri Dec 19 12:59:59 GMT+05:00 2025","passed","Fri Dec 19 12:59:59 GMT+05:00 2025","","test_search_create","",""
+"","737","test_get_similar_cars_positive","tests.api.car","Fri Dec 19 12:59:51 GMT+05:00 2025","passed","Fri Dec 19 12:59:51 GMT+05:00 2025","","test_search_cars","",""
+"","58","test_check_filter_search_positive","tests.api.filter","Fri Dec 19 12:59:58 GMT+05:00 2025","passed","Fri Dec 19 12:59:58 GMT+05:00 2025","","test_search_check","",""
+"","539","test_get_daily_view_stats_negative_cases[?auction_id=0&days=30]","tests.api.auctionn","Fri Dec 19 12:59:23 GMT+05:00 2025","passed","Fri Dec 19 12:59:23 GMT+05:00 2025","","test_daily_view","",""
+"","41","test_get_faq_list","tests.api.services","Fri Dec 19 13:00:15 GMT+05:00 2025","passed","Fri Dec 19 13:00:15 GMT+05:00 2025","","test_faq_list","",""
+"","319","test_cip_upload","tests.api.business","Fri Dec 19 12:59:30 GMT+05:00 2025","passed","Fri Dec 19 12:59:31 GMT+05:00 2025","","test_cip_upload","",""
 "
 Positive test:
-Verify that all user's likes can be removed successfully
-","53","test_remove_all_user_likes_success","tests.api.users","Wed Dec 10 09:56:43 GMT+05:00 2025","passed","Wed Dec 10 09:56:43 GMT+05:00 2025","","test_remove_like","",""
-"","56","test_car_detail","tests.api.car","Wed Dec 10 09:56:08 GMT+05:00 2025","failed","Wed Dec 10 09:56:08 GMT+05:00 2025","","test_car_detail","",""
-"","51","test_get_my_lost_offers_negative[?page=-1&size=20&type=lost]","tests.api.auctionn","Wed Dec 10 09:55:48 GMT+05:00 2025","failed","Wed Dec 10 09:55:49 GMT+05:00 2025","","test_offer_lost","",""
-"","62","Negative: Create trade-in request with invalid data","tests.api.mainfunctions","Wed Dec 10 09:56:33 GMT+05:00 2025","passed","Wed Dec 10 09:56:33 GMT+05:00 2025","","test_tradein_post","",""
-"Positive test for GET /moderation/auction-offers endpoint","365","test_get_auction_offers_positive","tests.api.moderation","Wed Dec 10 09:56:36 GMT+05:00 2025","passed","Wed Dec 10 09:56:36 GMT+05:00 2025","","test_auction_offers","",""
-"","377","test_admin_access_token_success","tests.api.token","Wed Dec 10 09:56:40 GMT+05:00 2025","passed","Wed Dec 10 09:56:41 GMT+05:00 2025","","test_token_acces_admin","",""
+Verify that the list of seen cars is returned with correct structure
+","49","test_get_seen_list_positive","tests.api.users","Fri Dec 19 13:00:23 GMT+05:00 2025","passed","Fri Dec 19 13:00:23 GMT+05:00 2025","","test_seen_list","",""
+"","51","test_get_fuel_type_by_id","tests.api.specifaction","Fri Dec 19 13:00:17 GMT+05:00 2025","passed","Fri Dec 19 13:00:17 GMT+05:00 2025","","test_fuel_type_id","",""
+"","36","test_get_generation_positions_by_id_positive[1651]","tests.api.car","Fri Dec 19 12:59:46 GMT+05:00 2025","passed","Fri Dec 19 12:59:46 GMT+05:00 2025","","test_get_generation","",""
+"
+Test Case: Verify that a new car configuration can be created successfully
+","45","test_create_car_configuration_positive","tests.api.car","Fri Dec 19 12:59:45 GMT+05:00 2025","passed","Fri Dec 19 12:59:45 GMT+05:00 2025","","test_conf_create","",""
+"","51","test_get_trade_in_centers_no_token","tests.api.auctionn","Fri Dec 19 12:59:28 GMT+05:00 2025","passed","Fri Dec 19 12:59:28 GMT+05:00 2025","","test_tradein_centers","",""
+"","210","test_data_collection","tests.api.car","Fri Dec 19 12:59:45 GMT+05:00 2025","passed","Fri Dec 19 12:59:45 GMT+05:00 2025","","test_data_collection","",""
+"","531","test_get_daily_view_stats_negative_cases[?auction_id=&days=30]","tests.api.auctionn","Fri Dec 19 12:59:25 GMT+05:00 2025","passed","Fri Dec 19 12:59:26 GMT+05:00 2025","","test_daily_view","",""
 "
 Positive test:
-Verify that the active auction cars list is returned with the expected structure
-","151","test_get_active_auction_cars","tests.api.users","Wed Dec 10 09:56:42 GMT+05:00 2025","passed","Wed Dec 10 09:56:42 GMT+05:00 2025","","test_auction_cars","",""
-"
-Test deleting an existing search filter should return 204
-","69","test_delete_search_filter_positive","tests.api.filter","Wed Dec 10 09:56:22 GMT+05:00 2025","passed","Wed Dec 10 09:56:22 GMT+05:00 2025","","test_search_create","",""
+Verify that payment history for carwash is returned with expected structure
+","91","test_get_carwash_payment_history","tests.api.carwash","Fri Dec 19 12:59:56 GMT+05:00 2025","failed","Fri Dec 19 12:59:56 GMT+05:00 2025","","test_payment_history","",""
 "
 Negative test:
-Verify that API returns 404 or appropriate error for invalid URL
-","26","test_get_about_us_blog_list_negative_invalid_url[/main/about-us/blog/unknown]","tests.api.main","Wed Dec 10 09:56:22 GMT+05:00 2025","passed","Wed Dec 10 09:56:23 GMT+05:00 2025","","test_about_us","",""
+Verify that missing 'phone' field returns validation error
+","80","test_post_auction_diagnostics_negative_missing_phone","tests.api.main","Fri Dec 19 13:00:00 GMT+05:00 2025","passed","Fri Dec 19 13:00:00 GMT+05:00 2025","","test_diagnostic","",""
 "
 Positive test:
-Verify that user profile can be successfully updated
-","56","test_patch_user_profile_positive","tests.api.users","Wed Dec 10 09:56:43 GMT+05:00 2025","passed","Wed Dec 10 09:56:43 GMT+05:00 2025","","test_patch_profile","",""
-"","565","test_daily_view_stats_positive","tests.api.car","Wed Dec 10 09:56:03 GMT+05:00 2025","passed","Wed Dec 10 09:56:04 GMT+05:00 2025","","test_1daily_view","",""
-"","66","test_options_read","tests.api.specifaction","Wed Dec 10 09:56:39 GMT+05:00 2025","passed","Wed Dec 10 09:56:39 GMT+05:00 2025","","test_options_id","",""
+Verify that user profile information is returned correctly
+","71","test_get_user_profile_positive","tests.api.users","Fri Dec 19 13:00:23 GMT+05:00 2025","passed","Fri Dec 19 13:00:23 GMT+05:00 2025","","test_user_profile","",""
+"","54","test_vehicle_options","tests.api.specifaction","Fri Dec 19 13:00:19 GMT+05:00 2025","passed","Fri Dec 19 13:00:19 GMT+05:00 2025","","test_vehicle_options","",""
 "
-Positive test:
-Verify that a valid code and phone number return access and refresh tokens
-","66","test_verify_code_success","tests.api.users","Wed Dec 10 09:56:43 GMT+05:00 2025","passed","Wed Dec 10 09:56:43 GMT+05:00 2025","","test_verify_code","",""
-"","678","test_get_similar_cars_negative","tests.api.car","Wed Dec 10 09:56:13 GMT+05:00 2025","passed","Wed Dec 10 09:56:13 GMT+05:00 2025","","test_search_cars","",""
-"","17","test_get_auction_view_count_negative[params0]","tests.api.auctionn","Wed Dec 10 09:55:44 GMT+05:00 2025","passed","Wed Dec 10 09:55:44 GMT+05:00 2025","","test_auction_view","",""
-"","532","test_get_daily_view_stats_negative_cases[?auction_id=abc&days=30]","tests.api.auctionn","Wed Dec 10 09:55:46 GMT+05:00 2025","passed","Wed Dec 10 09:55:46 GMT+05:00 2025","","test_daily_view","",""
-"
-Negative test:
-Verify that request with invalid token returns 401
-","38","test_get_garage_cars_invalid_token[Bearer invalid.token.value]","tests.api.carwash","Wed Dec 10 09:56:17 GMT+05:00 2025","passed","Wed Dec 10 09:56:17 GMT+05:00 2025","TestGarageCars","test_garaj_car_id","",""
-"","56","test_price_prediction_limit_positive","tests.api.car","Wed Dec 10 09:56:11 GMT+05:00 2025","passed","Wed Dec 10 09:56:12 GMT+05:00 2025","TestPricePrediction","test_price_predict_limit","",""
-"","33","test_get_offline_deals_negative[]","tests.api.auctionn","Wed Dec 10 09:55:49 GMT+05:00 2025","passed","Wed Dec 10 09:55:49 GMT+05:00 2025","","test_offline_deals","",""
+Test deleting a non-existing search filter should return 404 or 400
+","61","test_delete_search_filter_negative[999999]","tests.api.filter","Fri Dec 19 12:59:59 GMT+05:00 2025","passed","Fri Dec 19 12:59:59 GMT+05:00 2025","","test_search_create","",""
+"","73","test_get_main_additional_data_success","tests.api.auctionn","Fri Dec 19 12:59:21 GMT+05:00 2025","passed","Fri Dec 19 12:59:21 GMT+05:00 2025","","test_api_additional","",""
 "
 Test Case: Verify that API returns status code 200 for premium diagnostics info list
-","44","test_get_premium_diagnostics_info_list_status_code","tests.api.services","Wed Dec 10 09:56:38 GMT+05:00 2025","passed","Wed Dec 10 09:56:38 GMT+05:00 2025","","test_prem_info","",""
-"","49","test_get_pictures_list","tests.api.business","Wed Dec 10 09:56:01 GMT+05:00 2025","passed","Wed Dec 10 09:56:01 GMT+05:00 2025","","test_pictures_list","",""
+","37","test_get_premium_diagnostics_info_list_status_code","tests.api.services","Fri Dec 19 13:00:16 GMT+05:00 2025","passed","Fri Dec 19 13:00:16 GMT+05:00 2025","","test_prem_special","",""
 "
-Test Case: Verify API returns 404 or error message when invalid ID is provided
-","37","test_get_generation_configurations_v2_by_id_negative[-999999]","tests.api.car","Wed Dec 10 09:56:08 GMT+05:00 2025","passed","Wed Dec 10 09:56:08 GMT+05:00 2025","","test_generations","",""
-"","24","test_get_auction_deal_negative[?is_sold=true&mark=82&model=828&generation=abc&page=1&page_size=20]","tests.api.auctionn","Wed Dec 10 09:55:48 GMT+05:00 2025","passed","Wed Dec 10 09:55:48 GMT+05:00 2025","","test_deal_auction","",""
+Test Case: Verify that API returns 200 with empty list or like_count=0 for an invalid car ID
+","45","test_get_car_like_count_invalid_id","tests.api.car","Fri Dec 19 12:59:46 GMT+05:00 2025","passed","Fri Dec 19 12:59:46 GMT+05:00 2025","","test_like_count","",""
+"","51","test_get_search_list_success","tests.api.filter","Fri Dec 19 12:59:59 GMT+05:00 2025","failed","Fri Dec 19 12:59:59 GMT+05:00 2025","","test_search_list","",""
+"❌ Negative case: Missing required field should return 400 Bad Request","52","test_create_special_car_post_missing_field","tests.api.specific_cars","Fri Dec 19 13:00:20 GMT+05:00 2025","passed","Fri Dec 19 13:00:20 GMT+05:00 2025","","test_special_post","",""
+"","0","test_auction_full_flow","tests.api.mainfunctions","Fri Dec 19 13:00:09 GMT+05:00 2025","broken","Fri Dec 19 13:00:09 GMT+05:00 2025","","test_search_saved","",""
+"","41","test_get_main_additional_data_negative[?unknown=123]","tests.api.auctionn","Fri Dec 19 12:59:21 GMT+05:00 2025","passed","Fri Dec 19 12:59:21 GMT+05:00 2025","","test_api_additional","",""
+"","586","test_get_own_cars","tests.api.business","Fri Dec 19 12:59:31 GMT+05:00 2025","passed","Fri Dec 19 12:59:32 GMT+05:00 2025","","test_filter_cars","",""
 "
-Test Case: Verify that API returns status code 200 for premium diagnostics info list
-","38","test_get_premium_diagnostics_info_list_status_code","tests.api.services","Wed Dec 10 09:56:38 GMT+05:00 2025","passed","Wed Dec 10 09:56:38 GMT+05:00 2025","","test_prem_special","",""
-"
-Test Case: Verify that a new auction diagnostic can be created successfully
-","691","test_post_auction_diagnostics_positive","tests.api.services","Wed Dec 10 09:56:37 GMT+05:00 2025","passed","Wed Dec 10 09:56:38 GMT+05:00 2025","","test_moderation_auction","",""
-"","40","test_cashelok_amount","tests.api.business","Wed Dec 10 09:55:52 GMT+05:00 2025","passed","Wed Dec 10 09:55:52 GMT+05:00 2025","","test_cashelok_amount","",""
-"","47","test_get_auction_deal_negative[?is_sold=true&mark=82&model=828&generation=1651&page=1&page_size=0]","tests.api.auctionn","Wed Dec 10 09:55:48 GMT+05:00 2025","failed","Wed Dec 10 09:55:48 GMT+05:00 2025","","test_deal_auction","",""
-"","62","test_get_main_additional_data_success","tests.api.auctionn","Wed Dec 10 09:55:43 GMT+05:00 2025","passed","Wed Dec 10 09:55:43 GMT+05:00 2025","","test_api_additional","",""
-"","538","test_get_daily_view_stats_negative_cases[?auction_id=5342&days=-5]","tests.api.auctionn","Wed Dec 10 09:55:45 GMT+05:00 2025","passed","Wed Dec 10 09:55:46 GMT+05:00 2025","","test_daily_view","",""
-"
-Positive test:
-Verify that the API returns showroom application details by valid ID
-","55","test_get_showroom_application_by_id_positive","tests.api.main","Wed Dec 10 09:56:24 GMT+05:00 2025","passed","Wed Dec 10 09:56:24 GMT+05:00 2025","","test_showroom","",""
-"","42","test_get_promotion_types_positive","tests.api.car","Wed Dec 10 09:56:09 GMT+05:00 2025","passed","Wed Dec 10 09:56:09 GMT+05:00 2025","","test_get_promo_type","",""
+Test Case: Verify that API returns generation configuration details for a valid ID
+","40","test_get_generation_configurations_v2_by_id_positive[2483]","tests.api.car","Fri Dec 19 12:59:45 GMT+05:00 2025","passed","Fri Dec 19 12:59:45 GMT+05:00 2025","","test_generations","",""
+"","5469","test_list_business","tests.api.business","Fri Dec 19 12:59:33 GMT+05:00 2025","passed","Fri Dec 19 12:59:38 GMT+05:00 2025","","test_list","",""
 "
 Negative test:
-Verify that request with invalid token returns 401
-","37","test_get_garage_cars_invalid_token[Token abcdefg]","tests.api.carwash","Wed Dec 10 09:56:17 GMT+05:00 2025","passed","Wed Dec 10 09:56:17 GMT+05:00 2025","TestGarageCars","test_garaj_car_id","",""
-"","44","test_get_drive_unit_by_id_success","tests.api.specifaction","Wed Dec 10 09:56:39 GMT+05:00 2025","passed","Wed Dec 10 09:56:39 GMT+05:00 2025","","test_drive_unit_id","",""
-"","89","test_price_prediction_invalid_brand","tests.api.car","Wed Dec 10 09:56:11 GMT+05:00 2025","failed","Wed Dec 10 09:56:11 GMT+05:00 2025","","test_price_predict1","",""
-"","66","Positive: Update trade-in app status to approved","tests.api.mainfunctions","Wed Dec 10 09:56:33 GMT+05:00 2025","passed","Wed Dec 10 09:56:33 GMT+05:00 2025","","test_tradein_patch","",""
-"","44","test_get_my_lost_offers_negative[?page=1&size=0&type=lost]","tests.api.auctionn","Wed Dec 10 09:55:49 GMT+05:00 2025","failed","Wed Dec 10 09:55:49 GMT+05:00 2025","","test_offer_lost","",""
-"","201","test_saved_keywords_flow","tests.api.business","Wed Dec 10 09:56:02 GMT+05:00 2025","passed","Wed Dec 10 09:56:02 GMT+05:00 2025","","test_saved_keywords","",""
-"","43","test_transmission","tests.api.specifaction","Wed Dec 10 09:56:39 GMT+05:00 2025","passed","Wed Dec 10 09:56:39 GMT+05:00 2025","","test_transmission","",""
-"","377","test_create_avtosalon_request","tests.api.business","Wed Dec 10 09:55:51 GMT+05:00 2025","passed","Wed Dec 10 09:55:51 GMT+05:00 2025","","test_avtosalon_create_request","",""
-"❌ Negative case: Missing required field should return 400 Bad Request","60","test_create_special_car_post_missing_field","tests.api.specific_cars","Wed Dec 10 09:56:40 GMT+05:00 2025","passed","Wed Dec 10 09:56:40 GMT+05:00 2025","","test_special_post","",""
-"","36","test_similar_cars_negative[invalid_body1]","tests.api.car","Wed Dec 10 09:56:14 GMT+05:00 2025","passed","Wed Dec 10 09:56:14 GMT+05:00 2025","TestSimilarCars","test_similar","",""
-"","593","test_get_own_cars","tests.api.business","Wed Dec 10 09:55:54 GMT+05:00 2025","passed","Wed Dec 10 09:55:54 GMT+05:00 2025","","test_filter_cars","",""
-"","47","test_get_insurance_list","tests.api.business","Wed Dec 10 09:55:55 GMT+05:00 2025","passed","Wed Dec 10 09:55:55 GMT+05:00 2025","","test_insurances","",""
-"","19","test_get_main_additional_data_negative[?mark=abc]","tests.api.auctionn","Wed Dec 10 09:55:43 GMT+05:00 2025","passed","Wed Dec 10 09:55:43 GMT+05:00 2025","","test_api_additional","",""
-"","60","test_create_ad","tests.api.abozor_ads","Wed Dec 10 09:55:40 GMT+05:00 2025","passed","Wed Dec 10 09:55:40 GMT+05:00 2025","","test_ads_create","",""
-"
-Negative test:
-Verify API handles missing core_car field gracefully
-","43","test_price_prediction_missing_core_car","tests.api.auctionn","Wed Dec 10 09:55:49 GMT+05:00 2025","passed","Wed Dec 10 09:55:49 GMT+05:00 2025","","test_price_predict","",""
-"
-Negative test:
-Verify that creating a carwash order with invalid payload returns proper error or validation message
-","39","test_create_order_invalid_payload[payload0]","tests.api.carwash","Wed Dec 10 09:56:17 GMT+05:00 2025","passed","Wed Dec 10 09:56:17 GMT+05:00 2025","","test_cashback_order","",""
-"","25","test_price_prediction_negative[invalid_body0]","tests.api.car","Wed Dec 10 09:56:11 GMT+05:00 2025","passed","Wed Dec 10 09:56:11 GMT+05:00 2025","TestPricePrediction","test_price_predict_limit","",""
-"","19","test_get_auction_detail_negative[]","tests.api.auctionn","Wed Dec 10 09:55:44 GMT+05:00 2025","passed","Wed Dec 10 09:55:44 GMT+05:00 2025","","test_auction_detail","",""
-"
-Positive test:
-Verify that endpoint returns a paginated list of user's promos
-","59","test_get_my_promos_success","tests.api.carwash","Wed Dec 10 09:56:18 GMT+05:00 2025","passed","Wed Dec 10 09:56:18 GMT+05:00 2025","","test_my_promo","",""
-"","42","test_get_diagnostics_price_positive","tests.api.business","Wed Dec 10 09:55:53 GMT+05:00 2025","passed","Wed Dec 10 09:55:53 GMT+05:00 2025","","test_diagnostic_price","",""
-"
-Test Case: Verify that the API returns a valid list of diagnostics centers
-","196","test_get_diagnostics_centers_positive","tests.api.services","Wed Dec 10 09:56:37 GMT+05:00 2025","passed","Wed Dec 10 09:56:37 GMT+05:00 2025","","test_diagnostic_centers","",""
+Verify that requesting last report time without authorization returns 401 or 403
+","55","test_get_last_report_time_unauthorized","tests.api.carwash","Fri Dec 19 12:59:56 GMT+05:00 2025","passed","Fri Dec 19 12:59:56 GMT+05:00 2025","","test_last_report","",""
+"","23","test_get_auction_view_count_success","tests.api.auctionn","Fri Dec 19 12:59:22 GMT+05:00 2025","passed","Fri Dec 19 12:59:22 GMT+05:00 2025","","test_auction_view","",""
 "
 Negative test:
 Verify that endpoint returns 401 or 403 when no token is provided
-","43","test_get_my_promos_unauthorized","tests.api.carwash","Wed Dec 10 09:56:18 GMT+05:00 2025","passed","Wed Dec 10 09:56:19 GMT+05:00 2025","","test_my_promo","",""
-"","585","test_get_daily_view_stats_negative_cases[?auction_id=&days=30]","tests.api.auctionn","Wed Dec 10 09:55:47 GMT+05:00 2025","passed","Wed Dec 10 09:55:47 GMT+05:00 2025","","test_daily_view","",""
-"","62","test_get_trade_in_centers","tests.api.business","Wed Dec 10 09:56:02 GMT+05:00 2025","passed","Wed Dec 10 09:56:02 GMT+05:00 2025","","test_trade_in_centers","",""
-"","101","test_price_prediction_positive","tests.api.car","Wed Dec 10 09:56:11 GMT+05:00 2025","broken","Wed Dec 10 09:56:11 GMT+05:00 2025","","test_price_predict1","",""
-"","43","test_get_offline_deals_negative[?page=1&size=20&type=unknown]","tests.api.auctionn","Wed Dec 10 09:55:49 GMT+05:00 2025","passed","Wed Dec 10 09:55:49 GMT+05:00 2025","","test_offline_deals","",""
-"
-Test Case: Verify that API returns 404 for an invalid auction-avtosalon endpoint
-","28","test_get_car_brand_list2_auction_avtosalon_invalid_endpoint","tests.api.car","Wed Dec 10 09:56:07 GMT+05:00 2025","passed","Wed Dec 10 09:56:07 GMT+05:00 2025","","test_auction_avtosalon","",""
-"","39","test_vehicle_options","tests.api.specifaction","Wed Dec 10 09:56:40 GMT+05:00 2025","passed","Wed Dec 10 09:56:40 GMT+05:00 2025","","test_vehicle_options","",""
-"
-Test Case: Verify that API returns correct structure even when no results are found
-","44","test_get_business_cars_list_positive","tests.api.car","Wed Dec 10 09:56:08 GMT+05:00 2025","passed","Wed Dec 10 09:56:08 GMT+05:00 2025","","test_business_read","",""
-"
-Test deleting an existing search filter should return 204
-","57","test_delete_search_filter_positive","tests.api.filter","Wed Dec 10 09:56:21 GMT+05:00 2025","passed","Wed Dec 10 09:56:21 GMT+05:00 2025","","test_delete_search","",""
+","41","test_get_my_promos_unauthorized","tests.api.carwash","Fri Dec 19 12:59:56 GMT+05:00 2025","passed","Fri Dec 19 12:59:56 GMT+05:00 2025","","test_my_promo","",""
 "
 Negative test:
-Verify that creating a carwash order with invalid payload returns proper error or validation message
-","61","test_create_order_invalid_payload[payload2]","tests.api.carwash","Wed Dec 10 09:56:17 GMT+05:00 2025","passed","Wed Dec 10 09:56:17 GMT+05:00 2025","","test_cashback_order","",""
+Verify that API returns 404 or 400 for invalid own car IDs.
+","27","test_get_own_car_negative[invalid]","tests.api.car","Fri Dec 19 12:59:48 GMT+05:00 2025","passed","Fri Dec 19 12:59:48 GMT+05:00 2025","","test_owner_page","",""
+"Positive test for GET /moderation/auction-offers endpoint","321","test_get_auction_offers_positive","tests.api.moderation","Fri Dec 19 13:00:13 GMT+05:00 2025","passed","Fri Dec 19 13:00:13 GMT+05:00 2025","","test_auction_offers","",""
+"","67","test_post_auction_diagnostics_positive","tests.api.business","Fri Dec 19 12:59:31 GMT+05:00 2025","passed","Fri Dec 19 12:59:31 GMT+05:00 2025","","test_diagnostic_create_without_car","",""
 "
-Test Case: Verify that API returns a paginated list of car brands with correct fields
-","33","test_get_car_brand_list_positive","tests.api.car","Wed Dec 10 09:56:07 GMT+05:00 2025","passed","Wed Dec 10 09:56:07 GMT+05:00 2025","","test_brand_list","",""
+Negative test:
+Verify that API returns 404 or 400 for invalid endpoint
+","23","test_get_regions_list_negative_invalid_url[/main/region]","tests.api.main","Fri Dec 19 13:00:01 GMT+05:00 2025","passed","Fri Dec 19 13:00:01 GMT+05:00 2025","","test_region","",""
 "
-Test case to verify that the GET request for changed parts quality list
-returns status code 200 and valid response structure.
-","55","test_get_changed_parts_quality_list_success","tests.api.specifaction","Wed Dec 10 09:56:39 GMT+05:00 2025","passed","Wed Dec 10 09:56:39 GMT+05:00 2025","","test_chevrolet","",""
-"","58","test_patch_ad","tests.api.abozor_ads","Wed Dec 10 09:55:40 GMT+05:00 2025","passed","Wed Dec 10 09:55:40 GMT+05:00 2025","","test_ads_patch","",""
+Negative test:
+Verify that API returns 404 or 400 for invalid own car IDs.
+","191","test_get_own_car_negative[999999999]","tests.api.car","Fri Dec 19 12:59:48 GMT+05:00 2025","passed","Fri Dec 19 12:59:48 GMT+05:00 2025","","test_owner_page","",""
+"","1173","test_get_trade_in_app_active","tests.api.business","Fri Dec 19 12:59:39 GMT+05:00 2025","passed","Fri Dec 19 12:59:40 GMT+05:00 2025","","test_read","",""
+"","535","test_get_additional_deal_data_negative[]","tests.api.auctionn","Fri Dec 19 12:59:21 GMT+05:00 2025","passed","Fri Dec 19 12:59:21 GMT+05:00 2025","","test_additional_data","",""
+"","109","test_post_trade_in_app","tests.api.business","Fri Dec 19 12:59:41 GMT+05:00 2025","passed","Fri Dec 19 12:59:41 GMT+05:00 2025","","test_trade_in_create","",""
 "
-Test Case: Verify that API returns 200 with empty list or like_count=0 for an invalid car ID
-","44","test_get_car_like_count_invalid_id","tests.api.car","Wed Dec 10 09:56:09 GMT+05:00 2025","passed","Wed Dec 10 09:56:09 GMT+05:00 2025","","test_like_count","",""
+Negative test:
+Verify that API returns 404 or 400 for invalid showroom application ID
+","41","test_get_showroom_application_by_id_negative[99999]","tests.api.main","Fri Dec 19 13:00:01 GMT+05:00 2025","passed","Fri Dec 19 13:00:01 GMT+05:00 2025","","test_showroom","",""
 "
-Test Case: Verify that API returns 404 for invalid avtosalon ID
-","57","test_get_avtosalon_by_id_negative[999999]","tests.api.car","Wed Dec 10 09:56:07 GMT+05:00 2025","passed","Wed Dec 10 09:56:07 GMT+05:00 2025","","test_avtosalon_read","",""
+Negative test:
+Verify that invalid code or phone returns 400 or 401
+","41","test_verify_code_invalid[payload0]","tests.api.users","Fri Dec 19 13:00:23 GMT+05:00 2025","passed","Fri Dec 19 13:00:23 GMT+05:00 2025","","test_verify_code","",""
+"","538","test_get_additional_deal_data_negative[?is_sold=true&mark=82&model=828&year=]","tests.api.auctionn","Fri Dec 19 12:59:20 GMT+05:00 2025","passed","Fri Dec 19 12:59:21 GMT+05:00 2025","","test_additional_data","",""
+"","544","test_daily_view_stats_negative_invalid_car[abc]","tests.api.car","Fri Dec 19 12:59:43 GMT+05:00 2025","passed","Fri Dec 19 12:59:44 GMT+05:00 2025","","test_1daily_view","",""
+"","558","test_login_negative_cases[+998888672005-000000]","tests.api.mainfunctions","Fri Dec 19 13:00:08 GMT+05:00 2025","passed","Fri Dec 19 13:00:08 GMT+05:00 2025","","test_login_prod","",""
+"","288","test_saved_keywords_flow","tests.api.business","Fri Dec 19 12:59:40 GMT+05:00 2025","failed","Fri Dec 19 12:59:41 GMT+05:00 2025","","test_saved_keywords","",""
+"
+Test to ensure that promotion types are returned successfully.
+","43","test_get_promotion_types_positive","tests.api.car","Fri Dec 19 12:59:51 GMT+05:00 2025","passed","Fri Dec 19 12:59:51 GMT+05:00 2025","","test_promotion_type","",""
+"","532","test_get_additional_deal_data_negative[?is_sold=maybe&mark=82&model=828&year=2020]","tests.api.auctionn","Fri Dec 19 12:59:18 GMT+05:00 2025","passed","Fri Dec 19 12:59:19 GMT+05:00 2025","","test_additional_data","",""
+"
+Test Case: Verify that the API returns the list of services successfully
+","54","test_get_services_list_positive","tests.api.services","Fri Dec 19 13:00:16 GMT+05:00 2025","passed","Fri Dec 19 13:00:16 GMT+05:00 2025","","test_service_list","",""
+"✅ Positive case: Successfully get dealers ranking list","63","test_get_dealers_ranking_positive","tests.api.business","Fri Dec 19 12:59:31 GMT+05:00 2025","passed","Fri Dec 19 12:59:31 GMT+05:00 2025","","test_dealers_ranking","",""
+"","38","test_get_main_additional_data_negative[?page=1]","tests.api.auctionn","Fri Dec 19 12:59:21 GMT+05:00 2025","passed","Fri Dec 19 12:59:21 GMT+05:00 2025","","test_api_additional","",""
+"
+Positive test:
+Verify that garage cars list is returned with expected structure
+","83","test_get_garage_cars_success","tests.api.carwash","Fri Dec 19 12:59:55 GMT+05:00 2025","passed","Fri Dec 19 12:59:55 GMT+05:00 2025","TestGarageCars","test_garaj_car_id","",""
+"","55","test_get_user_positive","tests.api.chat","Fri Dec 19 12:59:57 GMT+05:00 2025","passed","Fri Dec 19 12:59:58 GMT+05:00 2025","","test_get_user_id","",""
+"","545","test_get_daily_view_stats_negative_cases[?auction_id=5342&days=-5]","tests.api.auctionn","Fri Dec 19 12:59:23 GMT+05:00 2025","passed","Fri Dec 19 12:59:24 GMT+05:00 2025","","test_daily_view","",""
+"❌ Negative case: Unauthorized user should not be able to create a post","26","test_create_special_car_post_without_auth","tests.api.specific_cars","Fri Dec 19 13:00:20 GMT+05:00 2025","passed","Fri Dec 19 13:00:20 GMT+05:00 2025","","test_special_post","",""
+"","547","test_get_daily_view_stats_success","tests.api.auctionn","Fri Dec 19 12:59:22 GMT+05:00 2025","passed","Fri Dec 19 12:59:23 GMT+05:00 2025","","test_daily_view","",""
+"","1695","Check GET /business/trade-in-app returns 200 OK and valid JSON response","tests.api.mainfunctions","Fri Dec 19 13:00:09 GMT+05:00 2025","passed","Fri Dec 19 13:00:11 GMT+05:00 2025","","test_tradein_get","",""
+"","51","test_business_login_negative[+998990600862-wrongpassword]","tests.api.business","Fri Dec 19 12:59:39 GMT+05:00 2025","passed","Fri Dec 19 12:59:39 GMT+05:00 2025","","test_login","",""
+"
+Positive test:
+Verify that tariffs are returned for a given carwash_id and the structure is valid
+","48","test_get_car_wash_tariffs_by_id","tests.api.carwash","Fri Dec 19 12:59:56 GMT+05:00 2025","passed","Fri Dec 19 12:59:56 GMT+05:00 2025","","test_get_tarrif","",""
+"
+Test Case: Verify API returns 404 or error message when invalid ID is provided
+","21","test_get_generation_configurations_v2_by_id_negative[!@#]","tests.api.car","Fri Dec 19 12:59:46 GMT+05:00 2025","passed","Fri Dec 19 12:59:46 GMT+05:00 2025","","test_generations","",""
+"","174","test_get_active_ads","tests.api.abozor_ads","Fri Dec 19 12:59:16 GMT+05:00 2025","passed","Fri Dec 19 12:59:17 GMT+05:00 2025","","test_active_ads","",""
+"","47","test_get_diagnostics_price_positive","tests.api.business","Fri Dec 19 12:59:31 GMT+05:00 2025","passed","Fri Dec 19 12:59:31 GMT+05:00 2025","","test_diagnostic_price","",""
+"","399","test_business_login_positive","tests.api.business","Fri Dec 19 12:59:38 GMT+05:00 2025","passed","Fri Dec 19 12:59:39 GMT+05:00 2025","","test_login","",""
+"","43","test_get_pictures_list","tests.api.business","Fri Dec 19 12:59:39 GMT+05:00 2025","passed","Fri Dec 19 12:59:39 GMT+05:00 2025","","test_pictures_list","",""
+"","107","test_verify_code_success","tests.api.business","Fri Dec 19 12:59:41 GMT+05:00 2025","passed","Fri Dec 19 12:59:41 GMT+05:00 2025","","test_verification","",""
+"","23","test_post_business_lead_negative_missing_field","tests.api.business","Fri Dec 19 12:59:33 GMT+05:00 2025","passed","Fri Dec 19 12:59:33 GMT+05:00 2025","","test_leads_create","",""
+"
+Negative test:
+Verify that API returns 404 or 400 for invalid showroom application ID
+","46","test_get_showroom_application_by_id_negative[-5]","tests.api.main","Fri Dec 19 13:00:01 GMT+05:00 2025","passed","Fri Dec 19 13:00:01 GMT+05:00 2025","","test_showroom","",""
+"","411","test_create_avtosalon_request","tests.api.business","Fri Dec 19 12:59:29 GMT+05:00 2025","passed","Fri Dec 19 12:59:29 GMT+05:00 2025","","test_avtosalon_create_request","",""
+"","107","test_get_topsearch_list_success","tests.api.filter","Fri Dec 19 12:59:59 GMT+05:00 2025","passed","Fri Dec 19 12:59:59 GMT+05:00 2025","","test_top_search","",""
+"
+Test Case: Verify that API returns ad promotions for a valid ad ID
+","41","test_get_ad_promotions_positive[22226]","tests.api.car","Fri Dec 19 12:59:44 GMT+05:00 2025","passed","Fri Dec 19 12:59:44 GMT+05:00 2025","","test_add_promotion","",""
+"","33","test_get_contacts_negative","tests.api.chat","Fri Dec 19 12:59:57 GMT+05:00 2025","passed","Fri Dec 19 12:59:57 GMT+05:00 2025","","test_contacts","",""
+"","54","test_get_business_user_by_id","tests.api.business","Fri Dec 19 12:59:41 GMT+05:00 2025","passed","Fri Dec 19 12:59:41 GMT+05:00 2025","","test_user_read","",""
+"
+Negative test:
+Posting to invalid car IDs with empty body should return 404 or 400.
+","46","test_post_photo_invalid_id_empty_body[abc]","tests.api.car","Fri Dec 19 12:59:48 GMT+05:00 2025","passed","Fri Dec 19 12:59:49 GMT+05:00 2025","","test_photo_post","",""
+"
+Negative test:
+Verify that liking a non-existing car returns 404 Not Found
+","64","test_patch_like_non_existing_car","tests.api.users","Fri Dec 19 13:00:22 GMT+05:00 2025","passed","Fri Dec 19 13:00:22 GMT+05:00 2025","","TEST_patch_like","",""
+"","541","test_get_daily_view_stats_negative_cases[?auction_id=abc&days=30]","tests.api.auctionn","Fri Dec 19 12:59:24 GMT+05:00 2025","passed","Fri Dec 19 12:59:25 GMT+05:00 2025","","test_daily_view","",""
+"
+Test Case: Verify that API returns 404 for an invalid endpoint
+","26","test_get_top_car_brands_invalid_endpoint","tests.api.car","Fri Dec 19 12:59:45 GMT+05:00 2025","passed","Fri Dec 19 12:59:45 GMT+05:00 2025","","test_brand_top","",""
+"❌ Negative case: invalid endpoint should return 404","45","test_get_special_cars_list_invalid_url","tests.api.specific_cars","Fri Dec 19 13:00:20 GMT+05:00 2025","passed","Fri Dec 19 13:00:20 GMT+05:00 2025","","test_special_car_list","",""
+"
+Positive test: update business profile successfully
+","69","test_patch_profile_update_positive","tests.api.business","Fri Dec 19 12:59:39 GMT+05:00 2025","passed","Fri Dec 19 12:59:39 GMT+05:00 2025","","test_profile_update","",""
 "
 Negative test:
 Verify that creating a car wash order with invalid data returns an error
-","50","test_create_car_wash_order_invalid_data[payload3]","tests.api.carwash","Wed Dec 10 09:56:17 GMT+05:00 2025","passed","Wed Dec 10 09:56:17 GMT+05:00 2025","","test_create_order","",""
+","44","test_create_car_wash_order_invalid_data[payload1]","tests.api.carwash","Fri Dec 19 12:59:55 GMT+05:00 2025","passed","Fri Dec 19 12:59:55 GMT+05:00 2025","","test_create_order","",""
+"","53","GET Not Seen/Sold Auctions - 200 OK Check","tests.api.business","Fri Dec 19 12:59:41 GMT+05:00 2025","passed","Fri Dec 19 12:59:41 GMT+05:00 2025","","test_sold_auction","",""
+"
+Positive test:
+Verify that checking a valid phone number returns type and detail
+","98","test_check_user_success","tests.api.users","Fri Dec 19 13:00:22 GMT+05:00 2025","passed","Fri Dec 19 13:00:22 GMT+05:00 2025","","test_check_user","",""
+"
+Positive test:
+Verify that all user's likes can be removed successfully
+","51","test_remove_all_user_likes_success","tests.api.users","Fri Dec 19 13:00:23 GMT+05:00 2025","passed","Fri Dec 19 13:00:23 GMT+05:00 2025","","test_remove_like","",""
+"","68","test_room_full_flow","tests.api.chat","Fri Dec 19 12:59:57 GMT+05:00 2025","failed","Fri Dec 19 12:59:57 GMT+05:00 2025","","test_create_room","",""
+"","416","test_admin_access_token_success","tests.api.token","Fri Dec 19 13:00:20 GMT+05:00 2025","passed","Fri Dec 19 13:00:21 GMT+05:00 2025","","test_token_acces_admin","",""
+"","60","Negative: Try to update trade-in app with invalid ID","tests.api.mainfunctions","Fri Dec 19 13:00:11 GMT+05:00 2025","passed","Fri Dec 19 13:00:11 GMT+05:00 2025","","test_tradein_patch","",""
+"","48","test_login_success","tests.api.token","Fri Dec 19 13:00:20 GMT+05:00 2025","passed","Fri Dec 19 13:00:20 GMT+05:00 2025","","test_loginapi","",""
+"
+Test Case: Verify that API returns 404 for an invalid page number
+","27","test_get_car_brand_list_invalid_page","tests.api.car","Fri Dec 19 12:59:45 GMT+05:00 2025","passed","Fri Dec 19 12:59:45 GMT+05:00 2025","","test_brand_list","",""
+"","44","test_avtosalon_data","tests.api.car","Fri Dec 19 12:59:44 GMT+05:00 2025","passed","Fri Dec 19 12:59:44 GMT+05:00 2025","","test_avtosalon_data","",""
+"","22","test_get_auction_deal_negative[?is_sold=true&mark=82&model=828&generation=abc&page=1&page_size=20]","tests.api.auctionn","Fri Dec 19 12:59:26 GMT+05:00 2025","failed","Fri Dec 19 12:59:26 GMT+05:00 2025","","test_deal_auction","",""
+"","147","test_create_ad","tests.api.abozor_ads","Fri Dec 19 12:59:17 GMT+05:00 2025","passed","Fri Dec 19 12:59:17 GMT+05:00 2025","","test_ads_create","",""
+"
+Test deleting a non-existing search filter should return 404 or 400
+","44","test_delete_search_filter_negative[-1]","tests.api.filter","Fri Dec 19 12:59:59 GMT+05:00 2025","passed","Fri Dec 19 12:59:59 GMT+05:00 2025","","test_search_create","",""
+"","261","test_add_edit_delete_car","tests.api.business","Fri Dec 19 12:59:28 GMT+05:00 2025","passed","Fri Dec 19 12:59:29 GMT+05:00 2025","","test_add_car_to_garage","",""
+"","331","test_c2b_auction_full_flow","tests.api.auctionn","Fri Dec 19 12:59:27 GMT+05:00 2025","passed","Fri Dec 19 12:59:27 GMT+05:00 2025","","test_self_auction","",""
+"
+Negative test:
+Verify that requesting carwash payment history without authorization returns 401
+","22","test_get_carwash_payment_history_unauthorized","tests.api.carwash","Fri Dec 19 12:59:56 GMT+05:00 2025","passed","Fri Dec 19 12:59:56 GMT+05:00 2025","","test_payment_history","",""
+"Check bad request with invalid payload returns 400","41","Negative: Send request with invalid payload","tests.api.moderation","Fri Dec 19 13:00:14 GMT+05:00 2025","passed","Fri Dec 19 13:00:14 GMT+05:00 2025","TestModerationAction","test_moderation_action","",""
+"
+Test Case: Verify that the API returns a valid list of diagnostics centers
+","194","test_get_diagnostics_centers_positive","tests.api.services","Fri Dec 19 13:00:14 GMT+05:00 2025","passed","Fri Dec 19 13:00:15 GMT+05:00 2025","","test_diagnostic_centers","",""
+"
+Test deleting an existing search filter should return 204
+","69","test_delete_search_filter_positive","tests.api.filter","Fri Dec 19 12:59:58 GMT+05:00 2025","passed","Fri Dec 19 12:59:58 GMT+05:00 2025","","test_delete_search","",""
+"
+Negative test:
+Verify that API returns 404 or 400 for invalid own car IDs.
+","176","test_get_own_car_negative[0]","tests.api.car","Fri Dec 19 12:59:48 GMT+05:00 2025","passed","Fri Dec 19 12:59:48 GMT+05:00 2025","","test_owner_page","",""
+"","285","test_add_car_and_create_carwash_order","tests.api.mainfunctions","Fri Dec 19 13:00:05 GMT+05:00 2025","passed","Fri Dec 19 13:00:06 GMT+05:00 2025","","test_carwash_create_order11","",""
+"","24","test_get_my_offers_invalid_query_params[?page=abc&size=20]","tests.api.auctionn","Fri Dec 19 12:59:27 GMT+05:00 2025","passed","Fri Dec 19 12:59:27 GMT+05:00 2025","","test_my_offer","",""
+"","0","test_create_self_auction_missing_required_field","tests.api.auctionn","Fri Dec 19 12:59:27 GMT+05:00 2025","broken","Fri Dec 19 12:59:27 GMT+05:00 2025","","test_self_auction","",""
+"
+Negative test:
+Verify that creating a car wash order with invalid data returns an error
+","45","test_create_car_wash_order_invalid_data[payload2]","tests.api.carwash","Fri Dec 19 12:59:55 GMT+05:00 2025","passed","Fri Dec 19 12:59:55 GMT+05:00 2025","","test_create_order","",""
+"
+Negative test:
+Verify that invalid code or phone returns 400 or 401
+","28","test_verify_code_invalid[payload3]","tests.api.users","Fri Dec 19 13:00:23 GMT+05:00 2025","passed","Fri Dec 19 13:00:23 GMT+05:00 2025","","test_verify_code","",""
+"","37","test_get_auction_view_count_negative[params0]","tests.api.auctionn","Fri Dec 19 12:59:22 GMT+05:00 2025","failed","Fri Dec 19 12:59:22 GMT+05:00 2025","","test_auction_view","",""
+"","40","test_get_trade_in_center_available_slots_without_date","tests.api.business","Fri Dec 19 12:59:29 GMT+05:00 2025","passed","Fri Dec 19 12:59:29 GMT+05:00 2025","","test_avaliable_slots","",""
+"","257","test_add_edit_delete_car","tests.api.mainfunctions","Fri Dec 19 13:00:04 GMT+05:00 2025","passed","Fri Dec 19 13:00:04 GMT+05:00 2025","","test_car_add_garage","",""
+"
+Test Case: Verify that API returns a valid diagnostics price object
+","44","test_get_diagnostics_price_positive","tests.api.services","Fri Dec 19 13:00:15 GMT+05:00 2025","passed","Fri Dec 19 13:00:15 GMT+05:00 2025","","test_diagnostic_price1","",""
+"","226","Positive: Get trade-in app details by valid ID","tests.api.mainfunctions","Fri Dec 19 13:00:11 GMT+05:00 2025","passed","Fri Dec 19 13:00:11 GMT+05:00 2025","","test_tradein_get_id","",""
+"","0","test_add_car_and_create_carwash_order","tests.api.carwash","Fri Dec 19 12:59:55 GMT+05:00 2025","broken","Fri Dec 19 12:59:55 GMT+05:00 2025","","test_create_order","",""
+"","54","test_get_active_auctions","tests.api.auctionn","Fri Dec 19 12:59:17 GMT+05:00 2025","passed","Fri Dec 19 12:59:17 GMT+05:00 2025","","test_active_auction","",""
+"
+Test deleting a non-existing search filter should return 404 or 400
+","78","test_delete_search_filter_negative[0]","tests.api.filter","Fri Dec 19 12:59:58 GMT+05:00 2025","passed","Fri Dec 19 12:59:58 GMT+05:00 2025","","test_delete_search","",""
+"
+Negative test:
+Verify that creating a carwash order with invalid payload returns proper error or validation message
+","43","test_create_order_invalid_payload[payload3]","tests.api.carwash","Fri Dec 19 12:59:55 GMT+05:00 2025","passed","Fri Dec 19 12:59:55 GMT+05:00 2025","","test_cashback_order","",""
+"
+Negative test:
+Verify that request without auth headers returns 401 Unauthorized
+","22","test_get_my_promos_unauthorized","tests.api.carwash","Fri Dec 19 12:59:56 GMT+05:00 2025","passed","Fri Dec 19 12:59:56 GMT+05:00 2025","","test_get_promo","",""
+"","50","test_change_user_status_positive","tests.api.chat","Fri Dec 19 12:59:57 GMT+05:00 2025","passed","Fri Dec 19 12:59:57 GMT+05:00 2025","","test_change_status_user","",""
+"
+Test deleting an existing search filter should return 204
+","77","test_delete_search_filter_positive","tests.api.filter","Fri Dec 19 12:59:59 GMT+05:00 2025","passed","Fri Dec 19 12:59:59 GMT+05:00 2025","","test_search_create","",""
+"
+Test Case: Verify that API returns 400 or 404 for invalid car IDs
+","184","test_get_car_details_negative[999999]","tests.api.car","Fri Dec 19 12:59:46 GMT+05:00 2025","passed","Fri Dec 19 12:59:46 GMT+05:00 2025","","test_get_id","",""
+"","42","test_get_auction_deal_negative[?is_sold=true&mark=82&model=828&generation=1651&page=1&page_size=0]","tests.api.auctionn","Fri Dec 19 12:59:26 GMT+05:00 2025","passed","Fri Dec 19 12:59:26 GMT+05:00 2025","","test_deal_auction","",""
+"
+Positive test:
+Verify that diagnostics price details are returned correctly
+","62","test_get_diagnostics_price_positive","tests.api.main","Fri Dec 19 13:00:00 GMT+05:00 2025","passed","Fri Dec 19 13:00:01 GMT+05:00 2025","","test_diagnostics_price","",""
+"
+Positive test:
+Verify that the API returns a list of diagnosis forms
+","65","test_get_all_diagnosis_forms_positive","tests.api.main","Fri Dec 19 13:00:00 GMT+05:00 2025","passed","Fri Dec 19 13:00:00 GMT+05:00 2025","","test_diagnostics_list","",""
+"","415","test_admin_access_token_negative[supermoderator-wrongpass]","tests.api.token","Fri Dec 19 13:00:21 GMT+05:00 2025","passed","Fri Dec 19 13:00:22 GMT+05:00 2025","","test_token_acces_admin","",""
+"","47","test_get_offer_list_success","tests.api.auctionn","Fri Dec 19 12:59:28 GMT+05:00 2025","passed","Fri Dec 19 12:59:28 GMT+05:00 2025","","test_unseen_offer","",""
+"
+Test GET /specifications/options/list/ endpoint returns valid options data
+","327","test_options_list","tests.api.specifaction","Fri Dec 19 13:00:18 GMT+05:00 2025","passed","Fri Dec 19 13:00:18 GMT+05:00 2025","","test_options","",""
+"Negative test for POST /moderation/auction-diagnostics/ (invalid payload)","67","test_post_auction_diagnostics_negative","tests.api.moderation","Fri Dec 19 13:00:13 GMT+05:00 2025","passed","Fri Dec 19 13:00:13 GMT+05:00 2025","","test_auction_diagnostic","",""
+"Check if authorized user gets 200 and valid JSON response","54","Positive: Get auction diagnostics with valid token","tests.api.moderation","Fri Dec 19 13:00:13 GMT+05:00 2025","passed","Fri Dec 19 13:00:13 GMT+05:00 2025","TestModerationAuctionDiagnostics","test_auction_diagnostics","",""
+"
+❌ Negative Test:
+GET /car/model/generations/:id?year=2020 with invalid ID
+Expected: 200 OK with empty list OR 404 (depending on API behavior)
+","45","test_get_model_generations_by_year_negative[0-2020]","tests.api.car","Fri Dec 19 12:59:47 GMT+05:00 2025","passed","Fri Dec 19 12:59:47 GMT+05:00 2025","","test_model_generation","",""
+"","22","test_get_auction_view_count_negative[params1]","tests.api.auctionn","Fri Dec 19 12:59:22 GMT+05:00 2025","failed","Fri Dec 19 12:59:22 GMT+05:00 2025","","test_auction_view","",""
 "
 Full happy-path flow based strictly on user's provided endpoints & payloads:
   1) User1 creates auction                POST  /auction/self-auction
@@ -342,545 +309,558 @@ Full happy-path flow based strictly on user's provided endpoints & payloads:
   3) User2 creates offer                  POST  /business/offer/create/for/user
   4) User1 marks auction as sold          POST  /auction/auction/sold
   5) Admin confirms offer                 PATCH /moderation/offer-update/{offer_id}
-","843","test_c2b_auction_full_flow","tests.api.mainfunctions","Wed Dec 10 09:56:25 GMT+05:00 2025","passed","Wed Dec 10 09:56:26 GMT+05:00 2025","","test_auction_flow","",""
-"","44","test_post_trade_in_app_negative","tests.api.business","Wed Dec 10 09:56:03 GMT+05:00 2025","passed","Wed Dec 10 09:56:03 GMT+05:00 2025","","test_trade_in_create","",""
-"","20","test_get_my_lost_offers_success","tests.api.auctionn","Wed Dec 10 09:55:48 GMT+05:00 2025","passed","Wed Dec 10 09:55:48 GMT+05:00 2025","","test_offer_lost","",""
+","995","test_c2b_auction_full_flow","tests.api.mainfunctions","Fri Dec 19 13:00:03 GMT+05:00 2025","passed","Fri Dec 19 13:00:04 GMT+05:00 2025","","test_auction_flow","",""
+"","59","Positive: Update trade-in app status to approved","tests.api.mainfunctions","Fri Dec 19 13:00:11 GMT+05:00 2025","passed","Fri Dec 19 13:00:11 GMT+05:00 2025","","test_tradein_patch","",""
+"Check that request without token returns 401 or 403","35","Negative: Get Atmos holds without token","tests.api.moderation","Fri Dec 19 13:00:12 GMT+05:00 2025","passed","Fri Dec 19 13:00:12 GMT+05:00 2025","TestModerationAtmosHolds","test_atmos_holds","",""
+"
+Test case to verify that the GET request for changed parts quality list
+returns status code 200 and valid response structure.
+","59","test_get_changed_parts_quality_list_success","tests.api.specifaction","Fri Dec 19 13:00:17 GMT+05:00 2025","passed","Fri Dec 19 13:00:17 GMT+05:00 2025","","test_chevrolet","",""
+"
+Test case: Evaluate trade-in car price prediction
+Expected: Server returns a valid price prediction response
+","233","test_tradein_baholash","tests.api.mainfunctions","Fri Dec 19 13:00:09 GMT+05:00 2025","passed","Fri Dec 19 13:00:09 GMT+05:00 2025","","test_tradein_baholash","",""
+"","57","test_get_diagnostic_info","tests.api.services","Fri Dec 19 13:00:15 GMT+05:00 2025","passed","Fri Dec 19 13:00:15 GMT+05:00 2025","","test_diagnostic_info","",""
+"","85","test_get_garage_cars_list","tests.api.business","Fri Dec 19 12:59:32 GMT+05:00 2025","failed","Fri Dec 19 12:59:32 GMT+05:00 2025","","test_garage_cars_list","",""
+"","527","test_get_daily_view_stats_negative_cases[]","tests.api.auctionn","Fri Dec 19 12:59:26 GMT+05:00 2025","passed","Fri Dec 19 12:59:26 GMT+05:00 2025","","test_daily_view","",""
+"
+Negative test:
+Verify that API returns 404 or appropriate error for invalid URL
+","37","test_get_about_us_blog_list_negative_invalid_url[/main/about-us/blog/lists]","tests.api.main","Fri Dec 19 12:59:59 GMT+05:00 2025","passed","Fri Dec 19 12:59:59 GMT+05:00 2025","","test_about_us","",""
+"","33","test_get_auction_detail_success","tests.api.auctionn","Fri Dec 19 12:59:21 GMT+05:00 2025","passed","Fri Dec 19 12:59:21 GMT+05:00 2025","","test_auction_detail","",""
+"","21","test_get_my_offers_invalid_query_params[?page=1&size=0]","tests.api.auctionn","Fri Dec 19 12:59:27 GMT+05:00 2025","passed","Fri Dec 19 12:59:27 GMT+05:00 2025","","test_my_offer","",""
+"","24","test_get_leads_stats_negative_unauthorized","tests.api.car","Fri Dec 19 12:59:46 GMT+05:00 2025","passed","Fri Dec 19 12:59:46 GMT+05:00 2025","","test_leads_stats","",""
+"","43","test_get_price_prediction_options_invalid_model_id[-1]","tests.api.car","Fri Dec 19 12:59:50 GMT+05:00 2025","passed","Fri Dec 19 12:59:50 GMT+05:00 2025","","test_price_predict_option","",""
+"","23","test_price_prediction_negative_missing_field","tests.api.car","Fri Dec 19 12:59:49 GMT+05:00 2025","passed","Fri Dec 19 12:59:49 GMT+05:00 2025","","test_price_predict2","",""
+"
+Test Case: Verify that API returns 400 Bad Request when date format is invalid
+","43","test_get_available_slots_invalid_date","tests.api.services","Fri Dec 19 13:00:14 GMT+05:00 2025","passed","Fri Dec 19 13:00:14 GMT+05:00 2025","","test_date","",""
+"
+Test Case: Verify that API returns a list of avtosalons with required fields
+","203","test_get_avtosalon_list_positive","tests.api.car","Fri Dec 19 12:59:44 GMT+05:00 2025","passed","Fri Dec 19 12:59:44 GMT+05:00 2025","","test_avtosalon","",""
+"","59","test_get_car_promotions_positive","tests.api.car","Fri Dec 19 12:59:50 GMT+05:00 2025","passed","Fri Dec 19 12:59:50 GMT+05:00 2025","","test_promo_list","",""
+"
+Positive test:
+Verify that liking a car returns success message
+","259","test_patch_like_car_success","tests.api.users","Fri Dec 19 13:00:22 GMT+05:00 2025","passed","Fri Dec 19 13:00:22 GMT+05:00 2025","","TEST_patch_like","",""
+"✅ Positive case: valid car ID should return 200","55","test_get_specific_car_detail_positive","tests.api.specific_cars","Fri Dec 19 13:00:20 GMT+05:00 2025","passed","Fri Dec 19 13:00:20 GMT+05:00 2025","","test_detail_id","",""
+"","49","test_get_drive_unit_by_id_negative","tests.api.specifaction","Fri Dec 19 13:00:17 GMT+05:00 2025","passed","Fri Dec 19 13:00:17 GMT+05:00 2025","","test_drive_unit_id","",""
+"
+Test Case: Verify API returns 404 or 400 when an invalid configuration ID is provided
+","22","test_get_generation_configuration_by_id_negative[abc]","tests.api.car","Fri Dec 19 12:59:45 GMT+05:00 2025","passed","Fri Dec 19 12:59:45 GMT+05:00 2025","","test_config_by_id","",""
+"","0","test_add_car_and_create_carwash_order","tests.api.carwash","Fri Dec 19 12:59:54 GMT+05:00 2025","broken","Fri Dec 19 12:59:54 GMT+05:00 2025","","test_cashback_order","",""
+"","43","test_get_trade_in_app_active","tests.api.business","Fri Dec 19 12:59:41 GMT+05:00 2025","passed","Fri Dec 19 12:59:41 GMT+05:00 2025","","test_status_read","",""
+"","121","test_price_prediction_for_auction_positive","tests.api.car","Fri Dec 19 12:59:49 GMT+05:00 2025","broken","Fri Dec 19 12:59:49 GMT+05:00 2025","","test_price_predict_auction","",""
+"
+Test GET /specifications/salon/list/ endpoint returns valid salon options
+","49","test_get_salon_list","tests.api.specifaction","Fri Dec 19 13:00:19 GMT+05:00 2025","passed","Fri Dec 19 13:00:19 GMT+05:00 2025","","test_salon_list","",""
+"","51","test_transmission","tests.api.specifaction","Fri Dec 19 13:00:19 GMT+05:00 2025","passed","Fri Dec 19 13:00:19 GMT+05:00 2025","","test_transmission","",""
+"
+Test Case: Verify that API returns 404 for invalid avtosalon ID
+","45","test_get_avtosalon_by_id_negative[-1]","tests.api.car","Fri Dec 19 12:59:44 GMT+05:00 2025","passed","Fri Dec 19 12:59:44 GMT+05:00 2025","","test_avtosalon_read","",""
+"
+Negative test:
+Verify that invalid code or phone returns 400 or 401
+","40","test_verify_code_invalid[payload2]","tests.api.users","Fri Dec 19 13:00:23 GMT+05:00 2025","passed","Fri Dec 19 13:00:23 GMT+05:00 2025","","test_verify_code","",""
+"","20","test_get_auction_deal_negative[?is_sold=maybe&mark=82&model=828&generation=1651&page=1&page_size=20]","tests.api.auctionn","Fri Dec 19 12:59:26 GMT+05:00 2025","failed","Fri Dec 19 12:59:26 GMT+05:00 2025","","test_deal_auction","",""
+"","362","test_get_auction_detail_negative[-1]","tests.api.auctionn","Fri Dec 19 12:59:21 GMT+05:00 2025","passed","Fri Dec 19 12:59:22 GMT+05:00 2025","","test_auction_detail","",""
+"
+Test case to verify that the GET request for changed parts quality list
+returns status code 200 and valid response structure.
+","52","test_get_changed_parts_quality_list_success","tests.api.specifaction","Fri Dec 19 13:00:16 GMT+05:00 2025","passed","Fri Dec 19 13:00:17 GMT+05:00 2025","","test_changed_part_list","",""
+"
+Test Case: Verify that API returns status code 200 for premium diagnostics info list
+","39","test_get_premium_diagnostics_info_list_status_code","tests.api.services","Fri Dec 19 13:00:16 GMT+05:00 2025","passed","Fri Dec 19 13:00:16 GMT+05:00 2025","","test_prem_info","",""
+"","42","test_get_offline_deals_active","tests.api.auctionn","Fri Dec 19 12:59:27 GMT+05:00 2025","passed","Fri Dec 19 12:59:27 GMT+05:00 2025","","test_offline_deals","",""
+"","261","test_get_filter_home","tests.api.filter","Fri Dec 19 12:59:58 GMT+05:00 2025","passed","Fri Dec 19 12:59:58 GMT+05:00 2025","","test_home_list","",""
+"
+Test Case: Verify that API returns a list of car brands with correct fields
+","86","test_get_car_brand_list_db_post_positive","tests.api.car","Fri Dec 19 12:59:47 GMT+05:00 2025","passed","Fri Dec 19 12:59:47 GMT+05:00 2025","","test_list_post","",""
+"","40","test_get_bids_price_list_positive","tests.api.business","Fri Dec 19 12:59:30 GMT+05:00 2025","passed","Fri Dec 19 12:59:30 GMT+05:00 2025","","test_bids_price_list","",""
+"
+Negative test:
+Verify that API returns 404 or 400 for invalid endpoint
+","28","test_get_top_districts_list_negative_invalid_url[/main/districts/top/invalid]","tests.api.main","Fri Dec 19 13:00:01 GMT+05:00 2025","passed","Fri Dec 19 13:00:01 GMT+05:00 2025","","test_main_district","",""
+"
+Test Case: Verify that car modifications are returned for given configuration ID, transmission, and drive unit
+","54","test_get_car_modifications_positive","tests.api.car","Fri Dec 19 12:59:45 GMT+05:00 2025","passed","Fri Dec 19 12:59:45 GMT+05:00 2025","","test_conf_modification","",""
+"","55","test_get_diagnostic_center_list","tests.api.business","Fri Dec 19 12:59:31 GMT+05:00 2025","passed","Fri Dec 19 12:59:31 GMT+05:00 2025","","test_diagnostic_center_list","",""
+"","54","test_create_option","tests.api.moderation","Fri Dec 19 13:00:13 GMT+05:00 2025","failed","Fri Dec 19 13:00:14 GMT+05:00 2025","","test_create_option","",""
+"","58","test_my_diagnostics","tests.api.business","Fri Dec 19 12:59:39 GMT+05:00 2025","passed","Fri Dec 19 12:59:39 GMT+05:00 2025","","test_my_diagnostics","",""
+"","1615","test_login_success","tests.api.mainfunctions","Fri Dec 19 13:00:06 GMT+05:00 2025","passed","Fri Dec 19 13:00:07 GMT+05:00 2025","","test_login_prod","",""
+"","50","test_check_is_online_positive","tests.api.chat","Fri Dec 19 12:59:57 GMT+05:00 2025","passed","Fri Dec 19 12:59:57 GMT+05:00 2025","","test_check_is_online","",""
+"
+Positive test:
+Verify that the endpoint returns last_report_time with valid ISO datetime format
+","58","test_get_last_report_time_success","tests.api.carwash","Fri Dec 19 12:59:56 GMT+05:00 2025","passed","Fri Dec 19 12:59:56 GMT+05:00 2025","","test_last_report","",""
+"","19","test_get_main_additional_data_negative[?mark=abc]","tests.api.auctionn","Fri Dec 19 12:59:21 GMT+05:00 2025","passed","Fri Dec 19 12:59:21 GMT+05:00 2025","","test_api_additional","",""
+"
+Positive test:
+Verify that endpoint returns valid structure for my promos list
+","44","test_get_my_promos_success","tests.api.carwash","Fri Dec 19 12:59:55 GMT+05:00 2025","passed","Fri Dec 19 12:59:56 GMT+05:00 2025","","test_get_promo","",""
+"
+Test Case: Verify that API returns a list of top car brands with correct fields
+","131","test_get_top_car_brands_positive","tests.api.car","Fri Dec 19 12:59:45 GMT+05:00 2025","passed","Fri Dec 19 12:59:45 GMT+05:00 2025","","test_brand_top","",""
+"Negative test: Request without token should fail","20","test_get_dealer_ranking_position_unauthorized","tests.api.business","Fri Dec 19 12:59:31 GMT+05:00 2025","passed","Fri Dec 19 12:59:31 GMT+05:00 2025","","test_delaers_ranking_position","",""
+"
+Negative test:
+Verify that creating a carwash order with invalid payload returns proper error or validation message
+","42","test_create_order_invalid_payload[payload2]","tests.api.carwash","Fri Dec 19 12:59:54 GMT+05:00 2025","passed","Fri Dec 19 12:59:55 GMT+05:00 2025","","test_cashback_order","",""
+"","44","test_similar_cars_negative[invalid_body1]","tests.api.car","Fri Dec 19 12:59:53 GMT+05:00 2025","passed","Fri Dec 19 12:59:53 GMT+05:00 2025","TestSimilarCars","test_similar","",""
+"","48","test_transmission_id","tests.api.specifaction","Fri Dec 19 13:00:19 GMT+05:00 2025","passed","Fri Dec 19 13:00:19 GMT+05:00 2025","","test_transmisson_id","",""
+"","66","test_get_avtosalons_list","tests.api.business","Fri Dec 19 12:59:30 GMT+05:00 2025","passed","Fri Dec 19 12:59:30 GMT+05:00 2025","","test_avtosalons","",""
 "
 ✅ Positive Test:
 GET /car/model/generations/:id?year=2020
 Expected: 200 OK, valid list of generations
-","46","test_get_model_generations_by_year_positive[1703-2020]","tests.api.car","Wed Dec 10 09:56:10 GMT+05:00 2025","passed","Wed Dec 10 09:56:10 GMT+05:00 2025","","test_model_generation","",""
-"","45","test_get_price_prediction_options_positive","tests.api.car","Wed Dec 10 09:56:12 GMT+05:00 2025","passed","Wed Dec 10 09:56:12 GMT+05:00 2025","","test_price_predict_option","",""
-"","45","test_get_user_positive","tests.api.chat","Wed Dec 10 09:56:21 GMT+05:00 2025","passed","Wed Dec 10 09:56:21 GMT+05:00 2025","","test_get_user_id","",""
-"","25","test_get_my_offers_invalid_query_params[?page=abc&size=20]","tests.api.auctionn","Wed Dec 10 09:55:48 GMT+05:00 2025","passed","Wed Dec 10 09:55:48 GMT+05:00 2025","","test_my_offer","",""
+","47","test_get_model_generations_by_year_positive[1703-2020]","tests.api.car","Fri Dec 19 12:59:47 GMT+05:00 2025","passed","Fri Dec 19 12:59:47 GMT+05:00 2025","","test_model_generation","",""
+"✅ Positive case: Successfully create a new special car post","55","test_create_special_car_post_positive","tests.api.specific_cars","Fri Dec 19 13:00:20 GMT+05:00 2025","passed","Fri Dec 19 13:00:20 GMT+05:00 2025","","test_special_post","",""
+"","556","test_car_upload_and_activate","tests.api.mainfunctions","Fri Dec 19 13:00:04 GMT+05:00 2025","passed","Fri Dec 19 13:00:05 GMT+05:00 2025","","test_car_uploaddd","",""
+"","42","test_login_negative_cases[-]","tests.api.token","Fri Dec 19 13:00:20 GMT+05:00 2025","passed","Fri Dec 19 13:00:20 GMT+05:00 2025","","test_loginapi","",""
+"
+Negative test:
+Verify that API returns 404 or 400 for invalid endpoint
+","45","test_get_top_districts_list_negative_invalid_url[/main/districts/top1/]","tests.api.main","Fri Dec 19 13:00:01 GMT+05:00 2025","passed","Fri Dec 19 13:00:01 GMT+05:00 2025","","test_main_district","",""
+"
+Positive test:
+Verify that a specific body type can be retrieved by its ID
+","57","test_get_body_type_by_id_positive[1]","tests.api.specifaction","Fri Dec 19 13:00:16 GMT+05:00 2025","passed","Fri Dec 19 13:00:16 GMT+05:00 2025","","test_body_type_id","",""
+"","53","test_get_changed_parts_quality_list_negative","tests.api.specifaction","Fri Dec 19 13:00:17 GMT+05:00 2025","passed","Fri Dec 19 13:00:17 GMT+05:00 2025","","test_chevrolet","",""
+"","50","test_get_business_showrooms","tests.api.business","Fri Dec 19 12:59:41 GMT+05:00 2025","passed","Fri Dec 19 12:59:41 GMT+05:00 2025","","test_showroom_list","",""
+"","90","test_price_prediction_invalid_brand","tests.api.car","Fri Dec 19 12:59:49 GMT+05:00 2025","failed","Fri Dec 19 12:59:49 GMT+05:00 2025","","test_price_predict1","",""
+"","121","test_price_prediction_limit_positive","tests.api.car","Fri Dec 19 12:59:50 GMT+05:00 2025","passed","Fri Dec 19 12:59:50 GMT+05:00 2025","TestPricePrediction","test_price_predict_limit","",""
+"","48","test_get_auction_deal_success","tests.api.auctionn","Fri Dec 19 12:59:26 GMT+05:00 2025","passed","Fri Dec 19 12:59:26 GMT+05:00 2025","","test_deal_auction","",""
+"","200","test_get_ads_list","tests.api.abozor_ads","Fri Dec 19 12:59:16 GMT+05:00 2025","passed","Fri Dec 19 12:59:16 GMT+05:00 2025","","test_abozor_ads_ads","",""
+"","40","test_get_promotion_types_positive","tests.api.car","Fri Dec 19 12:59:46 GMT+05:00 2025","passed","Fri Dec 19 12:59:46 GMT+05:00 2025","","test_get_promo_type","",""
+"","544","test_daily_view_stats_negative_invalid_car[-1]","tests.api.car","Fri Dec 19 12:59:43 GMT+05:00 2025","passed","Fri Dec 19 12:59:43 GMT+05:00 2025","","test_1daily_view","",""
+"","26","test_get_auction_deal_negative[?is_sold=true&mark=82&model=invalid&generation=1651&page=1&page_size=20]","tests.api.auctionn","Fri Dec 19 12:59:26 GMT+05:00 2025","failed","Fri Dec 19 12:59:26 GMT+05:00 2025","","test_deal_auction","",""
+"","48","test_options_read_negative","tests.api.specifaction","Fri Dec 19 13:00:19 GMT+05:00 2025","passed","Fri Dec 19 13:00:19 GMT+05:00 2025","","test_options_id","",""
+"
+Positive test:
+Verify that endpoint returns a paginated list of user's car wash orders
+","361","test_get_my_carwash_orders_success","tests.api.carwash","Fri Dec 19 12:59:55 GMT+05:00 2025","passed","Fri Dec 19 12:59:55 GMT+05:00 2025","","test_get_order","",""
+"
+Negative test:
+Attempt to retrieve a body type with an invalid ID
+","26","test_get_body_type_by_id_negative_invalid_id[abc]","tests.api.specifaction","Fri Dec 19 13:00:16 GMT+05:00 2025","broken","Fri Dec 19 13:00:16 GMT+05:00 2025","","test_body_type_id","",""
+"
+Test Case: Verify that API returns 400 or 422 when sending invalid data
+","65","test_post_auction_diagnostics_invalid_data","tests.api.services","Fri Dec 19 13:00:16 GMT+05:00 2025","passed","Fri Dec 19 13:00:16 GMT+05:00 2025","","test_moderation_auction","",""
+"","42","test_similar_cars_negative[invalid_body2]","tests.api.car","Fri Dec 19 12:59:53 GMT+05:00 2025","passed","Fri Dec 19 12:59:53 GMT+05:00 2025","TestSimilarCars","test_similar","",""
+"","56","test_get_profile_list","tests.api.business","Fri Dec 19 12:59:39 GMT+05:00 2025","passed","Fri Dec 19 12:59:39 GMT+05:00 2025","","test_profile_list","",""
+"
+Test Case: Verify that API returns car list data with correct structure and pagination
+","146","test_get_car_list_with_pagination_positive[1]","tests.api.car","Fri Dec 19 12:59:46 GMT+05:00 2025","passed","Fri Dec 19 12:59:47 GMT+05:00 2025","","test_list1","",""
+"
+Positive test:
+Verify that user profile can be successfully updated
+","78","test_patch_user_profile_positive","tests.api.users","Fri Dec 19 13:00:23 GMT+05:00 2025","passed","Fri Dec 19 13:00:23 GMT+05:00 2025","","test_patch_profile","",""
+"Positive test: Verify dealer ranking position returns valid response","56","test_get_dealer_ranking_position_positive","tests.api.business","Fri Dec 19 12:59:31 GMT+05:00 2025","passed","Fri Dec 19 12:59:31 GMT+05:00 2025","","test_delaers_ranking_position","",""
+"
+Test Case: Verify that API returns a list of all available ad promotions
+","45","test_get_all_ad_promotions_positive","tests.api.car","Fri Dec 19 12:59:51 GMT+05:00 2025","passed","Fri Dec 19 12:59:51 GMT+05:00 2025","","test_promotion_list","",""
+"
+Test Case: Verify API returns 404 or 400 when an invalid configuration ID is provided
+","20","test_get_generation_configuration_by_id_negative[!@#]","tests.api.car","Fri Dec 19 12:59:45 GMT+05:00 2025","passed","Fri Dec 19 12:59:45 GMT+05:00 2025","","test_config_by_id","",""
+"
+Test Case: Verify that API returns 404 for an invalid auction-avtosalon endpoint
+","36","test_get_car_brand_list2_auction_avtosalon_invalid_endpoint","tests.api.car","Fri Dec 19 12:59:44 GMT+05:00 2025","passed","Fri Dec 19 12:59:44 GMT+05:00 2025","","test_auction_avtosalon","",""
+"","31","test_transmission_id_negative","tests.api.specifaction","Fri Dec 19 13:00:19 GMT+05:00 2025","passed","Fri Dec 19 13:00:19 GMT+05:00 2025","","test_transmisson_id","",""
+"","674","test_self_auction_with_tradein","tests.api.auctionn","Fri Dec 19 12:59:27 GMT+05:00 2025","passed","Fri Dec 19 12:59:28 GMT+05:00 2025","","test_tradein_auction","",""
+"","582","test_login_negative_cases[+998888672000-123456]","tests.api.mainfunctions","Fri Dec 19 13:00:07 GMT+05:00 2025","passed","Fri Dec 19 13:00:08 GMT+05:00 2025","","test_login_prod","",""
+"
+Test Case: Verify that API returns an error for invalid endpoint
+","219","test_get_car_brand_list_db_post_invalid_url","tests.api.car","Fri Dec 19 12:59:47 GMT+05:00 2025","passed","Fri Dec 19 12:59:47 GMT+05:00 2025","","test_list_post","",""
+"✅ Positive case: should return 200 and valid list of additional cars","58","test_get_additional_special_cars_list_positive","tests.api.specific_cars","Fri Dec 19 13:00:19 GMT+05:00 2025","passed","Fri Dec 19 13:00:20 GMT+05:00 2025","","test_additional_list","",""
+"","40","test_self_auction_missing_required_field","tests.api.auctionn","Fri Dec 19 12:59:28 GMT+05:00 2025","passed","Fri Dec 19 12:59:28 GMT+05:00 2025","","test_tradein_auction","",""
+"","55","test_get_insurance_list","tests.api.business","Fri Dec 19 12:59:39 GMT+05:00 2025","passed","Fri Dec 19 12:59:39 GMT+05:00 2025","","test_mib_data","",""
 "
 Positive test:
 Verify that GET request to fetch car wash centers list with pagination returns valid response
-","1098","test_get_car_wash_centers_list_success","tests.api.carwash","Wed Dec 10 09:56:15 GMT+05:00 2025","passed","Wed Dec 10 09:56:17 GMT+05:00 2025","","test_carwash_list","",""
+","75","test_get_car_wash_centers_list_success","tests.api.carwash","Fri Dec 19 12:59:54 GMT+05:00 2025","passed","Fri Dec 19 12:59:54 GMT+05:00 2025","","test_carwash_list","",""
 "
-Test deleting a non-existing search filter should return 404 or 400
-","26","test_delete_search_filter_negative[-1]","tests.api.filter","Wed Dec 10 09:56:21 GMT+05:00 2025","passed","Wed Dec 10 09:56:21 GMT+05:00 2025","","test_delete_search","",""
-"","78","test_get_auction_deal_success","tests.api.auctionn","Wed Dec 10 09:55:48 GMT+05:00 2025","passed","Wed Dec 10 09:55:48 GMT+05:00 2025","","test_deal_auction","",""
-"","68","test_patch_car_status_negative[-233-car-payload0-404]","tests.api.car","Wed Dec 10 09:56:14 GMT+05:00 2025","passed","Wed Dec 10 09:56:14 GMT+05:00 2025","","test_status_patch","",""
+Negative test:
+Verify that invalid parameters return an error message or empty promo
+","377","test_check_promo_invalid_params[params2]","tests.api.carwash","Fri Dec 19 12:59:57 GMT+05:00 2025","broken","Fri Dec 19 12:59:57 GMT+05:00 2025","","test_promo_check","",""
+"Check that request with invalid token returns 401","29","Negative: Get Atmos holds with invalid token","tests.api.moderation","Fri Dec 19 13:00:12 GMT+05:00 2025","passed","Fri Dec 19 13:00:12 GMT+05:00 2025","TestModerationAtmosHolds","test_atmos_holds","",""
+"
+Negative test:
+Posting to invalid car IDs with empty body should return 404 or 400.
+","57","test_post_photo_invalid_id_empty_body[-1]","tests.api.car","Fri Dec 19 12:59:49 GMT+05:00 2025","passed","Fri Dec 19 12:59:49 GMT+05:00 2025","","test_photo_post","",""
 "
 Negative test:
 Verify that API returns 404 or 400 for invalid showroom application ID
-","41","test_get_showroom_application_by_id_negative[-5]","tests.api.main","Wed Dec 10 09:56:24 GMT+05:00 2025","passed","Wed Dec 10 09:56:24 GMT+05:00 2025","","test_showroom","",""
-"
-Test Case: Verify that API returns a paginated list of car brands for auction-avtosalon with correct fields
-","60","test_get_car_brand_list2_auction_avtosalon_positive","tests.api.car","Wed Dec 10 09:56:07 GMT+05:00 2025","passed","Wed Dec 10 09:56:07 GMT+05:00 2025","","test_auction_avtosalon","",""
-"
-Negative test:
-Verify that endpoint returns 401 or 403 if request is sent without authorization
-","40","test_get_my_carwash_orders_unauthorized","tests.api.carwash","Wed Dec 10 09:56:18 GMT+05:00 2025","passed","Wed Dec 10 09:56:18 GMT+05:00 2025","","test_get_order","",""
+","53","test_get_showroom_application_by_id_negative[abc]","tests.api.main","Fri Dec 19 13:00:01 GMT+05:00 2025","passed","Fri Dec 19 13:00:01 GMT+05:00 2025","","test_showroom","",""
+"","45","test_business_login_negative[+998999999999-qwerty12345]","tests.api.business","Fri Dec 19 12:59:39 GMT+05:00 2025","passed","Fri Dec 19 12:59:39 GMT+05:00 2025","","test_login","",""
+"","170","test_get_business_web_view_list","tests.api.business","Fri Dec 19 12:59:41 GMT+05:00 2025","passed","Fri Dec 19 12:59:42 GMT+05:00 2025","","test_web_view","",""
+"","394","test_admin_access_token_negative[wronguser-K7N4P8R2T9]","tests.api.token","Fri Dec 19 13:00:21 GMT+05:00 2025","passed","Fri Dec 19 13:00:21 GMT+05:00 2025","","test_token_acces_admin","",""
 "
 Negative test:
 Verify that API returns 404 or 400 for invalid own car IDs.
-","188","test_get_own_car_negative[0]","tests.api.car","Wed Dec 10 09:56:10 GMT+05:00 2025","passed","Wed Dec 10 09:56:10 GMT+05:00 2025","","test_owner_page","",""
-"❌ Negative case: invalid car ID should return 404","44","test_get_specific_car_detail_invalid_id","tests.api.specific_cars","Wed Dec 10 09:56:40 GMT+05:00 2025","passed","Wed Dec 10 09:56:40 GMT+05:00 2025","","test_detail_id","",""
-"","160","test_get_active_ads","tests.api.abozor_ads","Wed Dec 10 09:55:39 GMT+05:00 2025","passed","Wed Dec 10 09:55:39 GMT+05:00 2025","","test_active_ads","",""
+","30","test_get_own_car_negative[-1]","tests.api.car","Fri Dec 19 12:59:48 GMT+05:00 2025","passed","Fri Dec 19 12:59:48 GMT+05:00 2025","","test_owner_page","",""
+"","48","test_login_negative_cases[+998888672000-123456]","tests.api.token","Fri Dec 19 13:00:20 GMT+05:00 2025","passed","Fri Dec 19 13:00:20 GMT+05:00 2025","","test_loginapi","",""
+"","49","prem_header","tests.api.services","Fri Dec 19 13:00:16 GMT+05:00 2025","passed","Fri Dec 19 13:00:16 GMT+05:00 2025","","test_prem_header","",""
 "
 Positive test:
-Verify that the list of seen cars is returned with correct structure
-","43","test_get_seen_list_positive","tests.api.users","Wed Dec 10 09:56:43 GMT+05:00 2025","passed","Wed Dec 10 09:56:43 GMT+05:00 2025","","test_seen_list","",""
-"","50","test_get_auction_detail_negative[9999999]","tests.api.auctionn","Wed Dec 10 09:55:44 GMT+05:00 2025","failed","Wed Dec 10 09:55:44 GMT+05:00 2025","","test_auction_detail","",""
-"","31","test_get_active_auctions","tests.api.auctionn","Wed Dec 10 09:55:40 GMT+05:00 2025","passed","Wed Dec 10 09:55:40 GMT+05:00 2025","","test_active_auction","",""
-"","22","test_create_diagnostics_request_functional","tests.api.business","Wed Dec 10 09:55:53 GMT+05:00 2025","failed","Wed Dec 10 09:55:53 GMT+05:00 2025","","test_diagnostic_create","",""
-"","197","test_get_business_web_view_list","tests.api.business","Wed Dec 10 09:56:03 GMT+05:00 2025","passed","Wed Dec 10 09:56:03 GMT+05:00 2025","","test_web_view","",""
+Verify that the active auction cars list is returned with the expected structure
+","161","test_get_active_auction_cars","tests.api.users","Fri Dec 19 13:00:22 GMT+05:00 2025","passed","Fri Dec 19 13:00:22 GMT+05:00 2025","","test_auction_cars","",""
+"Positive test: Verify posting phrases endpoint returns valid response","42","test_get_posting_phrases_positive","tests.api.car","Fri Dec 19 12:59:46 GMT+05:00 2025","passed","Fri Dec 19 12:59:46 GMT+05:00 2025","","test_get_phrases","",""
+"","63","test_get_generation_list_success","tests.api.filter","Fri Dec 19 12:59:58 GMT+05:00 2025","passed","Fri Dec 19 12:59:58 GMT+05:00 2025","","test_generation","",""
+"","73","test_get_trade_in_app_active","tests.api.business","Fri Dec 19 12:59:41 GMT+05:00 2025","passed","Fri Dec 19 12:59:41 GMT+05:00 2025","","test_trade_in_app","",""
+"","57","test_media_tools","tests.api.specifaction","Fri Dec 19 13:00:17 GMT+05:00 2025","passed","Fri Dec 19 13:00:17 GMT+05:00 2025","","test_media_tools","",""
 "
-Positive test:
-Verify that diagnostic request is successfully created
-","678","test_post_auction_diagnostics_positive","tests.api.main","Wed Dec 10 09:56:23 GMT+05:00 2025","passed","Wed Dec 10 09:56:23 GMT+05:00 2025","","test_diagnostic","",""
-"","43","test_get_offline_deals_negative[?page=1&size=0&type=active]","tests.api.auctionn","Wed Dec 10 09:55:49 GMT+05:00 2025","failed","Wed Dec 10 09:55:49 GMT+05:00 2025","","test_offline_deals","",""
-"Negative test for GET /moderation/auction-offers (missing or invalid token)","34","test_get_auction_offers_negative","tests.api.moderation","Wed Dec 10 09:56:36 GMT+05:00 2025","passed","Wed Dec 10 09:56:36 GMT+05:00 2025","","test_auction_offers","",""
-"","60","test_get_car_promotions_positive","tests.api.car","Wed Dec 10 09:56:12 GMT+05:00 2025","passed","Wed Dec 10 09:56:12 GMT+05:00 2025","","test_promo_list","",""
-"","37","test_get_my_lost_offers_negative[?page=1&size=&type=lost]","tests.api.auctionn","Wed Dec 10 09:55:49 GMT+05:00 2025","passed","Wed Dec 10 09:55:49 GMT+05:00 2025","","test_offer_lost","",""
+Test Case: Verify that API returns status code 200 for premium diagnostics info list
+","44","test_get_premium_diagnostics_info_list_status_code","tests.api.services","Fri Dec 19 13:00:16 GMT+05:00 2025","passed","Fri Dec 19 13:00:16 GMT+05:00 2025","","test_specialists","",""
+"","441","test_create_car_post_v2_positive","tests.api.car","Fri Dec 19 12:59:53 GMT+05:00 2025","passed","Fri Dec 19 12:59:54 GMT+05:00 2025","TestCreateCarPostV2","test_v2_create","",""
+"","20","test_get_auction_view_count_negative[params2]","tests.api.auctionn","Fri Dec 19 12:59:22 GMT+05:00 2025","failed","Fri Dec 19 12:59:22 GMT+05:00 2025","","test_auction_view","",""
 "
 Negative test:
-Verify that invalid code or phone returns 400 or 401
-","26","test_verify_code_invalid[payload2]","tests.api.users","Wed Dec 10 09:56:43 GMT+05:00 2025","passed","Wed Dec 10 09:56:43 GMT+05:00 2025","","test_verify_code","",""
-"Negative test for POST /moderation/auction-diagnostics/ (invalid payload)","51","test_post_auction_diagnostics_negative","tests.api.moderation","Wed Dec 10 09:56:35 GMT+05:00 2025","passed","Wed Dec 10 09:56:35 GMT+05:00 2025","","test_auction_diagnostic","",""
+Attempt to fetch user profile without providing authentication headers
+","37","test_get_user_profile_negative_unauthorized","tests.api.users","Fri Dec 19 13:00:23 GMT+05:00 2025","passed","Fri Dec 19 13:00:23 GMT+05:00 2025","","test_user_profile","",""
 "
-Positive test:
-Verify that checking promo returns a valid JSON structure
-","139","test_check_promo_success","tests.api.carwash","Wed Dec 10 09:56:20 GMT+05:00 2025","passed","Wed Dec 10 09:56:20 GMT+05:00 2025","","test_promo_check","",""
-"","54","test_check_is_online_negative","tests.api.chat","Wed Dec 10 09:56:20 GMT+05:00 2025","failed","Wed Dec 10 09:56:21 GMT+05:00 2025","","test_check_is_online","",""
+Negative test:
+Verify that an invalid carwash_id returns 200 with empty list or proper error response
+","59","test_get_tariffs_invalid_carwash_id[params1]","tests.api.carwash","Fri Dec 19 12:59:56 GMT+05:00 2025","failed","Fri Dec 19 12:59:56 GMT+05:00 2025","","test_get_tarrif","",""
+"","54","Negative: Try to update with invalid status value (Backend accepts it)","tests.api.mainfunctions","Fri Dec 19 13:00:11 GMT+05:00 2025","passed","Fri Dec 19 13:00:12 GMT+05:00 2025","","test_tradein_patch","",""
+"","563","test_get_additional_deal_data_negative[?is_sold=true&mark=82&model=&year=2020]","tests.api.auctionn","Fri Dec 19 12:59:19 GMT+05:00 2025","passed","Fri Dec 19 12:59:20 GMT+05:00 2025","","test_additional_data","",""
 "
-Positive test:
-Verify that the API returns the top list of districts with correct structure
-","64","test_get_top_districts_list_positive","tests.api.main","Wed Dec 10 09:56:24 GMT+05:00 2025","passed","Wed Dec 10 09:56:24 GMT+05:00 2025","","test_main_district","",""
+Test Case: Verify API returns 404 or error message when invalid ID is provided
+","19","test_get_generation_configurations_v2_by_id_negative[abc]","tests.api.car","Fri Dec 19 12:59:46 GMT+05:00 2025","passed","Fri Dec 19 12:59:46 GMT+05:00 2025","","test_generations","",""
 "
-Test Case: Verify that API returns 400 Bad Request when date format is invalid
-","66","test_get_available_slots_invalid_date","tests.api.services","Wed Dec 10 09:56:36 GMT+05:00 2025","passed","Wed Dec 10 09:56:37 GMT+05:00 2025","","test_date","",""
-"","26","test_options_read_negative","tests.api.specifaction","Wed Dec 10 09:56:39 GMT+05:00 2025","passed","Wed Dec 10 09:56:39 GMT+05:00 2025","","test_options_id","",""
+Negative test:
+Verify that creating a carwash order with invalid payload returns proper error or validation message
+","47","test_create_order_invalid_payload[payload0]","tests.api.carwash","Fri Dec 19 12:59:54 GMT+05:00 2025","passed","Fri Dec 19 12:59:54 GMT+05:00 2025","","test_cashback_order","",""
+"","559","test_get_additional_deal_data_negative[?is_sold=true&mark=abc&model=828&year=2020]","tests.api.auctionn","Fri Dec 19 12:59:19 GMT+05:00 2025","passed","Fri Dec 19 12:59:19 GMT+05:00 2025","","test_additional_data","",""
+"","52","test_click_ad","tests.api.abozor_ads","Fri Dec 19 12:59:17 GMT+05:00 2025","passed","Fri Dec 19 12:59:17 GMT+05:00 2025","","test_ads_click","",""
 "
-Test Case: Verify that API returns a list of all available ad promotions
-","39","test_get_all_ad_promotions_positive","tests.api.car","Wed Dec 10 09:56:12 GMT+05:00 2025","passed","Wed Dec 10 09:56:12 GMT+05:00 2025","","test_promotion_list","",""
-"","55","test_region_positive","tests.api.specifaction","Wed Dec 10 09:56:39 GMT+05:00 2025","passed","Wed Dec 10 09:56:39 GMT+05:00 2025","","test_region1","",""
-"","40","test_add_who_wrote","tests.api.chat","Wed Dec 10 09:56:20 GMT+05:00 2025","passed","Wed Dec 10 09:56:20 GMT+05:00 2025","","test_add_who_wrote","",""
-"","543","test_daily_view_stats_negative_invalid_car[-1]","tests.api.car","Wed Dec 10 09:56:04 GMT+05:00 2025","passed","Wed Dec 10 09:56:05 GMT+05:00 2025","","test_1daily_view","",""
-"","26","test_price_prediction_negative_missing_field","tests.api.car","Wed Dec 10 09:56:11 GMT+05:00 2025","passed","Wed Dec 10 09:56:11 GMT+05:00 2025","","test_price_predict2","",""
+Negative test:
+Verify that an invalid endpoint returns 404
+","23","test_get_banner_home_negative","tests.api.main","Fri Dec 19 12:59:59 GMT+05:00 2025","passed","Fri Dec 19 12:59:59 GMT+05:00 2025","","test_banner","",""
+"
+Negative test:
+Attempt to retrieve a body type with an invalid ID
+","25","test_get_body_type_by_id_negative_invalid_id[-1]","tests.api.specifaction","Fri Dec 19 13:00:16 GMT+05:00 2025","broken","Fri Dec 19 13:00:16 GMT+05:00 2025","","test_body_type_id","",""
+"","47","test_get_body_type_list_positive","tests.api.specifaction","Fri Dec 19 13:00:17 GMT+05:00 2025","passed","Fri Dec 19 13:00:17 GMT+05:00 2025","","test_external_body","",""
+"","30","test_login_negative_cases[+998888672005-000000]","tests.api.token","Fri Dec 19 13:00:20 GMT+05:00 2025","passed","Fri Dec 19 13:00:20 GMT+05:00 2025","","test_loginapi","",""
+"
+Negative test:
+Verify that API returns 404 or appropriate error for invalid URL
+","40","test_get_about_us_blog_list_negative_invalid_url[/main/about-us/blog/list123]","tests.api.main","Fri Dec 19 12:59:59 GMT+05:00 2025","passed","Fri Dec 19 12:59:59 GMT+05:00 2025","","test_about_us","",""
+"","72","test_create_car_post_v2_negative_missing_required[currency]","tests.api.car","Fri Dec 19 12:59:54 GMT+05:00 2025","passed","Fri Dec 19 12:59:54 GMT+05:00 2025","TestCreateCarPostV2","test_v2_create","",""
+"
+Test Case: Verify that API returns configuration details for a valid configuration ID (v2 endpoint)
+","45","test_get_generation_configuration_v2_by_id_positive[2483]","tests.api.car","Fri Dec 19 12:59:45 GMT+05:00 2025","passed","Fri Dec 19 12:59:45 GMT+05:00 2025","","test_config_by_id","",""
+"
+Negative test:
+Verify that calling a user without auth returns 401 Unauthorized
+","30","test_user_call_unauthorized","tests.api.users","Fri Dec 19 13:00:22 GMT+05:00 2025","passed","Fri Dec 19 13:00:22 GMT+05:00 2025","","test_call","",""
 "
 ❌ Negative Test:
 GET /car/model/generations/:id?year=2020 with invalid ID
 Expected: 200 OK with empty list OR 404 (depending on API behavior)
-","32","test_get_model_generations_by_year_negative[-999999-2020]","tests.api.car","Wed Dec 10 09:56:10 GMT+05:00 2025","passed","Wed Dec 10 09:56:10 GMT+05:00 2025","","test_model_generation","",""
-"
-Positive test:
-Verify that user profile information is returned correctly
-","57","test_get_user_profile_positive","tests.api.users","Wed Dec 10 09:56:43 GMT+05:00 2025","passed","Wed Dec 10 09:56:43 GMT+05:00 2025","","test_user_profile","",""
-"
-Negative test:
-Verify that invalid phone format returns validation error
-","52","test_post_auction_diagnostics_negative_invalid_phone","tests.api.main","Wed Dec 10 09:56:23 GMT+05:00 2025","passed","Wed Dec 10 09:56:23 GMT+05:00 2025","","test_diagnostic","",""
-"
-Negative test:
-Verify that an invalid carwash_id returns 200 with empty list or proper error response
-","47","test_get_tariffs_invalid_carwash_id[params0]","tests.api.carwash","Wed Dec 10 09:56:18 GMT+05:00 2025","failed","Wed Dec 10 09:56:18 GMT+05:00 2025","","test_get_tarrif","",""
-"","541","test_get_additional_deal_data_negative[]","tests.api.auctionn","Wed Dec 10 09:55:43 GMT+05:00 2025","passed","Wed Dec 10 09:55:43 GMT+05:00 2025","","test_additional_data","",""
-"
-Positive test:
-Verify that the API returns a valid list of car body types
-","49","test_get_body_type_list_positive","tests.api.specifaction","Wed Dec 10 09:56:38 GMT+05:00 2025","passed","Wed Dec 10 09:56:38 GMT+05:00 2025","","test_body_type","",""
-"
-Negative test:
-Verify that API returns 404 or 400 for invalid endpoint
-","23","test_get_regions_list_negative_invalid_url[/main/region]","tests.api.main","Wed Dec 10 09:56:24 GMT+05:00 2025","passed","Wed Dec 10 09:56:24 GMT+05:00 2025","","test_region","",""
+","23","test_get_model_generations_by_year_negative[-999999-2020]","tests.api.car","Fri Dec 19 12:59:47 GMT+05:00 2025","passed","Fri Dec 19 12:59:47 GMT+05:00 2025","","test_model_generation","",""
+"","24","test_get_my_auctions_success","tests.api.auctionn","Fri Dec 19 12:59:27 GMT+05:00 2025","passed","Fri Dec 19 12:59:27 GMT+05:00 2025","","test_my_auction","",""
+"","75","test_options_read","tests.api.specifaction","Fri Dec 19 13:00:19 GMT+05:00 2025","passed","Fri Dec 19 13:00:19 GMT+05:00 2025","","test_options_id","",""
+"","29","test_get_my_offers_paginated","tests.api.auctionn","Fri Dec 19 12:59:27 GMT+05:00 2025","passed","Fri Dec 19 12:59:27 GMT+05:00 2025","","test_my_offer","",""
 "
 Test case to verify that the GET request for changed parts quality list
 returns status code 200 and valid response structure.
-","52","test_get_changed_parts_quality_list_success","tests.api.specifaction","Wed Dec 10 09:56:38 GMT+05:00 2025","passed","Wed Dec 10 09:56:39 GMT+05:00 2025","","test_changed_part_list","",""
-"","47","test_get_user_negative","tests.api.chat","Wed Dec 10 09:56:21 GMT+05:00 2025","passed","Wed Dec 10 09:56:21 GMT+05:00 2025","","test_get_user_id","",""
+","61","test_get_changed_parts_quality_list_success","tests.api.specifaction","Fri Dec 19 13:00:16 GMT+05:00 2025","passed","Fri Dec 19 13:00:16 GMT+05:00 2025","","test_changed_part","",""
+"","52","test_get_diagnostic_center_functional[24]","tests.api.business","Fri Dec 19 12:59:30 GMT+05:00 2025","passed","Fri Dec 19 12:59:30 GMT+05:00 2025","","test_centers_read","",""
+"","49","test_get_leads_stats_positive","tests.api.car","Fri Dec 19 12:59:46 GMT+05:00 2025","passed","Fri Dec 19 12:59:46 GMT+05:00 2025","","test_leads_stats","",""
 "
 Negative test:
-Verify that an invalid carwash_id returns 200 with empty list or proper error response
-","44","test_get_tariffs_invalid_carwash_id[params1]","tests.api.carwash","Wed Dec 10 09:56:18 GMT+05:00 2025","failed","Wed Dec 10 09:56:18 GMT+05:00 2025","","test_get_tarrif","",""
-"","37","test_similar_cars_negative[invalid_body2]","tests.api.car","Wed Dec 10 09:56:14 GMT+05:00 2025","passed","Wed Dec 10 09:56:14 GMT+05:00 2025","TestSimilarCars","test_similar","",""
+Verify that creating a car wash order with invalid data returns an error
+","45","test_create_car_wash_order_invalid_data[payload0]","tests.api.carwash","Fri Dec 19 12:59:55 GMT+05:00 2025","passed","Fri Dec 19 12:59:55 GMT+05:00 2025","","test_create_order","",""
 "
-Test Case: Verify that API returns available time slots for the given date
-","50","test_get_available_slots_positive","tests.api.services","Wed Dec 10 09:56:36 GMT+05:00 2025","passed","Wed Dec 10 09:56:36 GMT+05:00 2025","","test_date","",""
-"","60","test_get_avtosalons_list","tests.api.business","Wed Dec 10 09:55:52 GMT+05:00 2025","passed","Wed Dec 10 09:55:52 GMT+05:00 2025","","test_avtosalons","",""
-"","134","test_verify_code_success","tests.api.business","Wed Dec 10 09:56:03 GMT+05:00 2025","passed","Wed Dec 10 09:56:03 GMT+05:00 2025","","test_verification","",""
-"","25","test_login_negative_cases[+998888672005-000000]","tests.api.token","Wed Dec 10 09:56:40 GMT+05:00 2025","passed","Wed Dec 10 09:56:40 GMT+05:00 2025","","test_loginapi","",""
+Negative test:
+Verify that request with invalid token returns 401
+","35","test_get_garage_cars_invalid_token[Bearer 12345]","tests.api.carwash","Fri Dec 19 12:59:55 GMT+05:00 2025","passed","Fri Dec 19 12:59:55 GMT+05:00 2025","TestGarageCars","test_garaj_car_id","",""
+"","30","test_get_marketplace_auction_additional_data_success","tests.api.auctionn","Fri Dec 19 12:59:27 GMT+05:00 2025","passed","Fri Dec 19 12:59:27 GMT+05:00 2025","","test_marketplace_auction","",""
 "
-Test Case: Verify API returns 404 or error message when invalid ID is provided
-","24","test_get_generation_configurations_v2_by_id_negative[abc]","tests.api.car","Wed Dec 10 09:56:08 GMT+05:00 2025","passed","Wed Dec 10 09:56:08 GMT+05:00 2025","","test_generations","",""
+Negative test:
+Verify that invalid code or phone returns 400 or 401
+","30","test_verify_code_invalid[payload1]","tests.api.users","Fri Dec 19 13:00:23 GMT+05:00 2025","passed","Fri Dec 19 13:00:23 GMT+05:00 2025","","test_verify_code","",""
+"
+Negative test:
+Verify that invalid parameters return an error message or empty promo
+","71","test_check_promo_invalid_params[params0]","tests.api.carwash","Fri Dec 19 12:59:56 GMT+05:00 2025","passed","Fri Dec 19 12:59:56 GMT+05:00 2025","","test_promo_check","",""
+"","21","test_get_my_lost_offers_success","tests.api.auctionn","Fri Dec 19 12:59:27 GMT+05:00 2025","passed","Fri Dec 19 12:59:27 GMT+05:00 2025","","test_offer_lost","",""
+"","50","test_get_faq_list","tests.api.chat","Fri Dec 19 12:59:57 GMT+05:00 2025","passed","Fri Dec 19 12:59:57 GMT+05:00 2025","","test_faq","",""
+"","88","test_get_total_cars_success","tests.api.filter","Fri Dec 19 12:59:59 GMT+05:00 2025","passed","Fri Dec 19 12:59:59 GMT+05:00 2025","","test_total_cars","",""
+"
+Test Case: Verify API returns 404 or 400 when an invalid configuration ID is provided
+","20","test_get_generation_configuration_by_id_negative[-9999999]","tests.api.car","Fri Dec 19 12:59:45 GMT+05:00 2025","passed","Fri Dec 19 12:59:45 GMT+05:00 2025","","test_config_by_id","",""
+"","62","test_region_positive","tests.api.specifaction","Fri Dec 19 13:00:19 GMT+05:00 2025","passed","Fri Dec 19 13:00:19 GMT+05:00 2025","","test_region1","",""
+"","60","test_get_trade_in_centers_success","tests.api.auctionn","Fri Dec 19 12:59:28 GMT+05:00 2025","passed","Fri Dec 19 12:59:28 GMT+05:00 2025","","test_tradein_centers","",""
+"Positive test for PATCH /moderation/auction-edit/{id}","174","test_patch_auction_edit_positive","tests.api.moderation","Fri Dec 19 13:00:13 GMT+05:00 2025","passed","Fri Dec 19 13:00:13 GMT+05:00 2025","","test_auction_edit","",""
+"
+Positive test:
+Verify that the API returns the list of blogs under About Us section
+","85","test_get_about_us_blog_list_positive","tests.api.main","Fri Dec 19 12:59:59 GMT+05:00 2025","passed","Fri Dec 19 12:59:59 GMT+05:00 2025","","test_about_us","",""
+"","204","test_similar_cars_positive","tests.api.car","Fri Dec 19 12:59:52 GMT+05:00 2025","passed","Fri Dec 19 12:59:52 GMT+05:00 2025","TestSimilarCars","test_similar","",""
+"","29","test_get_auction_deal_negative[?is_sold=true&mark=-1&model=828&generation=1651&page=1&page_size=20]","tests.api.auctionn","Fri Dec 19 12:59:26 GMT+05:00 2025","failed","Fri Dec 19 12:59:26 GMT+05:00 2025","","test_deal_auction","",""
+"","24","test_price_prediction_negative[invalid_body2]","tests.api.car","Fri Dec 19 12:59:50 GMT+05:00 2025","passed","Fri Dec 19 12:59:50 GMT+05:00 2025","TestPricePrediction","test_price_predict_limit","",""
+"
+Test Case: Verify that API returns like count inside a list for a valid car ID
+","53","test_get_car_like_count_positive","tests.api.car","Fri Dec 19 12:59:46 GMT+05:00 2025","passed","Fri Dec 19 12:59:46 GMT+05:00 2025","","test_like_count","",""
 "
 Negative test:
 Verify that API returns 404 or 400 for invalid endpoint
-","31","test_get_regions_list_negative_invalid_url[/main/regionss]","tests.api.main","Wed Dec 10 09:56:24 GMT+05:00 2025","passed","Wed Dec 10 09:56:24 GMT+05:00 2025","","test_region","",""
-"Check unauthorized access returns 401","31","Negative: Send request with invalid token","tests.api.moderation","Wed Dec 10 09:56:36 GMT+05:00 2025","passed","Wed Dec 10 09:56:36 GMT+05:00 2025","TestModerationAction","test_moderation_action","",""
+","50","test_get_regions_list_negative_invalid_url[/main/regions/invalid]","tests.api.main","Fri Dec 19 13:00:01 GMT+05:00 2025","passed","Fri Dec 19 13:00:01 GMT+05:00 2025","","test_region","",""
+"","46","test_add_who_wrote","tests.api.chat","Fri Dec 19 12:59:57 GMT+05:00 2025","passed","Fri Dec 19 12:59:57 GMT+05:00 2025","","test_add_who_wrote","",""
+"","43","test_get_car_promotions_negative_invalid_page[999999]","tests.api.car","Fri Dec 19 12:59:51 GMT+05:00 2025","passed","Fri Dec 19 12:59:51 GMT+05:00 2025","","test_promo_list","",""
+"✅ Positive case: should return 200 and list of cars","76","test_get_special_cars_list_positive","tests.api.specific_cars","Fri Dec 19 13:00:20 GMT+05:00 2025","passed","Fri Dec 19 13:00:20 GMT+05:00 2025","","test_special_car_list","",""
+"
+Negative test:
+Verify that missing phone returns 400 Bad Request
+","39","test_check_user_missing_phone","tests.api.users","Fri Dec 19 13:00:22 GMT+05:00 2025","passed","Fri Dec 19 13:00:22 GMT+05:00 2025","","test_check_user","",""
+"","31","❌ Verify API returns 401 when token is invalid or missing","tests.api.specific_cars","Fri Dec 19 13:00:20 GMT+05:00 2025","passed","Fri Dec 19 13:00:20 GMT+05:00 2025","","test_my_posts","",""
+"","29","test_price_prediction_negative[invalid_body0]","tests.api.car","Fri Dec 19 12:59:49 GMT+05:00 2025","passed","Fri Dec 19 12:59:50 GMT+05:00 2025","TestPricePrediction","test_price_predict_limit","",""
+"
+Positive test:
+Verify that the API returns showroom application details by valid ID
+","54","test_get_showroom_application_by_id_positive","tests.api.main","Fri Dec 19 13:00:01 GMT+05:00 2025","passed","Fri Dec 19 13:00:01 GMT+05:00 2025","","test_showroom","",""
+"
+Positive test:
+Verify that API returns a list of showroom applications
+","58","test_get_all_showroom_applications_positive","tests.api.main","Fri Dec 19 13:00:01 GMT+05:00 2025","passed","Fri Dec 19 13:00:01 GMT+05:00 2025","","test_showroom_list1","",""
+"
+Positive test:
+Verify that API returns 200 and valid JSON response for a valid own car ID.
+","271","test_get_own_car_positive[22720]","tests.api.car","Fri Dec 19 12:59:48 GMT+05:00 2025","passed","Fri Dec 19 12:59:48 GMT+05:00 2025","","test_owner_page","",""
+"","43","test_get_car_model_list_200[22228]","tests.api.car","Fri Dec 19 12:59:47 GMT+05:00 2025","passed","Fri Dec 19 12:59:48 GMT+05:00 2025","","test_model_list","",""
+"
+Negative test:
+Verify API handles missing core_car field gracefully
+","46","test_price_prediction_missing_core_car","tests.api.auctionn","Fri Dec 19 12:59:27 GMT+05:00 2025","passed","Fri Dec 19 12:59:27 GMT+05:00 2025","","test_price_predict","",""
+"","0","test_patch_update_korib_berish","tests.api.business","Fri Dec 19 12:59:33 GMT+05:00 2025","passed","Fri Dec 19 12:59:33 GMT+05:00 2025","","test_korib_berish_update","",""
+"","45","test_get_auction_detail_negative[9999999]","tests.api.auctionn","Fri Dec 19 12:59:22 GMT+05:00 2025","passed","Fri Dec 19 12:59:22 GMT+05:00 2025","","test_auction_detail","",""
+"
+Test Case: Verify that API returns 401 or valid response when no auth headers are provided
+","42","test_get_all_ad_promotions_unauthorized","tests.api.car","Fri Dec 19 12:59:51 GMT+05:00 2025","passed","Fri Dec 19 12:59:51 GMT+05:00 2025","","test_promotion_list","",""
+"","41","test_complaints_positive","tests.api.chat","Fri Dec 19 12:59:57 GMT+05:00 2025","passed","Fri Dec 19 12:59:57 GMT+05:00 2025","","test_complaints","",""
+"","19","test_get_my_offers_invalid_query_params[?page=&size=20]","tests.api.auctionn","Fri Dec 19 12:59:27 GMT+05:00 2025","passed","Fri Dec 19 12:59:27 GMT+05:00 2025","","test_my_offer","",""
+"
+Negative test:
+Verify that endpoint returns 401 if no authorization headers are provided
+","39","test_remove_all_user_likes_unauthorized","tests.api.users","Fri Dec 19 13:00:23 GMT+05:00 2025","passed","Fri Dec 19 13:00:23 GMT+05:00 2025","","test_remove_like","",""
+"
+Positive test:
+Verify that making a call to a user returns 'success'
+","48","test_user_call_success","tests.api.users","Fri Dec 19 13:00:22 GMT+05:00 2025","passed","Fri Dec 19 13:00:22 GMT+05:00 2025","","test_call","",""
+"
+Test Case: Verify that API returns 404 for invalid avtosalon ID
+","43","test_get_avtosalon_by_id_negative[999999]","tests.api.car","Fri Dec 19 12:59:44 GMT+05:00 2025","passed","Fri Dec 19 12:59:44 GMT+05:00 2025","","test_avtosalon_read","",""
+"","52","test_get_user_negative","tests.api.chat","Fri Dec 19 12:59:58 GMT+05:00 2025","passed","Fri Dec 19 12:59:58 GMT+05:00 2025","","test_get_user_id","",""
+"
+Positive test:
+Verify that diagnostic request is successfully created
+","696","test_post_auction_diagnostics_positive","tests.api.main","Fri Dec 19 12:59:59 GMT+05:00 2025","passed","Fri Dec 19 13:00:00 GMT+05:00 2025","","test_diagnostic","",""
+"
+Test Case: Verify that API returns correct avtosalon details by ID
+","54","test_get_avtosalon_by_id_positive[42]","tests.api.car","Fri Dec 19 12:59:44 GMT+05:00 2025","passed","Fri Dec 19 12:59:44 GMT+05:00 2025","","test_avtosalon_read","",""
+"","27","test_price_prediction_negative[invalid_body1]","tests.api.car","Fri Dec 19 12:59:50 GMT+05:00 2025","passed","Fri Dec 19 12:59:50 GMT+05:00 2025","TestPricePrediction","test_price_predict_limit","",""
+"","62","test_get_trade_in_center_available_slots","tests.api.business","Fri Dec 19 12:59:29 GMT+05:00 2025","passed","Fri Dec 19 12:59:29 GMT+05:00 2025","","test_avaliable_slots","",""
+"
+Negative test:
+Verify that API returns 404 or appropriate error for invalid URL
+","41","test_get_about_us_blog_list_negative_invalid_url[/main/about-us/blog/unknown]","tests.api.main","Fri Dec 19 12:59:59 GMT+05:00 2025","passed","Fri Dec 19 12:59:59 GMT+05:00 2025","","test_about_us","",""
+"
+Negative test:
+Verify that an invalid carwash_id returns 200 with empty list or proper error response
+","46","test_get_tariffs_invalid_carwash_id[params0]","tests.api.carwash","Fri Dec 19 12:59:56 GMT+05:00 2025","failed","Fri Dec 19 12:59:56 GMT+05:00 2025","","test_get_tarrif","",""
+"
+Positive test:
+Verify that the API returns the top list of districts with correct structure
+","77","test_get_top_districts_list_positive","tests.api.main","Fri Dec 19 13:00:01 GMT+05:00 2025","passed","Fri Dec 19 13:00:01 GMT+05:00 2025","","test_main_district","",""
+"
+Test Case: Verify that API returns 404 for invalid avtosalon ID
+","41","test_get_avtosalon_by_id_negative[abc]","tests.api.car","Fri Dec 19 12:59:44 GMT+05:00 2025","passed","Fri Dec 19 12:59:44 GMT+05:00 2025","","test_avtosalon_read","",""
+"","33","test_post_trade_in_app_negative","tests.api.business","Fri Dec 19 12:59:41 GMT+05:00 2025","passed","Fri Dec 19 12:59:41 GMT+05:00 2025","","test_trade_in_create","",""
+"","541","test_daily_view_stats_negative_invalid_car[999999]","tests.api.car","Fri Dec 19 12:59:42 GMT+05:00 2025","passed","Fri Dec 19 12:59:43 GMT+05:00 2025","","test_1daily_view","",""
+"
+Test Case: Verify that API returns 400 or 404 for invalid car IDs
+","22","test_get_car_details_negative[-1]","tests.api.car","Fri Dec 19 12:59:46 GMT+05:00 2025","passed","Fri Dec 19 12:59:46 GMT+05:00 2025","","test_get_id","",""
+"
+Negative test:
+Verify that an invalid endpoint returns 404
+","31","test_get_all_showroom_applications_negative","tests.api.main","Fri Dec 19 13:00:01 GMT+05:00 2025","passed","Fri Dec 19 13:00:01 GMT+05:00 2025","","test_showroom_list1","",""
+"
+Negative test:
+Verify that an invalid endpoint returns 404
+","27","test_get_all_diagnosis_forms_negative","tests.api.main","Fri Dec 19 13:00:00 GMT+05:00 2025","passed","Fri Dec 19 13:00:00 GMT+05:00 2025","","test_diagnostics_list","",""
+"","709","test_get_owen_cars_by_user_id","tests.api.business","Fri Dec 19 12:59:32 GMT+05:00 2025","passed","Fri Dec 19 12:59:33 GMT+05:00 2025","","test_get_owen_cars","",""
+"","68","Negative: Create trade-in request with invalid data","tests.api.mainfunctions","Fri Dec 19 13:00:12 GMT+05:00 2025","passed","Fri Dec 19 13:00:12 GMT+05:00 2025","","test_tradein_post","",""
+"
+Negative test:
+Verify that an invalid carwash_id returns 200 with empty list or proper error response
+","70","test_get_tariffs_invalid_carwash_id[params2]","tests.api.carwash","Fri Dec 19 12:59:56 GMT+05:00 2025","passed","Fri Dec 19 12:59:56 GMT+05:00 2025","","test_get_tarrif","",""
+"
+Test Case: Verify that API returns a paginated list of car brands for auction-avtosalon with correct fields
+","46","test_get_car_brand_list2_auction_avtosalon_positive","tests.api.car","Fri Dec 19 12:59:44 GMT+05:00 2025","passed","Fri Dec 19 12:59:44 GMT+05:00 2025","","test_auction_avtosalon","",""
+"","361","test_create_car","tests.api.business","Fri Dec 19 12:59:30 GMT+05:00 2025","passed","Fri Dec 19 12:59:30 GMT+05:00 2025","","test_car_upload","",""
+"","44","test_get_contacts_positive","tests.api.chat","Fri Dec 19 12:59:57 GMT+05:00 2025","passed","Fri Dec 19 12:59:57 GMT+05:00 2025","","test_contacts","",""
+"Check that valid request returns 200 and correct JSON structure","98","Positive: Get Atmos holds with valid token","tests.api.moderation","Fri Dec 19 13:00:12 GMT+05:00 2025","passed","Fri Dec 19 13:00:12 GMT+05:00 2025","TestModerationAtmosHolds","test_atmos_holds","",""
+"
+Negative test:
+Verify that creating a car wash order with invalid data returns an error
+","42","test_create_car_wash_order_invalid_data[payload3]","tests.api.carwash","Fri Dec 19 12:59:55 GMT+05:00 2025","passed","Fri Dec 19 12:59:55 GMT+05:00 2025","","test_create_order","",""
+"","74","test_create_car_post_v2_negative_missing_required[price]","tests.api.car","Fri Dec 19 12:59:54 GMT+05:00 2025","passed","Fri Dec 19 12:59:54 GMT+05:00 2025","TestCreateCarPostV2","test_v2_create","",""
+"","524","test_get_price_prediction_options_invalid_model_id[abc]","tests.api.car","Fri Dec 19 12:59:50 GMT+05:00 2025","passed","Fri Dec 19 12:59:50 GMT+05:00 2025","","test_price_predict_option","",""
+"
+Positive test:
+Verify that the list of tariffs is returned and has valid data structure
+","49","test_get_car_wash_tariffs","tests.api.carwash","Fri Dec 19 12:59:56 GMT+05:00 2025","passed","Fri Dec 19 12:59:56 GMT+05:00 2025","","test_get_tarrifs","",""
+"
+Test Case: Verify that API returns 400 or 404 for a non-existing business ID
+","27","test_get_business_cars_list_invalid_id","tests.api.car","Fri Dec 19 12:59:45 GMT+05:00 2025","passed","Fri Dec 19 12:59:45 GMT+05:00 2025","","test_business_read","",""
+"","314","test_patch_car_status_positive","tests.api.car","Fri Dec 19 12:59:53 GMT+05:00 2025","passed","Fri Dec 19 12:59:53 GMT+05:00 2025","","test_status_patch","",""
+"
+Positive test:
+Verify that the API returns a list of banners
+","54","test_get_banner_home_positive","tests.api.main","Fri Dec 19 12:59:59 GMT+05:00 2025","passed","Fri Dec 19 12:59:59 GMT+05:00 2025","","test_banner","",""
+"","333","test_create_car_post_v2_negative_missing_required[region]","tests.api.car","Fri Dec 19 12:59:54 GMT+05:00 2025","passed","Fri Dec 19 12:59:54 GMT+05:00 2025","TestCreateCarPostV2","test_v2_create","",""
+"","98","test_get_car_wash_center_success","tests.api.carwash","Fri Dec 19 12:59:54 GMT+05:00 2025","passed","Fri Dec 19 12:59:54 GMT+05:00 2025","","test_car_wash_centers","",""
+"Check if valid moderation action returns 200/201","492","Positive: Send valid moderation action","tests.api.moderation","Fri Dec 19 13:00:14 GMT+05:00 2025","passed","Fri Dec 19 13:00:14 GMT+05:00 2025","TestModerationAction","test_moderation_action","",""
+"","32","test_create_self_auction_invalid_token","tests.api.auctionn","Fri Dec 19 12:59:27 GMT+05:00 2025","passed","Fri Dec 19 12:59:27 GMT+05:00 2025","","test_self_auction","",""
+"","21","test_get_my_offers_invalid_query_params[?page=-1&size=20]","tests.api.auctionn","Fri Dec 19 12:59:27 GMT+05:00 2025","passed","Fri Dec 19 12:59:27 GMT+05:00 2025","","test_my_offer","",""
+"","82","test_price_prediction_for_auction_invalid_brand","tests.api.car","Fri Dec 19 12:59:49 GMT+05:00 2025","passed","Fri Dec 19 12:59:49 GMT+05:00 2025","","test_price_predict_auction","",""
+"","44","test_get_price_prediction_options_positive","tests.api.car","Fri Dec 19 12:59:50 GMT+05:00 2025","passed","Fri Dec 19 12:59:50 GMT+05:00 2025","","test_price_predict_option","",""
+"
+Negative test:
+Verify that invalid phone format returns validation error
+","43","test_post_auction_diagnostics_negative_invalid_phone","tests.api.main","Fri Dec 19 13:00:00 GMT+05:00 2025","passed","Fri Dec 19 13:00:00 GMT+05:00 2025","","test_diagnostic","",""
+"","565","test_login_negative_cases[-]","tests.api.mainfunctions","Fri Dec 19 13:00:08 GMT+05:00 2025","passed","Fri Dec 19 13:00:09 GMT+05:00 2025","","test_login_prod","",""
+"
+Negative test:
+Verify that API returns 404 or 400 for invalid endpoint
+","23","test_get_regions_list_negative_invalid_url[/main/regionss]","tests.api.main","Fri Dec 19 13:00:01 GMT+05:00 2025","passed","Fri Dec 19 13:00:01 GMT+05:00 2025","","test_region","",""
+"
+Negative test:
+Verify that API returns 404 or 400 for invalid endpoint
+","43","test_get_top_districts_list_negative_invalid_url[/main/districts/tops/]","tests.api.main","Fri Dec 19 13:00:01 GMT+05:00 2025","passed","Fri Dec 19 13:00:01 GMT+05:00 2025","","test_main_district","",""
+"Test GET /moderation API endpoint","55","test_get_moderation","tests.api.moderation","Fri Dec 19 13:00:14 GMT+05:00 2025","passed","Fri Dec 19 13:00:14 GMT+05:00 2025","","test_moderation_list","",""
 "
 Test Case:
 Verify that API returns a list of top cars by like count
 and each entry has the required fields with correct data types.
-","49","test_get_top_10_cars_positive","tests.api.car","Wed Dec 10 09:56:14 GMT+05:00 2025","passed","Wed Dec 10 09:56:14 GMT+05:00 2025","","test_top_10","",""
-"
-Test GET /specifications/options/list/ endpoint returns valid options data
-","63","test_options_list","tests.api.specifaction","Wed Dec 10 09:56:39 GMT+05:00 2025","passed","Wed Dec 10 09:56:39 GMT+05:00 2025","","test_options","",""
-"","47","test_complaint","tests.api.car","Wed Dec 10 09:56:08 GMT+05:00 2025","passed","Wed Dec 10 09:56:08 GMT+05:00 2025","","test_complaint","",""
-"","58","test_optics","tests.api.specifaction","Wed Dec 10 09:56:39 GMT+05:00 2025","passed","Wed Dec 10 09:56:39 GMT+05:00 2025","","test_optics","",""
-"
-Test Case: Verify that API returns either top_10_cars list or car_id/like_count list
-","50","test_get_car_like_count_or_top_10","tests.api.car","Wed Dec 10 09:56:14 GMT+05:00 2025","passed","Wed Dec 10 09:56:14 GMT+05:00 2025","","test_top_model","",""
-"","402","test_admin_access_token_negative[wronguser-K7N4P8R2T9]","tests.api.token","Wed Dec 10 09:56:41 GMT+05:00 2025","passed","Wed Dec 10 09:56:41 GMT+05:00 2025","","test_token_acces_admin","",""
-"
-Positive test:
-Verify that API returns 200 and valid JSON response for a valid own car ID.
-","248","test_get_own_car_positive[22720]","tests.api.car","Wed Dec 10 09:56:10 GMT+05:00 2025","passed","Wed Dec 10 09:56:10 GMT+05:00 2025","","test_owner_page","",""
-"","620","test_self_auction_with_tradein","tests.api.auctionn","Wed Dec 10 09:55:50 GMT+05:00 2025","passed","Wed Dec 10 09:55:50 GMT+05:00 2025","","test_tradein_auction","",""
-"
-Negative test:
-Posting to invalid car IDs with empty body should return 404 or 400.
-","33","test_post_photo_invalid_id_empty_body[abc]","tests.api.car","Wed Dec 10 09:56:11 GMT+05:00 2025","passed","Wed Dec 10 09:56:11 GMT+05:00 2025","","test_photo_post","",""
-"","60","Negative: Try to get trade-in app with invalid ID","tests.api.mainfunctions","Wed Dec 10 09:56:33 GMT+05:00 2025","passed","Wed Dec 10 09:56:33 GMT+05:00 2025","","test_tradein_get_id","",""
-"Negative test: Request without token should fail","23","test_get_dealer_ranking_position_unauthorized","tests.api.business","Wed Dec 10 09:55:53 GMT+05:00 2025","passed","Wed Dec 10 09:55:53 GMT+05:00 2025","","test_delaers_ranking_position","",""
-"","22","test_create_self_auction_invalid_token","tests.api.auctionn","Wed Dec 10 09:55:50 GMT+05:00 2025","passed","Wed Dec 10 09:55:50 GMT+05:00 2025","","test_self_auction","",""
-"","46","test_get_auction_deal_negative[?mark=82&model=828&generation=1651&page=1&page_size=20]","tests.api.auctionn","Wed Dec 10 09:55:48 GMT+05:00 2025","passed","Wed Dec 10 09:55:48 GMT+05:00 2025","","test_deal_auction","",""
-"
-Positive test: update business profile successfully
-","59","test_patch_profile_update_positive","tests.api.business","Wed Dec 10 09:56:02 GMT+05:00 2025","passed","Wed Dec 10 09:56:02 GMT+05:00 2025","","test_profile_update","",""
-"✅ Positive case: Successfully get dealers ranking list","83","test_get_dealers_ranking_positive","tests.api.business","Wed Dec 10 09:55:53 GMT+05:00 2025","passed","Wed Dec 10 09:55:53 GMT+05:00 2025","","test_dealers_ranking","",""
-"
-Negative test:
-Verify that an invalid endpoint returns 404
-","36","test_get_banner_home_negative","tests.api.main","Wed Dec 10 09:56:23 GMT+05:00 2025","passed","Wed Dec 10 09:56:23 GMT+05:00 2025","","test_banner","",""
-"","44","test_transmission_id","tests.api.specifaction","Wed Dec 10 09:56:39 GMT+05:00 2025","passed","Wed Dec 10 09:56:40 GMT+05:00 2025","","test_transmisson_id","",""
-"
-Negative test:
-Verify that request without token returns 401
-","34","test_get_garage_cars_unauthorized","tests.api.carwash","Wed Dec 10 09:56:17 GMT+05:00 2025","passed","Wed Dec 10 09:56:17 GMT+05:00 2025","TestGarageCars","test_garaj_car_id","",""
-"
-Test Case: Verify that the API returns the list of services successfully
-","52","test_get_services_list_positive","tests.api.services","Wed Dec 10 09:56:38 GMT+05:00 2025","passed","Wed Dec 10 09:56:38 GMT+05:00 2025","","test_service_list","",""
-"","415","test_business_login_positive","tests.api.business","Wed Dec 10 09:56:01 GMT+05:00 2025","passed","Wed Dec 10 09:56:01 GMT+05:00 2025","","test_login","",""
-"","38","test_patch_car_status_negative[6161-invalid_type-payload1-400]","tests.api.car","Wed Dec 10 09:56:14 GMT+05:00 2025","passed","Wed Dec 10 09:56:14 GMT+05:00 2025","","test_status_patch","",""
-"
-Test Case: Verify API returns 404 or 400 when an invalid configuration ID is provided
-","26","test_get_generation_configuration_by_id_negative[!@#]","tests.api.car","Wed Dec 10 09:56:08 GMT+05:00 2025","passed","Wed Dec 10 09:56:08 GMT+05:00 2025","","test_config_by_id","",""
-"Positive test: Verify posting phrases endpoint returns valid response","36","test_get_posting_phrases_positive","tests.api.car","Wed Dec 10 09:56:09 GMT+05:00 2025","passed","Wed Dec 10 09:56:09 GMT+05:00 2025","","test_get_phrases","",""
-"","44","test_media_tools","tests.api.specifaction","Wed Dec 10 09:56:39 GMT+05:00 2025","passed","Wed Dec 10 09:56:39 GMT+05:00 2025","","test_media_tools","",""
-"
-Positive test:
-Verify that endpoint returns a paginated list of user's car wash orders
-","376","test_get_my_carwash_orders_success","tests.api.carwash","Wed Dec 10 09:56:17 GMT+05:00 2025","passed","Wed Dec 10 09:56:18 GMT+05:00 2025","","test_get_order","",""
-"
-Positive test:
-Verify that payment history for carwash is returned with expected structure
-","328","test_get_carwash_payment_history","tests.api.carwash","Wed Dec 10 09:56:19 GMT+05:00 2025","failed","Wed Dec 10 09:56:19 GMT+05:00 2025","","test_payment_history","",""
-"","61","test_room_full_flow","tests.api.chat","Wed Dec 10 09:56:21 GMT+05:00 2025","failed","Wed Dec 10 09:56:21 GMT+05:00 2025","","test_create_room","",""
-"","281","test_add_car_and_create_carwash_order","tests.api.mainfunctions","Wed Dec 10 09:56:28 GMT+05:00 2025","passed","Wed Dec 10 09:56:28 GMT+05:00 2025","","test_carwash_create_order11","",""
-"","19","test_get_my_offers_invalid_query_params[?page=-1&size=20]","tests.api.auctionn","Wed Dec 10 09:55:48 GMT+05:00 2025","passed","Wed Dec 10 09:55:48 GMT+05:00 2025","","test_my_offer","",""
-"","221","test_add_edit_delete_car","tests.api.mainfunctions","Wed Dec 10 09:56:26 GMT+05:00 2025","passed","Wed Dec 10 09:56:26 GMT+05:00 2025","","test_car_add_garage","",""
-"
-Negative test:
-Verify that missing 'phone' field returns validation error
-","44","test_post_auction_diagnostics_negative_missing_phone","tests.api.main","Wed Dec 10 09:56:23 GMT+05:00 2025","passed","Wed Dec 10 09:56:23 GMT+05:00 2025","","test_diagnostic","",""
-"","71","test_get_color_list_success","tests.api.specifaction","Wed Dec 10 09:56:39 GMT+05:00 2025","passed","Wed Dec 10 09:56:39 GMT+05:00 2025","","test_color_list","",""
-"","37","test_get_auction_view_count_negative[params3]","tests.api.auctionn","Wed Dec 10 09:55:44 GMT+05:00 2025","failed","Wed Dec 10 09:55:44 GMT+05:00 2025","","test_auction_view","",""
-"","49","test_change_user_status_positive","tests.api.chat","Wed Dec 10 09:56:20 GMT+05:00 2025","passed","Wed Dec 10 09:56:20 GMT+05:00 2025","","test_change_status_user","",""
-"
-Negative test:
-Posting to invalid car IDs with empty body should return 404 or 400.
-","25","test_post_photo_invalid_id_empty_body[-1]","tests.api.car","Wed Dec 10 09:56:11 GMT+05:00 2025","passed","Wed Dec 10 09:56:11 GMT+05:00 2025","","test_photo_post","",""
-"","37","prem_header","tests.api.services","Wed Dec 10 09:56:38 GMT+05:00 2025","passed","Wed Dec 10 09:56:38 GMT+05:00 2025","","test_prem_header","",""
-"","53","test_create_option","tests.api.moderation","Wed Dec 10 09:56:36 GMT+05:00 2025","failed","Wed Dec 10 09:56:36 GMT+05:00 2025","","test_create_option","",""
-"","57","test_get_bids_price_list_positive","tests.api.business","Wed Dec 10 09:55:52 GMT+05:00 2025","passed","Wed Dec 10 09:55:52 GMT+05:00 2025","","test_bids_price_list","",""
-"
-Negative test:
-Verify that requesting last report time without authorization returns 401 or 403
-","43","test_get_last_report_time_unauthorized","tests.api.carwash","Wed Dec 10 09:56:18 GMT+05:00 2025","passed","Wed Dec 10 09:56:18 GMT+05:00 2025","","test_last_report","",""
-"❌ Negative case: Unauthorized user should not be able to create a post","35","test_create_special_car_post_without_auth","tests.api.specific_cars","Wed Dec 10 09:56:40 GMT+05:00 2025","passed","Wed Dec 10 09:56:40 GMT+05:00 2025","","test_special_post","",""
-"","44","test_similar_cars_negative[invalid_body0]","tests.api.car","Wed Dec 10 09:56:14 GMT+05:00 2025","passed","Wed Dec 10 09:56:14 GMT+05:00 2025","TestSimilarCars","test_similar","",""
-"
-Negative test:
-Verify that invalid parameters return an error message or empty promo
-","59","test_check_promo_invalid_params[params0]","tests.api.carwash","Wed Dec 10 09:56:20 GMT+05:00 2025","passed","Wed Dec 10 09:56:20 GMT+05:00 2025","","test_promo_check","",""
-"","29","test_get_marketplace_auction_additional_data_success","tests.api.auctionn","Wed Dec 10 09:55:48 GMT+05:00 2025","passed","Wed Dec 10 09:55:48 GMT+05:00 2025","","test_marketplace_auction","",""
-"
-Negative test:
-Verify that API returns 404 or 400 for invalid own car IDs.
-","26","test_get_own_car_negative[-1]","tests.api.car","Wed Dec 10 09:56:10 GMT+05:00 2025","passed","Wed Dec 10 09:56:10 GMT+05:00 2025","","test_owner_page","",""
-"
-Test Case: Verify that API returns a list of avtosalons with required fields
-","215","test_get_avtosalon_list_positive","tests.api.car","Wed Dec 10 09:56:07 GMT+05:00 2025","passed","Wed Dec 10 09:56:07 GMT+05:00 2025","","test_avtosalon","",""
-"
-Test deleting a non-existing search filter should return 404 or 400
-","22","test_delete_search_filter_negative[-1]","tests.api.filter","Wed Dec 10 09:56:22 GMT+05:00 2025","passed","Wed Dec 10 09:56:22 GMT+05:00 2025","","test_search_create","",""
-"","182","test_get_ads_list","tests.api.abozor_ads","Wed Dec 10 09:55:39 GMT+05:00 2025","passed","Wed Dec 10 09:55:39 GMT+05:00 2025","","test_abozor_ads_ads","",""
-"","501","test_create_car_post_v2_positive","tests.api.car","Wed Dec 10 09:56:14 GMT+05:00 2025","passed","Wed Dec 10 09:56:15 GMT+05:00 2025","TestCreateCarPostV2","test_v2_create","",""
-"
-Negative test:
-Verify that the endpoint returns 401 when no auth headers are provided
-","34","test_get_auction_cars_unauthorized","tests.api.users","Wed Dec 10 09:56:42 GMT+05:00 2025","passed","Wed Dec 10 09:56:42 GMT+05:00 2025","","test_auction_cars","",""
-"
-Test GET /specifications/salon/list/ endpoint returns valid salon options
-","44","test_get_salon_list","tests.api.specifaction","Wed Dec 10 09:56:39 GMT+05:00 2025","passed","Wed Dec 10 09:56:39 GMT+05:00 2025","","test_salon_list","",""
-"","28","test_get_auction_detail_success","tests.api.auctionn","Wed Dec 10 09:55:43 GMT+05:00 2025","passed","Wed Dec 10 09:55:43 GMT+05:00 2025","","test_auction_detail","",""
-"","54","Negative: Try to update trade-in app with invalid ID","tests.api.mainfunctions","Wed Dec 10 09:56:33 GMT+05:00 2025","passed","Wed Dec 10 09:56:33 GMT+05:00 2025","","test_tradein_patch","",""
-"
-Positive test:
-Verify that the API returns a list of diagnosis forms
-","51","test_get_all_diagnosis_forms_positive","tests.api.main","Wed Dec 10 09:56:23 GMT+05:00 2025","passed","Wed Dec 10 09:56:24 GMT+05:00 2025","","test_diagnostics_list","",""
-"
-Test to ensure that promotion types are returned successfully.
-","40","test_get_promotion_types_positive","tests.api.car","Wed Dec 10 09:56:12 GMT+05:00 2025","passed","Wed Dec 10 09:56:12 GMT+05:00 2025","","test_promotion_type","",""
-"","71","test_get_trade_in_center_available_slots","tests.api.business","Wed Dec 10 09:55:51 GMT+05:00 2025","passed","Wed Dec 10 09:55:51 GMT+05:00 2025","","test_avaliable_slots","",""
-"","62","Negative: Try to update with invalid status value (Backend accepts it)","tests.api.mainfunctions","Wed Dec 10 09:56:33 GMT+05:00 2025","passed","Wed Dec 10 09:56:33 GMT+05:00 2025","","test_tradein_patch","",""
-"
-Test Case: Verify that a new car configuration can be created successfully
-","53","test_create_car_configuration_positive","tests.api.car","Wed Dec 10 09:56:08 GMT+05:00 2025","passed","Wed Dec 10 09:56:08 GMT+05:00 2025","","test_conf_create","",""
-"","708","test_get_owen_cars_by_user_id","tests.api.business","Wed Dec 10 09:55:54 GMT+05:00 2025","passed","Wed Dec 10 09:55:55 GMT+05:00 2025","","test_get_owen_cars","",""
-"","44","test_get_car_promotions_negative_invalid_page[999999]","tests.api.car","Wed Dec 10 09:56:12 GMT+05:00 2025","passed","Wed Dec 10 09:56:12 GMT+05:00 2025","","test_promo_list","",""
-"","78","test_get_trade_in_center","tests.api.business","Wed Dec 10 09:56:02 GMT+05:00 2025","passed","Wed Dec 10 09:56:02 GMT+05:00 2025","","test_trade_in_center_list","",""
-"
-Test Case: Verify that API returns 400 or 404 for invalid car IDs
-","28","test_get_car_details_negative[-1]","tests.api.car","Wed Dec 10 09:56:09 GMT+05:00 2025","passed","Wed Dec 10 09:56:09 GMT+05:00 2025","","test_get_id","",""
-"
-Positive test:
-Verify that the endpoint returns last_report_time with valid ISO datetime format
-","46","test_get_last_report_time_success","tests.api.carwash","Wed Dec 10 09:56:18 GMT+05:00 2025","passed","Wed Dec 10 09:56:18 GMT+05:00 2025","","test_last_report","",""
-"
-Negative test:
-Verify that an invalid carwash_id returns 200 with empty list or proper error response
-","45","test_get_tariffs_invalid_carwash_id[params2]","tests.api.carwash","Wed Dec 10 09:56:18 GMT+05:00 2025","passed","Wed Dec 10 09:56:18 GMT+05:00 2025","","test_get_tarrif","",""
-"
-Negative test:
-Verify that missing phone returns 400 Bad Request
-","39","test_check_user_missing_phone","tests.api.users","Wed Dec 10 09:56:42 GMT+05:00 2025","failed","Wed Dec 10 09:56:42 GMT+05:00 2025","","test_check_user","",""
-"","34","test_get_price_prediction_options_invalid_model_id[abc]","tests.api.car","Wed Dec 10 09:56:12 GMT+05:00 2025","failed","Wed Dec 10 09:56:12 GMT+05:00 2025","","test_price_predict_option","",""
-"
-Test Case: Verify API returns 404 or error message when invalid ID is provided
-","33","test_get_generation_configurations_v2_by_id_negative[!@#]","tests.api.car","Wed Dec 10 09:56:08 GMT+05:00 2025","passed","Wed Dec 10 09:56:08 GMT+05:00 2025","","test_generations","",""
-"","544","test_daily_view_stats_negative_invalid_car[999999]","tests.api.car","Wed Dec 10 09:56:04 GMT+05:00 2025","passed","Wed Dec 10 09:56:04 GMT+05:00 2025","","test_1daily_view","",""
-"","61","test_post_auction_diagnostics_positive","tests.api.business","Wed Dec 10 09:55:53 GMT+05:00 2025","passed","Wed Dec 10 09:55:53 GMT+05:00 2025","","test_diagnostic_create_without_car","",""
-"
-Positive test:
-Verify that the API returns the list of regions with correct structure
-","83","test_get_regions_list_positive","tests.api.main","Wed Dec 10 09:56:24 GMT+05:00 2025","passed","Wed Dec 10 09:56:24 GMT+05:00 2025","","test_region","",""
-"
-Test Case: Verify that API returns status code 200 for premium diagnostics info list
-","45","test_get_premium_diagnostics_info_list_status_code","tests.api.services","Wed Dec 10 09:56:38 GMT+05:00 2025","passed","Wed Dec 10 09:56:38 GMT+05:00 2025","","test_specialists","",""
-"
-Test Case: Verify that API returns 404 for invalid avtosalon ID
-","58","test_get_avtosalon_by_id_negative[abc]","tests.api.car","Wed Dec 10 09:56:07 GMT+05:00 2025","passed","Wed Dec 10 09:56:07 GMT+05:00 2025","","test_avtosalon_read","",""
-"
-Negative test:
-Verify that creating a car wash order with invalid data returns an error
-","54","test_create_car_wash_order_invalid_data[payload0]","tests.api.carwash","Wed Dec 10 09:56:17 GMT+05:00 2025","passed","Wed Dec 10 09:56:17 GMT+05:00 2025","","test_create_order","",""
-"Positive test for POST /moderation/auction-diagnostics/ endpoint","685","test_post_auction_diagnostic_positive","tests.api.moderation","Wed Dec 10 09:56:34 GMT+05:00 2025","passed","Wed Dec 10 09:56:35 GMT+05:00 2025","","test_auction_diagnostic","",""
-"
-Negative test:
-Verify that creating a carwash order with invalid payload returns proper error or validation message
-","41","test_create_order_invalid_payload[payload1]","tests.api.carwash","Wed Dec 10 09:56:17 GMT+05:00 2025","passed","Wed Dec 10 09:56:17 GMT+05:00 2025","","test_cashback_order","",""
-"
-Test Case: Verify that API returns a valid diagnostics price object
-","47","test_get_diagnostics_price_positive","tests.api.services","Wed Dec 10 09:56:38 GMT+05:00 2025","passed","Wed Dec 10 09:56:38 GMT+05:00 2025","","test_my_diagnostic","",""
-"","125","test_price_prediction_for_auction_positive","tests.api.car","Wed Dec 10 09:56:11 GMT+05:00 2025","broken","Wed Dec 10 09:56:11 GMT+05:00 2025","","test_price_predict_auction","",""
-"","5487","test_list_business","tests.api.business","Wed Dec 10 09:55:55 GMT+05:00 2025","passed","Wed Dec 10 09:56:01 GMT+05:00 2025","","test_list","",""
-"","56","test_get_profile_list","tests.api.business","Wed Dec 10 09:56:01 GMT+05:00 2025","passed","Wed Dec 10 09:56:02 GMT+05:00 2025","","test_profile_list","",""
-"
-Test Case: Verify API returns 404 or 400 when an invalid configuration ID is provided
-","33","test_get_generation_configuration_by_id_negative[-9999999]","tests.api.car","Wed Dec 10 09:56:08 GMT+05:00 2025","passed","Wed Dec 10 09:56:08 GMT+05:00 2025","","test_config_by_id","",""
-"","46","test_get_main_additional_data_negative[?page=1]","tests.api.auctionn","Wed Dec 10 09:55:43 GMT+05:00 2025","passed","Wed Dec 10 09:55:43 GMT+05:00 2025","","test_api_additional","",""
-"
-Negative test:
-Verify that creating a carwash order with invalid payload returns proper error or validation message
-","42","test_create_order_invalid_payload[payload3]","tests.api.carwash","Wed Dec 10 09:56:17 GMT+05:00 2025","passed","Wed Dec 10 09:56:17 GMT+05:00 2025","","test_cashback_order","",""
-"","1499","test_daily_view_stats_negative_invalid_car[abc]","tests.api.car","Wed Dec 10 09:56:05 GMT+05:00 2025","passed","Wed Dec 10 09:56:06 GMT+05:00 2025","","test_1daily_view","",""
-"","41","test_business_login_negative[+998999999999-qwerty12345]","tests.api.business","Wed Dec 10 09:56:01 GMT+05:00 2025","passed","Wed Dec 10 09:56:01 GMT+05:00 2025","","test_login","",""
-"","1","test_patch_update_korib_berish","tests.api.business","Wed Dec 10 09:55:55 GMT+05:00 2025","passed","Wed Dec 10 09:55:55 GMT+05:00 2025","","test_korib_berish_update","",""
-"","42","test_get_offline_deals_negative[?page=1&size=20&type=]","tests.api.auctionn","Wed Dec 10 09:55:49 GMT+05:00 2025","passed","Wed Dec 10 09:55:49 GMT+05:00 2025","","test_offline_deals","",""
-"","19","test_patch_car_status_positive","tests.api.car","Wed Dec 10 09:56:14 GMT+05:00 2025","failed","Wed Dec 10 09:56:14 GMT+05:00 2025","","test_status_patch","",""
-"","24","test_get_my_offers_paginated","tests.api.auctionn","Wed Dec 10 09:55:48 GMT+05:00 2025","passed","Wed Dec 10 09:55:48 GMT+05:00 2025","","test_my_offer","",""
-"
-Negative test:
-Verify that API returns 404 or 400 for invalid own car IDs.
-","175","test_get_own_car_negative[999999999]","tests.api.car","Wed Dec 10 09:56:10 GMT+05:00 2025","passed","Wed Dec 10 09:56:10 GMT+05:00 2025","","test_owner_page","",""
-"
-Positive test:
-Verify that liking a car returns success message
-","254","test_patch_like_car_success","tests.api.users","Wed Dec 10 09:56:42 GMT+05:00 2025","passed","Wed Dec 10 09:56:42 GMT+05:00 2025","","TEST_patch_like","",""
-"","48","test_get_my_auctions_success","tests.api.auctionn","Wed Dec 10 09:55:44 GMT+05:00 2025","passed","Wed Dec 10 09:55:44 GMT+05:00 2025","","test_auction_v2","",""
-"","51","test_room_exist_check_negative","tests.api.chat","Wed Dec 10 09:56:21 GMT+05:00 2025","failed","Wed Dec 10 09:56:21 GMT+05:00 2025","","test_room_exist_check","",""
-"
-❌ Negative Test:
-GET /car/model/generations/:id?year=2020 with invalid ID
-Expected: 200 OK with empty list OR 404 (depending on API behavior)
-","45","test_get_model_generations_by_year_negative[0-2020]","tests.api.car","Wed Dec 10 09:56:10 GMT+05:00 2025","passed","Wed Dec 10 09:56:10 GMT+05:00 2025","","test_model_generation","",""
-"","292","test_c2b_auction_full_flow","tests.api.auctionn","Wed Dec 10 09:55:49 GMT+05:00 2025","passed","Wed Dec 10 09:55:50 GMT+05:00 2025","","test_self_auction","",""
-"
-Negative test:
-Verify that invalid code or phone returns 400 or 401
-","35","test_verify_code_invalid[payload0]","tests.api.users","Wed Dec 10 09:56:43 GMT+05:00 2025","passed","Wed Dec 10 09:56:43 GMT+05:00 2025","","test_verify_code","",""
-"","46","test_get_my_offers","tests.api.auctionn","Wed Dec 10 09:55:48 GMT+05:00 2025","passed","Wed Dec 10 09:55:48 GMT+05:00 2025","","test_get_auc_id","",""
-"
-Test Case: Verify that API returns 400 or 404 for a non-existing business ID
-","30","test_get_business_cars_list_invalid_id","tests.api.car","Wed Dec 10 09:56:08 GMT+05:00 2025","passed","Wed Dec 10 09:56:08 GMT+05:00 2025","","test_business_read","",""
-"✅ Positive case: valid car ID should return 200","50","test_get_specific_car_detail_positive","tests.api.specific_cars","Wed Dec 10 09:56:40 GMT+05:00 2025","passed","Wed Dec 10 09:56:40 GMT+05:00 2025","","test_detail_id","",""
-"
-Test Case: Verify that API returns ad promotions for a valid ad ID
-","46","test_get_ad_promotions_positive[22226]","tests.api.car","Wed Dec 10 09:56:06 GMT+05:00 2025","passed","Wed Dec 10 09:56:06 GMT+05:00 2025","","test_add_promotion","",""
-"✅ Positive case: Successfully create a new special car post","59","test_create_special_car_post_positive","tests.api.specific_cars","Wed Dec 10 09:56:40 GMT+05:00 2025","passed","Wed Dec 10 09:56:40 GMT+05:00 2025","","test_special_post","",""
-"","37","test_get_price_prediction_options_invalid_model_id[-1]","tests.api.car","Wed Dec 10 09:56:12 GMT+05:00 2025","passed","Wed Dec 10 09:56:12 GMT+05:00 2025","","test_price_predict_option","",""
-"","23","test_price_prediction_negative[invalid_body1]","tests.api.car","Wed Dec 10 09:56:11 GMT+05:00 2025","passed","Wed Dec 10 09:56:11 GMT+05:00 2025","TestPricePrediction","test_price_predict_limit","",""
-"","79","GET Not Seen/Sold Auctions - 200 OK Check","tests.api.business","Wed Dec 10 09:56:02 GMT+05:00 2025","passed","Wed Dec 10 09:56:02 GMT+05:00 2025","","test_sold_auction","",""
-"","72","test_get_contact_by_id","tests.api.business","Wed Dec 10 09:55:53 GMT+05:00 2025","broken","Wed Dec 10 09:55:53 GMT+05:00 2025","","test_contact_read","",""
-"","42","test_check_filter_search_positive","tests.api.filter","Wed Dec 10 09:56:22 GMT+05:00 2025","passed","Wed Dec 10 09:56:22 GMT+05:00 2025","","test_search_check","",""
-"","0","test_add_car_and_create_carwash_order","tests.api.carwash","Wed Dec 10 09:56:17 GMT+05:00 2025","broken","Wed Dec 10 09:56:17 GMT+05:00 2025","","test_create_order","",""
-"","96","Positive: Create trade-in request with valid data","tests.api.mainfunctions","Wed Dec 10 09:56:33 GMT+05:00 2025","passed","Wed Dec 10 09:56:33 GMT+05:00 2025","","test_tradein_post","",""
-"
-Test deleting a non-existing search filter should return 404 or 400
-","52","test_delete_search_filter_negative[999999]","tests.api.filter","Wed Dec 10 09:56:21 GMT+05:00 2025","passed","Wed Dec 10 09:56:21 GMT+05:00 2025","","test_delete_search","",""
-"","0","test_auction_full_flow","tests.api.mainfunctions","Wed Dec 10 09:56:30 GMT+05:00 2025","broken","Wed Dec 10 09:56:30 GMT+05:00 2025","","test_search_saved","",""
-"","85","test_price_prediction_positive","tests.api.car","Wed Dec 10 09:56:11 GMT+05:00 2025","broken","Wed Dec 10 09:56:11 GMT+05:00 2025","TestPricePrediction","test_price_predict_limit","",""
-"","25","test_post_business_lead_negative_missing_field","tests.api.business","Wed Dec 10 09:55:55 GMT+05:00 2025","passed","Wed Dec 10 09:55:55 GMT+05:00 2025","","test_leads_create","",""
-"
-Negative test:
-Verify that API returns 404 or 400 for invalid endpoint
-","43","test_get_top_districts_list_negative_invalid_url[/main/districts/top1/]","tests.api.main","Wed Dec 10 09:56:24 GMT+05:00 2025","passed","Wed Dec 10 09:56:24 GMT+05:00 2025","","test_main_district","",""
-"
-Positive test:
-Verify that API returns a list of showroom applications
-","51","test_get_all_showroom_applications_positive","tests.api.main","Wed Dec 10 09:56:24 GMT+05:00 2025","passed","Wed Dec 10 09:56:24 GMT+05:00 2025","","test_showroom_list1","",""
-"
-Positive test:
-Verify that endpoint returns valid structure for my promos list
-","52","test_get_my_promos_success","tests.api.carwash","Wed Dec 10 09:56:18 GMT+05:00 2025","passed","Wed Dec 10 09:56:18 GMT+05:00 2025","","test_get_promo","",""
-"","71","test_get_diagnostics_functional[3727]","tests.api.business","Wed Dec 10 09:55:53 GMT+05:00 2025","passed","Wed Dec 10 09:55:53 GMT+05:00 2025","","test_diagnostic_history","",""
-"Positive test for PATCH /moderation/auction-edit/{id}","180","test_patch_auction_edit_positive","tests.api.moderation","Wed Dec 10 09:56:35 GMT+05:00 2025","passed","Wed Dec 10 09:56:35 GMT+05:00 2025","","test_auction_edit","",""
-"","242","test_get_filter_home","tests.api.filter","Wed Dec 10 09:56:22 GMT+05:00 2025","passed","Wed Dec 10 09:56:22 GMT+05:00 2025","","test_home_list","",""
-"","44","test_get_trade_in_app_active","tests.api.business","Wed Dec 10 09:56:02 GMT+05:00 2025","passed","Wed Dec 10 09:56:02 GMT+05:00 2025","","test_read","",""
-"","566","test_login_negative_cases[-]","tests.api.mainfunctions","Wed Dec 10 09:56:30 GMT+05:00 2025","passed","Wed Dec 10 09:56:30 GMT+05:00 2025","","test_login_prod","",""
-"","33","test_get_auction_view_count_negative[params1]","tests.api.auctionn","Wed Dec 10 09:55:44 GMT+05:00 2025","passed","Wed Dec 10 09:55:44 GMT+05:00 2025","","test_auction_view","",""
-"
-Test Case: Verify that API returns an error for invalid endpoint
-","26","test_get_car_brand_list_db_post_invalid_url","tests.api.car","Wed Dec 10 09:56:09 GMT+05:00 2025","passed","Wed Dec 10 09:56:10 GMT+05:00 2025","","test_list_post","",""
-"","240","test_add_edit_delete_car","tests.api.business","Wed Dec 10 09:55:50 GMT+05:00 2025","passed","Wed Dec 10 09:55:51 GMT+05:00 2025","","test_add_car_to_garage","",""
-"
-Negative test:
-Verify that liking a non-existing car returns 404 Not Found
-","60","test_patch_like_non_existing_car","tests.api.users","Wed Dec 10 09:56:42 GMT+05:00 2025","failed","Wed Dec 10 09:56:42 GMT+05:00 2025","","TEST_patch_like","",""
-"
-Negative test:
-Verify that API returns 404 or 400 for invalid endpoint
-","25","test_get_top_districts_list_negative_invalid_url[/main/districts/top/invalid]","tests.api.main","Wed Dec 10 09:56:24 GMT+05:00 2025","passed","Wed Dec 10 09:56:24 GMT+05:00 2025","","test_main_district","",""
-"","54","test_get_generation_list_success","tests.api.filter","Wed Dec 10 09:56:21 GMT+05:00 2025","passed","Wed Dec 10 09:56:22 GMT+05:00 2025","","test_generation","",""
-"","21","test_get_my_auctions_success","tests.api.auctionn","Wed Dec 10 09:55:48 GMT+05:00 2025","passed","Wed Dec 10 09:55:48 GMT+05:00 2025","","test_my_auction","",""
-"","44","test_get_drive_unit_list_success","tests.api.specifaction","Wed Dec 10 09:56:39 GMT+05:00 2025","passed","Wed Dec 10 09:56:39 GMT+05:00 2025","","test_drive_unit","",""
-"","40","test_get_changed_parts_quality_list_negative","tests.api.specifaction","Wed Dec 10 09:56:39 GMT+05:00 2025","passed","Wed Dec 10 09:56:39 GMT+05:00 2025","","test_chevrolet","",""
-"","82","test_price_prediction_for_auction_invalid_brand","tests.api.car","Wed Dec 10 09:56:11 GMT+05:00 2025","passed","Wed Dec 10 09:56:11 GMT+05:00 2025","","test_price_predict_auction","",""
-"","49","test_check_is_online_positive","tests.api.chat","Wed Dec 10 09:56:20 GMT+05:00 2025","passed","Wed Dec 10 09:56:20 GMT+05:00 2025","","test_check_is_online","",""
+","69","test_get_top_10_cars_positive","tests.api.car","Fri Dec 19 12:59:53 GMT+05:00 2025","passed","Fri Dec 19 12:59:53 GMT+05:00 2025","","test_top_10","",""
+"","32","test_admin_access_token_negative[-]","tests.api.token","Fri Dec 19 13:00:22 GMT+05:00 2025","passed","Fri Dec 19 13:00:22 GMT+05:00 2025","","test_token_acces_admin","",""
+"","42","test_get_car_promotions_negative_invalid_page[0]","tests.api.car","Fri Dec 19 12:59:50 GMT+05:00 2025","passed","Fri Dec 19 12:59:51 GMT+05:00 2025","","test_promo_list","",""
+"","44","test_get_insurance_list","tests.api.business","Fri Dec 19 12:59:33 GMT+05:00 2025","passed","Fri Dec 19 12:59:33 GMT+05:00 2025","","test_insurances","",""
+"","63","✅ Verify user can get their active posts (currency=USD)","tests.api.specific_cars","Fri Dec 19 13:00:20 GMT+05:00 2025","passed","Fri Dec 19 13:00:20 GMT+05:00 2025","","test_my_posts","",""
 "
 Test case to verify that the GET request for paint condition list
 returns a status code 200.
-","49","test_get_paint_condition_list_success","tests.api.specifaction","Wed Dec 10 09:56:39 GMT+05:00 2025","passed","Wed Dec 10 09:56:39 GMT+05:00 2025","","test_paint_cond","",""
-"","17","test_get_auction_deal_negative[?is_sold=true&mark=82&model=invalid&generation=1651&page=1&page_size=20]","tests.api.auctionn","Wed Dec 10 09:55:48 GMT+05:00 2025","passed","Wed Dec 10 09:55:48 GMT+05:00 2025","","test_deal_auction","",""
-"
-Negative test:
-Verify that API returns 404 or appropriate error for invalid URL
-","24","test_get_about_us_blog_list_negative_invalid_url[/main/about-us/blog/list123]","tests.api.main","Wed Dec 10 09:56:23 GMT+05:00 2025","passed","Wed Dec 10 09:56:23 GMT+05:00 2025","","test_about_us","",""
-"","25","test_get_drive_unit_by_id_negative","tests.api.specifaction","Wed Dec 10 09:56:39 GMT+05:00 2025","passed","Wed Dec 10 09:56:39 GMT+05:00 2025","","test_drive_unit_id","",""
-"
-Test deleting a non-existing search filter should return 404 or 400
-","47","test_delete_search_filter_negative[999999]","tests.api.filter","Wed Dec 10 09:56:22 GMT+05:00 2025","passed","Wed Dec 10 09:56:22 GMT+05:00 2025","","test_search_create","",""
-"","22","test_get_contacts_negative","tests.api.chat","Wed Dec 10 09:56:21 GMT+05:00 2025","passed","Wed Dec 10 09:56:21 GMT+05:00 2025","","test_contacts","",""
-"","536","test_login_negative_cases[+998888672000-123456]","tests.api.mainfunctions","Wed Dec 10 09:56:28 GMT+05:00 2025","passed","Wed Dec 10 09:56:29 GMT+05:00 2025","","test_login_prod","",""
+","71","test_get_paint_condition_list_success","tests.api.specifaction","Fri Dec 19 13:00:19 GMT+05:00 2025","passed","Fri Dec 19 13:00:19 GMT+05:00 2025","","test_paint_cond","",""
 "
 Positive test:
-Verify that the API returns a list of banners
-","50","test_get_banner_home_positive","tests.api.main","Wed Dec 10 09:56:23 GMT+05:00 2025","passed","Wed Dec 10 09:56:23 GMT+05:00 2025","","test_banner","",""
-"❌ Negative case: invalid endpoint should return 404","28","test_get_special_cars_list_invalid_url","tests.api.specific_cars","Wed Dec 10 09:56:40 GMT+05:00 2025","passed","Wed Dec 10 09:56:40 GMT+05:00 2025","","test_special_car_list","",""
+Verify that the API returns a valid list of car body types
+","69","test_get_body_type_list_positive","tests.api.specifaction","Fri Dec 19 13:00:16 GMT+05:00 2025","passed","Fri Dec 19 13:00:16 GMT+05:00 2025","","test_body_type","",""
+"","42","test_get_offer_status_success","tests.api.auctionn","Fri Dec 19 12:59:22 GMT+05:00 2025","passed","Fri Dec 19 12:59:22 GMT+05:00 2025","","test_bids_price","",""
+"","62","test_post_business_lead_positive","tests.api.business","Fri Dec 19 12:59:33 GMT+05:00 2025","passed","Fri Dec 19 12:59:33 GMT+05:00 2025","","test_leads_create","",""
+"
+Full happy-path flow based strictly on user's provided endpoints & payloads:
+  1) User1 creates auction                POST  /auction/self-auction
+  2) Admin activates auction              PATCH /moderation/auction-edit/{auction_id}   (status=offer_sending)
+  3) User2 creates offer                  POST  /business/offer/create/for/user
+  4) User1 marks auction as sold          POST  /auction/auction/sold
+  5) Admin confirms offer                 PATCH /moderation/offer-update/{offer_id}
+","1051","test_c2b_auction_full_flow","tests.api.mainfunctions","Fri Dec 19 13:00:01 GMT+05:00 2025","passed","Fri Dec 19 13:00:02 GMT+05:00 2025","","test_auction_active","",""
 "
 Negative test:
-Verify that requesting carwash payment history without authorization returns 401
-","291","test_get_carwash_payment_history_unauthorized","tests.api.carwash","Wed Dec 10 09:56:19 GMT+05:00 2025","passed","Wed Dec 10 09:56:19 GMT+05:00 2025","","test_payment_history","",""
-"✅ Positive case: should return 200 and list of cars","66","test_get_special_cars_list_positive","tests.api.specific_cars","Wed Dec 10 09:56:40 GMT+05:00 2025","passed","Wed Dec 10 09:56:40 GMT+05:00 2025","","test_special_car_list","",""
-"
-Negative test:
-Attempt to fetch user profile without providing authentication headers
-","23","test_get_user_profile_negative_unauthorized","tests.api.users","Wed Dec 10 09:56:43 GMT+05:00 2025","passed","Wed Dec 10 09:56:43 GMT+05:00 2025","","test_user_profile","",""
-"","38","test_self_auction_missing_required_field","tests.api.auctionn","Wed Dec 10 09:55:50 GMT+05:00 2025","passed","Wed Dec 10 09:55:50 GMT+05:00 2025","","test_tradein_auction","",""
-"","69","test_create_car_post_v2_negative_missing_required[price]","tests.api.car","Wed Dec 10 09:56:15 GMT+05:00 2025","passed","Wed Dec 10 09:56:15 GMT+05:00 2025","TestCreateCarPostV2","test_v2_create","",""
-"","67","test_post_business_lead_positive","tests.api.business","Wed Dec 10 09:55:55 GMT+05:00 2025","passed","Wed Dec 10 09:55:55 GMT+05:00 2025","","test_leads_create","",""
-"
-Test Case: Verify that API returns 400 or 404 for invalid car IDs
-","21","test_get_car_details_negative[invalid]","tests.api.car","Wed Dec 10 09:56:09 GMT+05:00 2025","passed","Wed Dec 10 09:56:09 GMT+05:00 2025","","test_get_id","",""
+Verify that request without token returns 401
+","25","test_get_garage_cars_unauthorized","tests.api.carwash","Fri Dec 19 12:59:55 GMT+05:00 2025","passed","Fri Dec 19 12:59:55 GMT+05:00 2025","TestGarageCars","test_garaj_car_id","",""
 "
 Positive test:
-Verify that garage cars list is returned with expected structure
-","91","test_get_garage_cars_success","tests.api.carwash","Wed Dec 10 09:56:17 GMT+05:00 2025","passed","Wed Dec 10 09:56:17 GMT+05:00 2025","TestGarageCars","test_garaj_car_id","",""
-"","530","test_get_additional_deal_data_negative[?is_sold=true&mark=82&model=828&year=]","tests.api.auctionn","Wed Dec 10 09:55:42 GMT+05:00 2025","passed","Wed Dec 10 09:55:43 GMT+05:00 2025","","test_additional_data","",""
-"","542","test_car_upload_and_activate","tests.api.mainfunctions","Wed Dec 10 09:56:26 GMT+05:00 2025","passed","Wed Dec 10 09:56:27 GMT+05:00 2025","","test_car_uploaddd","",""
-"","648","test_get_similar_cars_positive","tests.api.car","Wed Dec 10 09:56:12 GMT+05:00 2025","passed","Wed Dec 10 09:56:13 GMT+05:00 2025","","test_search_cars","",""
-"
-Test deleting a non-existing search filter should return 404 or 400
-","43","test_delete_search_filter_negative[0]","tests.api.filter","Wed Dec 10 09:56:22 GMT+05:00 2025","passed","Wed Dec 10 09:56:22 GMT+05:00 2025","","test_search_create","",""
-"
-Test Case: Verify that car modifications are returned for given configuration ID, transmission, and drive unit
-","54","test_get_car_modifications_positive","tests.api.car","Wed Dec 10 09:56:08 GMT+05:00 2025","passed","Wed Dec 10 09:56:08 GMT+05:00 2025","","test_conf_modification","",""
-"Check that valid request returns 200 and correct JSON structure","619","Positive: Get Atmos holds with valid token","tests.api.moderation","Wed Dec 10 09:56:34 GMT+05:00 2025","passed","Wed Dec 10 09:56:34 GMT+05:00 2025","TestModerationAtmosHolds","test_atmos_holds","",""
-"
-Test Case: Verify that API returns 404 for an invalid endpoint
-","30","test_get_top_car_brands_invalid_endpoint","tests.api.car","Wed Dec 10 09:56:07 GMT+05:00 2025","passed","Wed Dec 10 09:56:08 GMT+05:00 2025","","test_brand_top","",""
-"
-Test Case: Verify that API returns car list data with correct structure and pagination
-","137","test_get_car_list_with_pagination_positive[1]","tests.api.car","Wed Dec 10 09:56:09 GMT+05:00 2025","passed","Wed Dec 10 09:56:09 GMT+05:00 2025","","test_list1","",""
-"","562","test_login_success","tests.api.mainfunctions","Wed Dec 10 09:56:28 GMT+05:00 2025","passed","Wed Dec 10 09:56:28 GMT+05:00 2025","","test_login_prod","",""
-"","32","❌ Verify API returns 401 when token is invalid or missing","tests.api.specific_cars","Wed Dec 10 09:56:40 GMT+05:00 2025","passed","Wed Dec 10 09:56:40 GMT+05:00 2025","","test_my_posts","",""
-"","35","test_get_fuel_type_by_invalid_id","tests.api.specifaction","Wed Dec 10 09:56:39 GMT+05:00 2025","passed","Wed Dec 10 09:56:39 GMT+05:00 2025","","test_fuel_type_id","",""
+Verify that a valid code and phone number return access and refresh tokens
+","75","test_verify_code_success","tests.api.users","Fri Dec 19 13:00:23 GMT+05:00 2025","passed","Fri Dec 19 13:00:23 GMT+05:00 2025","","test_verify_code","",""
+"","29","test_get_fuel_type_by_invalid_id","tests.api.specifaction","Fri Dec 19 13:00:17 GMT+05:00 2025","passed","Fri Dec 19 13:00:17 GMT+05:00 2025","","test_fuel_type_id","",""
+"","103","Positive: Create trade-in request with valid data","tests.api.mainfunctions","Fri Dec 19 13:00:12 GMT+05:00 2025","passed","Fri Dec 19 13:00:12 GMT+05:00 2025","","test_tradein_post","",""
+"","29","test_create_diagnostics_request_functional","tests.api.business","Fri Dec 19 12:59:31 GMT+05:00 2025","failed","Fri Dec 19 12:59:31 GMT+05:00 2025","","test_diagnostic_create","",""
+"","111","test_price_prediction_positive","tests.api.car","Fri Dec 19 12:59:49 GMT+05:00 2025","broken","Fri Dec 19 12:59:49 GMT+05:00 2025","","test_price_predict1","",""
+"","658","test_get_additional_deal_data_success","tests.api.auctionn","Fri Dec 19 12:59:17 GMT+05:00 2025","passed","Fri Dec 19 12:59:18 GMT+05:00 2025","","test_additional_data","",""
 "
 Positive test:
-Verify that the liked cars list is returned with the correct structure
-","128","test_get_liked_cars_list","tests.api.users","Wed Dec 10 09:56:42 GMT+05:00 2025","passed","Wed Dec 10 09:56:43 GMT+05:00 2025","","test_liked_cars","",""
-"","55","✅ Verify user can get their active posts (currency=USD)","tests.api.specific_cars","Wed Dec 10 09:56:40 GMT+05:00 2025","passed","Wed Dec 10 09:56:40 GMT+05:00 2025","","test_my_posts","",""
-"","51","test_get_trade_in_center_available_slots_without_date","tests.api.business","Wed Dec 10 09:55:51 GMT+05:00 2025","passed","Wed Dec 10 09:55:51 GMT+05:00 2025","","test_avaliable_slots","",""
-"","41","test_get_offer_list_success","tests.api.auctionn","Wed Dec 10 09:55:50 GMT+05:00 2025","passed","Wed Dec 10 09:55:50 GMT+05:00 2025","","test_unseen_offer","",""
-"
-Test Case: Verify that API returns configuration details for a valid configuration ID (v2 endpoint)
-","44","test_get_generation_configuration_v2_by_id_positive[2483]","tests.api.car","Wed Dec 10 09:56:08 GMT+05:00 2025","passed","Wed Dec 10 09:56:08 GMT+05:00 2025","","test_config_by_id","",""
-"
-Negative test:
-Verify that an invalid endpoint returns 404
-","30","test_get_all_showroom_applications_negative","tests.api.main","Wed Dec 10 09:56:24 GMT+05:00 2025","passed","Wed Dec 10 09:56:24 GMT+05:00 2025","","test_showroom_list1","",""
-"","42","test_get_bids_price_list_functional","tests.api.business","Wed Dec 10 09:55:52 GMT+05:00 2025","passed","Wed Dec 10 09:55:52 GMT+05:00 2025","","test_bids_1price","",""
-"","39","test_complaints_positive","tests.api.chat","Wed Dec 10 09:56:21 GMT+05:00 2025","passed","Wed Dec 10 09:56:21 GMT+05:00 2025","","test_complaints","",""
-"
-Test Case: Verify API returns 404 or 400 when an invalid configuration ID is provided
-","25","test_get_generation_configuration_by_id_negative[abc]","tests.api.car","Wed Dec 10 09:56:08 GMT+05:00 2025","passed","Wed Dec 10 09:56:08 GMT+05:00 2025","","test_config_by_id","",""
-"
-Negative test:
-Verify that an invalid endpoint returns 404
-","23","test_get_all_diagnosis_forms_negative","tests.api.main","Wed Dec 10 09:56:24 GMT+05:00 2025","passed","Wed Dec 10 09:56:24 GMT+05:00 2025","","test_diagnostics_list","",""
-"","64","test_get_trade_in_app_active","tests.api.business","Wed Dec 10 09:56:02 GMT+05:00 2025","passed","Wed Dec 10 09:56:02 GMT+05:00 2025","","test_trade_in_app","",""
-"","148","test_data_collection","tests.api.car","Wed Dec 10 09:56:08 GMT+05:00 2025","passed","Wed Dec 10 09:56:08 GMT+05:00 2025","","test_data_collection","",""
-"
-Negative test:
-Verify that invalid code or phone returns 400 or 401
-","35","test_verify_code_invalid[payload1]","tests.api.users","Wed Dec 10 09:56:43 GMT+05:00 2025","passed","Wed Dec 10 09:56:43 GMT+05:00 2025","","test_verify_code","",""
-"","46","test_create_car_post_v2_negative_missing_required[core_car]","tests.api.car","Wed Dec 10 09:56:15 GMT+05:00 2025","passed","Wed Dec 10 09:56:15 GMT+05:00 2025","TestCreateCarPostV2","test_v2_create","",""
-"","39","test_get_car_model_list_200[22228]","tests.api.car","Wed Dec 10 09:56:10 GMT+05:00 2025","passed","Wed Dec 10 09:56:10 GMT+05:00 2025","","test_model_list","",""
-"
-Negative test:
-Verify that API returns 404 or 400 for invalid endpoint
-","40","test_get_top_districts_list_negative_invalid_url[/main/districts/tops/]","tests.api.main","Wed Dec 10 09:56:24 GMT+05:00 2025","passed","Wed Dec 10 09:56:24 GMT+05:00 2025","","test_main_district","",""
-"","38","test_get_main_additional_data_negative[?unknown=123]","tests.api.auctionn","Wed Dec 10 09:55:43 GMT+05:00 2025","passed","Wed Dec 10 09:55:43 GMT+05:00 2025","","test_api_additional","",""
-"","535","test_get_additional_deal_data_negative[?is_sold=true&mark=82&model=&year=2020]","tests.api.auctionn","Wed Dec 10 09:55:42 GMT+05:00 2025","passed","Wed Dec 10 09:55:42 GMT+05:00 2025","","test_additional_data","",""
-"","92","test_get_topsearch_list_success","tests.api.filter","Wed Dec 10 09:56:22 GMT+05:00 2025","passed","Wed Dec 10 09:56:22 GMT+05:00 2025","","test_top_search","",""
-"","40","test_get_generation_positions_by_id_positive[1651]","tests.api.car","Wed Dec 10 09:56:08 GMT+05:00 2025","passed","Wed Dec 10 09:56:08 GMT+05:00 2025","","test_get_generation","",""
-"
-Test Case: Verify that API returns 401 or valid response when no auth headers are provided
-","37","test_get_all_ad_promotions_unauthorized","tests.api.car","Wed Dec 10 09:56:12 GMT+05:00 2025","passed","Wed Dec 10 09:56:12 GMT+05:00 2025","","test_promotion_list","",""
-"
-Negative test:
-Verify that API returns 404 or 400 for invalid own car IDs.
-","27","test_get_own_car_negative[invalid]","tests.api.car","Wed Dec 10 09:56:10 GMT+05:00 2025","passed","Wed Dec 10 09:56:11 GMT+05:00 2025","","test_owner_page","",""
-"
-Test Case: Verify that API returns 400 or 422 when sending invalid data
-","45","test_post_auction_diagnostics_invalid_data","tests.api.services","Wed Dec 10 09:56:38 GMT+05:00 2025","passed","Wed Dec 10 09:56:38 GMT+05:00 2025","","test_moderation_auction","",""
-"","46","test_click_ad","tests.api.abozor_ads","Wed Dec 10 09:55:39 GMT+05:00 2025","passed","Wed Dec 10 09:55:39 GMT+05:00 2025","","test_ads_click","",""
-"","53","test_get_my_offers_invalid_query_params[?page=1&size=0]","tests.api.auctionn","Wed Dec 10 09:55:48 GMT+05:00 2025","passed","Wed Dec 10 09:55:48 GMT+05:00 2025","","test_my_offer","",""
+Verify that API returns price_from and price_to for valid car data
+","71","test_price_prediction_success","tests.api.auctionn","Fri Dec 19 12:59:27 GMT+05:00 2025","failed","Fri Dec 19 12:59:27 GMT+05:00 2025","","test_price_predict","",""
 "
 Test Case: Verify that API returns a valid diagnostics price object
-","48","test_get_diagnostics_price_positive","tests.api.services","Wed Dec 10 09:56:37 GMT+05:00 2025","passed","Wed Dec 10 09:56:37 GMT+05:00 2025","","test_diagnostic_price1","",""
+","55","test_get_diagnostics_price_positive","tests.api.services","Fri Dec 19 13:00:16 GMT+05:00 2025","passed","Fri Dec 19 13:00:16 GMT+05:00 2025","","test_my_diagnostic","",""
+"","36","test_complaint","tests.api.car","Fri Dec 19 12:59:45 GMT+05:00 2025","passed","Fri Dec 19 12:59:45 GMT+05:00 2025","","test_complaint","",""
+"","77","test_get_color_list_success","tests.api.specifaction","Fri Dec 19 13:00:17 GMT+05:00 2025","passed","Fri Dec 19 13:00:17 GMT+05:00 2025","","test_color_list","",""
 "
-Test Case: Verify that API returns 404 for an invalid page number
-","40","test_get_car_brand_list_invalid_page","tests.api.car","Wed Dec 10 09:56:07 GMT+05:00 2025","passed","Wed Dec 10 09:56:07 GMT+05:00 2025","","test_brand_list","",""
-"","46","test_post_car_photo[22228]","tests.api.car","Wed Dec 10 09:56:11 GMT+05:00 2025","passed","Wed Dec 10 09:56:11 GMT+05:00 2025","","test_photo_post","",""
-"","94","test_price_prediction_positive","tests.api.car","Wed Dec 10 09:56:11 GMT+05:00 2025","failed","Wed Dec 10 09:56:11 GMT+05:00 2025","","test_price_predict2","",""
-"","53","test_room_exist_check_positive","tests.api.chat","Wed Dec 10 09:56:21 GMT+05:00 2025","failed","Wed Dec 10 09:56:21 GMT+05:00 2025","","test_room_exist_check","",""
+Negative test:
+Verify that creating a carwash order with invalid payload returns proper error or validation message
+","50","test_create_order_invalid_payload[payload1]","tests.api.carwash","Fri Dec 19 12:59:54 GMT+05:00 2025","passed","Fri Dec 19 12:59:54 GMT+05:00 2025","","test_cashback_order","",""
+"","36","test_get_auction_view_count_negative[params3]","tests.api.auctionn","Fri Dec 19 12:59:22 GMT+05:00 2025","passed","Fri Dec 19 12:59:22 GMT+05:00 2025","","test_auction_view","",""
+"Check unauthorized access returns 401","46","Negative: Send request with invalid token","tests.api.moderation","Fri Dec 19 13:00:14 GMT+05:00 2025","passed","Fri Dec 19 13:00:14 GMT+05:00 2025","TestModerationAction","test_moderation_action","",""
+"Negative test for GET /moderation/auction-offers (missing or invalid token)","36","test_get_auction_offers_negative","tests.api.moderation","Fri Dec 19 13:00:13 GMT+05:00 2025","passed","Fri Dec 19 13:00:13 GMT+05:00 2025","","test_auction_offers","",""
 "
-Test Case: Verify that API returns correct avtosalon details by ID
-","74","test_get_avtosalon_by_id_positive[42]","tests.api.car","Wed Dec 10 09:56:07 GMT+05:00 2025","passed","Wed Dec 10 09:56:07 GMT+05:00 2025","","test_avtosalon_read","",""
+Test Case: Verify API returns 404 or error message when invalid ID is provided
+","19","test_get_generation_configurations_v2_by_id_negative[-999999]","tests.api.car","Fri Dec 19 12:59:45 GMT+05:00 2025","passed","Fri Dec 19 12:59:45 GMT+05:00 2025","","test_generations","",""
+"
+Negative test:
+Verify that invalid parameters return an error message or empty promo
+","65","test_check_promo_invalid_params[params1]","tests.api.carwash","Fri Dec 19 12:59:56 GMT+05:00 2025","passed","Fri Dec 19 12:59:57 GMT+05:00 2025","","test_promo_check","",""
+"","104","test_price_prediction_positive","tests.api.car","Fri Dec 19 12:59:49 GMT+05:00 2025","broken","Fri Dec 19 12:59:49 GMT+05:00 2025","TestPricePrediction","test_price_predict_limit","",""
+"
+Test Case: Verify that API returns brand details for a valid brand name (BYD)
+","46","test_get_car_brand_by_name_positive","tests.api.car","Fri Dec 19 12:59:45 GMT+05:00 2025","passed","Fri Dec 19 12:59:45 GMT+05:00 2025","","test_brands_read","",""
+"","70","test_post_car_photo[22228]","tests.api.car","Fri Dec 19 12:59:48 GMT+05:00 2025","passed","Fri Dec 19 12:59:48 GMT+05:00 2025","","test_photo_post","",""
+"
+Negative test:
+Verify that request with invalid token returns 401
+","24","test_get_garage_cars_invalid_token[Token abcdefg]","tests.api.carwash","Fri Dec 19 12:59:55 GMT+05:00 2025","passed","Fri Dec 19 12:59:55 GMT+05:00 2025","TestGarageCars","test_garaj_car_id","",""
+"
+Test Case: Verify that API returns available time slots for the given date
+","53","test_get_available_slots_positive","tests.api.services","Fri Dec 19 13:00:14 GMT+05:00 2025","passed","Fri Dec 19 13:00:14 GMT+05:00 2025","","test_date","",""
+"","95","test_price_prediction_positive","tests.api.car","Fri Dec 19 12:59:49 GMT+05:00 2025","failed","Fri Dec 19 12:59:49 GMT+05:00 2025","","test_price_predict2","",""
+"","43","test_cashelok_amount","tests.api.business","Fri Dec 19 12:59:30 GMT+05:00 2025","passed","Fri Dec 19 12:59:30 GMT+05:00 2025","","test_cashelok_amount","",""
+"","548","test_daily_view_stats_positive","tests.api.car","Fri Dec 19 12:59:42 GMT+05:00 2025","passed","Fri Dec 19 12:59:42 GMT+05:00 2025","","test_1daily_view","",""
+"Negative test for PATCH /moderation/auction-edit/{id} with invalid data","53","test_patch_auction_edit_negative","tests.api.moderation","Fri Dec 19 13:00:13 GMT+05:00 2025","broken","Fri Dec 19 13:00:13 GMT+05:00 2025","","test_auction_edit","",""
+"Positive test for POST /moderation/auction-diagnostics/ endpoint","726","test_post_auction_diagnostic_positive","tests.api.moderation","Fri Dec 19 13:00:12 GMT+05:00 2025","passed","Fri Dec 19 13:00:13 GMT+05:00 2025","","test_auction_diagnostic","",""
+"
+Test Case: Verify that API returns a paginated list of car brands with correct fields
+","57","test_get_car_brand_list_positive","tests.api.car","Fri Dec 19 12:59:44 GMT+05:00 2025","passed","Fri Dec 19 12:59:45 GMT+05:00 2025","","test_brand_list","",""
+"","80","test_get_diagnostics_by_id[3727]","tests.api.business","Fri Dec 19 12:59:31 GMT+05:00 2025","passed","Fri Dec 19 12:59:31 GMT+05:00 2025","","test_diagnostic_read","",""
 "
 Positive test:
-Verify that making a call to a user returns 'success'
-","52","test_user_call_success","tests.api.users","Wed Dec 10 09:56:42 GMT+05:00 2025","passed","Wed Dec 10 09:56:42 GMT+05:00 2025","","test_call","",""
-"","21","test_get_auction_view_count_success","tests.api.auctionn","Wed Dec 10 09:55:44 GMT+05:00 2025","passed","Wed Dec 10 09:55:44 GMT+05:00 2025","","test_auction_view","",""
-"","32","test_price_prediction_negative[invalid_body2]","tests.api.car","Wed Dec 10 09:56:11 GMT+05:00 2025","passed","Wed Dec 10 09:56:11 GMT+05:00 2025","TestPricePrediction","test_price_predict_limit","",""
-"","54","test_get_garage_cars_list","tests.api.business","Wed Dec 10 09:55:54 GMT+05:00 2025","failed","Wed Dec 10 09:55:54 GMT+05:00 2025","","test_garage_cars_list","",""
-"","1996","Check GET /business/trade-in-app returns 200 OK and valid JSON response","tests.api.mainfunctions","Wed Dec 10 09:56:30 GMT+05:00 2025","passed","Wed Dec 10 09:56:32 GMT+05:00 2025","","test_tradein_get","",""
+Verify that the API returns the list of regions with correct structure
+","74","test_get_regions_list_positive","tests.api.main","Fri Dec 19 13:00:01 GMT+05:00 2025","passed","Fri Dec 19 13:00:01 GMT+05:00 2025","","test_region","",""
 "
-Test Case: Verify that API returns 400 or 404 for invalid car IDs
-","188","test_get_car_details_negative[999999]","tests.api.car","Wed Dec 10 09:56:09 GMT+05:00 2025","passed","Wed Dec 10 09:56:09 GMT+05:00 2025","","test_get_id","",""
-"","52","test_get_contacts_positive","tests.api.chat","Wed Dec 10 09:56:21 GMT+05:00 2025","passed","Wed Dec 10 09:56:21 GMT+05:00 2025","","test_contacts","",""
+Test Case: Verify that a new auction diagnostic can be created successfully
+","915","test_post_auction_diagnostics_positive","tests.api.services","Fri Dec 19 13:00:15 GMT+05:00 2025","passed","Fri Dec 19 13:00:16 GMT+05:00 2025","","test_moderation_auction","",""
 "
-Negative test:
-Attempt to update profile with invalid region value
-","47","test_patch_user_profile_negative_invalid_region","tests.api.users","Wed Dec 10 09:56:43 GMT+05:00 2025","passed","Wed Dec 10 09:56:43 GMT+05:00 2025","","test_patch_profile","",""
-"","26","test_login_negative_cases[-]","tests.api.token","Wed Dec 10 09:56:40 GMT+05:00 2025","passed","Wed Dec 10 09:56:40 GMT+05:00 2025","","test_loginapi","",""
-"","55","test_get_car_promotions_negative_invalid_page[-1]","tests.api.car","Wed Dec 10 09:56:12 GMT+05:00 2025","passed","Wed Dec 10 09:56:12 GMT+05:00 2025","","test_promo_list","",""
+Test case: Create a car object without uploading any photos
+Expected: Car should be created successfully, then activated by moderator
+","478","test_car_without_photo","tests.api.mainfunctions","Fri Dec 19 13:00:05 GMT+05:00 2025","passed","Fri Dec 19 13:00:05 GMT+05:00 2025","","test_car_without_photo","",""
+"","58","test_get_bids_price_list_functional","tests.api.business","Fri Dec 19 12:59:30 GMT+05:00 2025","passed","Fri Dec 19 12:59:30 GMT+05:00 2025","","test_bids_1price","",""
+"","44","test_get_auction_deal_negative[?mark=82&model=828&generation=1651&page=1&page_size=20]","tests.api.auctionn","Fri Dec 19 12:59:26 GMT+05:00 2025","failed","Fri Dec 19 12:59:27 GMT+05:00 2025","","test_deal_auction","",""
+"","52","test_get_my_auctions_success","tests.api.auctionn","Fri Dec 19 12:59:22 GMT+05:00 2025","passed","Fri Dec 19 12:59:22 GMT+05:00 2025","","test_auction_v2","",""
 "
-Test Case: Verify that API returns 404 for invalid avtosalon ID
-","46","test_get_avtosalon_by_id_negative[-1]","tests.api.car","Wed Dec 10 09:56:07 GMT+05:00 2025","passed","Wed Dec 10 09:56:07 GMT+05:00 2025","","test_avtosalon_read","",""
-"","92","test_get_car_wash_center_success","tests.api.carwash","Wed Dec 10 09:56:15 GMT+05:00 2025","passed","Wed Dec 10 09:56:15 GMT+05:00 2025","","test_car_wash_centers","",""
-"","50","test_get_offline_deals_active","tests.api.auctionn","Wed Dec 10 09:55:49 GMT+05:00 2025","passed","Wed Dec 10 09:55:49 GMT+05:00 2025","","test_offline_deals","",""
-"","28","test_get_leads_stats_negative_unauthorized","tests.api.car","Wed Dec 10 09:56:09 GMT+05:00 2025","passed","Wed Dec 10 09:56:09 GMT+05:00 2025","","test_leads_stats","",""
-"","90","test_get_business_showrooms","tests.api.business","Wed Dec 10 09:56:02 GMT+05:00 2025","passed","Wed Dec 10 09:56:02 GMT+05:00 2025","","test_showroom_list","",""
+Positive test:
+Verify that endpoint returns a paginated list of user's promos
+","63","test_get_my_promos_success","tests.api.carwash","Fri Dec 19 12:59:56 GMT+05:00 2025","passed","Fri Dec 19 12:59:56 GMT+05:00 2025","","test_my_promo","",""
+"
+Positive test:
+Verify that API returns 200 and valid JSON response for a valid car model ID with auction and avtosalon filters.
+","50","test_get_car_model_list2_auction_avtosalon_positive[22228]","tests.api.car","Fri Dec 19 12:59:48 GMT+05:00 2025","passed","Fri Dec 19 12:59:48 GMT+05:00 2025","","test_model_list2","",""
 "
 Negative test:
-Attempt to retrieve a body type with an invalid ID
-","24","test_get_body_type_by_id_negative_invalid_id[abc]","tests.api.specifaction","Wed Dec 10 09:56:38 GMT+05:00 2025","broken","Wed Dec 10 09:56:38 GMT+05:00 2025","","test_body_type_id","",""
-"","554","test_get_daily_view_stats_negative_cases[]","tests.api.auctionn","Wed Dec 10 09:55:47 GMT+05:00 2025","passed","Wed Dec 10 09:55:48 GMT+05:00 2025","","test_daily_view","",""
-"","65","test_get_trade_in_centers_success","tests.api.auctionn","Wed Dec 10 09:55:50 GMT+05:00 2025","passed","Wed Dec 10 09:55:50 GMT+05:00 2025","","test_tradein_centers","",""
-"","536","test_get_daily_view_stats_success","tests.api.auctionn","Wed Dec 10 09:55:44 GMT+05:00 2025","passed","Wed Dec 10 09:55:44 GMT+05:00 2025","","test_daily_view","",""
+Verify that request with invalid token returns 401
+","33","test_get_garage_cars_invalid_token[Bearer invalid.token.value]","tests.api.carwash","Fri Dec 19 12:59:55 GMT+05:00 2025","passed","Fri Dec 19 12:59:55 GMT+05:00 2025","TestGarageCars","test_garaj_car_id","",""
+"
+Negative test:
+Send request to invalid URL and expect 404 error
+","25","test_get_body_type_list_negative_invalid_url","tests.api.specifaction","Fri Dec 19 13:00:16 GMT+05:00 2025","passed","Fri Dec 19 13:00:16 GMT+05:00 2025","","test_body_type","",""
+"","49","test_car_detail","tests.api.car","Fri Dec 19 12:59:45 GMT+05:00 2025","passed","Fri Dec 19 12:59:45 GMT+05:00 2025","","test_car_detail","",""
+"
+Negative test:
+Verify that the endpoint returns 401 when no auth headers are provided
+","26","test_get_auction_cars_unauthorized","tests.api.users","Fri Dec 19 13:00:22 GMT+05:00 2025","passed","Fri Dec 19 13:00:22 GMT+05:00 2025","","test_auction_cars","",""
+"","529","test_get_daily_view_stats_negative_cases[?auction_id=5342&days=]","tests.api.auctionn","Fri Dec 19 12:59:25 GMT+05:00 2025","passed","Fri Dec 19 12:59:25 GMT+05:00 2025","","test_daily_view","",""
+"","46","test_get_car_promotions_negative_invalid_page[-1]","tests.api.car","Fri Dec 19 12:59:50 GMT+05:00 2025","passed","Fri Dec 19 12:59:50 GMT+05:00 2025","","test_promo_list","",""
+"","77","test_get_contact_by_id","tests.api.business","Fri Dec 19 12:59:31 GMT+05:00 2025","broken","Fri Dec 19 12:59:31 GMT+05:00 2025","","test_contact_read","",""
+"","720","test_get_similar_cars_negative","tests.api.car","Fri Dec 19 12:59:51 GMT+05:00 2025","passed","Fri Dec 19 12:59:52 GMT+05:00 2025","","test_search_cars","",""

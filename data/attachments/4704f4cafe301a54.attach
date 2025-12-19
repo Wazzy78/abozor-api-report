@@ -1,0 +1,1 @@
+{"phone":["This field may not be blank."],"type":["\"unknown\" is not a valid choice."],"status":["\"invalid_status\" is not a valid choice."],"arrive_time":["Datetime has wrong format. Use one of these formats instead: YYYY-MM-DDThh:mm[:ss[.uuuuuu]][+HH:MM|-HH:MM|Z]."],"diagnostics_center":["Incorrect type. Expected pk value, received str."]}

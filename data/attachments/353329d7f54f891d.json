@@ -1,0 +1,51 @@
+{
+  "core_car": {
+    "services": [],
+    "modification": 17580,
+    "drive_unit": 1,
+    "media_tools": [],
+    "optics": [],
+    "external_body_kit": [],
+    "salon": [],
+    "used_car": false,
+    "brand": 82,
+    "car_model": 828,
+    "generation": 1651,
+    "configuration": 2391,
+    "body_type": 1,
+    "fuel_type": 1,
+    "transmission": 1,
+    "color": 3,
+    "year": 2023,
+    "mileage": 0.0
+  },
+  "region": 2,
+  "currency": "usd",
+  "photos": [
+    {
+      "url": "https://files-api.itpoint.uz/orient-motors/images/original/b1e15b0a-9d8c-4c04-9df8-98216dcd5bc3.jpg",
+      "thumbnail": "https://files-api.itpoint.uz/orient-motors/images/thumbnail/b1e15b0a-9d8c-4c04-9df8-98216dcd5bc3.jpg",
+      "type": "general"
+    },
+    {
+      "url": "https://files-api.itpoint.uz/orient-motors/images/original/386ad3ae-cba7-420d-b530-39881d90da1a.jpg",
+      "thumbnail": "https://files-api.itpoint.uz/orient-motors/images/thumbnail/386ad3ae-cba7-420d-b530-39881d90da1a.jpg",
+      "type": "general"
+    },
+    {
+      "url": "https://files-api.itpoint.uz/orient-motors/images/original/872d21f0-61ec-46d7-837e-619c7be2a04c.jpg",
+      "thumbnail": "https://files-api.itpoint.uz/orient-motors/images/thumbnail/872d21f0-61ec-46d7-837e-619c7be2a04c.jpg",
+      "type": "general"
+    },
+    {
+      "url": "https://files-api.itpoint.uz/orient-motors/images/original/1b7fc842-8486-4d2f-92a2-6d08e674a08b.jpg",
+      "thumbnail": "https://files-api.itpoint.uz/orient-motors/images/thumbnail/1b7fc842-8486-4d2f-92a2-6d08e674a08b.jpg",
+      "type": "general"
+    }
+  ],
+  "changed_part": [],
+  "condition": "average",
+  "barter": false,
+  "is_cheaper": false,
+  "passed_customs_clearance": false
+}
