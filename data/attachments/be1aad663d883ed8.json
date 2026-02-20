@@ -1,0 +1,48 @@
+{
+  "core_car": {
+    "services": [],
+    "modification": 17580,
+    "drive_unit": 1,
+    "media_tools": [],
+    "optics": [],
+    "external_body_kit": [
+      5
+    ],
+    "salon": [],
+    "used_car": true,
+    "description": "Balon alishtirish kerak, tosh tekkan joylari bor, kraska toza",
+    "brand": 82,
+    "car_model": 828,
+    "generation": 1651,
+    "configuration": 2391,
+    "body_type": 1,
+    "fuel_type": 8,
+    "transmission": 1,
+    "color": 3,
+    "year": 2022,
+    "mileage": 22555.0
+  },
+  "gene_attorney": true,
+  "region": 7,
+  "currency": "usd",
+  "photos": [
+    {
+      "url": "https://files-api.itpoint.uz/orient-motors/images/2026/01/15/original/e7a45cb1-97ec-4d0c-908a-d6c67b99c026.webp",
+      "thumbnail": "https://files-api.itpoint.uz/orient-motors/images/2026/01/15/thumbnail/e7a45cb1-97ec-4d0c-908a-d6c67b99c026_thumb.webp",
+      "type": "general"
+    }
+  ],
+  "changed_part": [
+    {
+      "part_id": 3,
+      "quality_id": 2,
+      "description": "shshshaywjs"
+    }
+  ],
+  "condition": "average",
+  "barter": false,
+  "is_cheaper": false,
+  "passed_customs_clearance": false,
+  "buy_it_now_price": 10000.0,
+  "buy_it_now_currency": "usd"
+}

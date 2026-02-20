@@ -1,0 +1,1 @@
+{"id":11498,"year_from":2011,"year_to":2025,"price_from":10000,"price_to":50000,"currency":"usd","mileage_from":20000,"mileage_to":100000,"condition":null,"created_at":"2026-02-20T10:13:51.114276+05:00","business_user":null,"anonym_user":null,"brand":82,"car_model":854,"generation":[1711],"region":[8],"services":[],"fuel":[1],"color":[3],"transmission":[1],"body_type":[1]}
